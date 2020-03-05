@@ -4,6 +4,7 @@ const { src, dest, watch } = require('gulp'),
   rename = require('gulp-rename'),
   cssnano = require('gulp-cssnano'),
   sass = require('gulp-sass'),
+  autoprefixer = require('gulp-autoprefixer'),
   browserSync = require('browser-sync').create();
 
 
@@ -17,6 +18,7 @@ function minCSS() {
 function serveSass() {
   return src('src/sass/**/*.{scss,sass}')
       .pipe(sass())
+      .pipe(autoprefixer({cascade: false}))
       .pipe(dest('src/css'))
       .pipe(browserSync.stream());
 }

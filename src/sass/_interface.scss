@@ -7,4 +7,9 @@
     background-color: $primary;
     color: $light;
   }
+  &--outline {
+    border: 1px solid #FFFFFF;
+    background-color: transparent;
+    color: $light;
+  }
 }

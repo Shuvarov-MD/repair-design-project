@@ -9,17 +9,17 @@ const { src, dest, watch } = require('gulp'),
 
 
 function minCSS() {
-  return src('src/css/style.css')
+  return src('docs/css/style.css')
     .pipe(cssnano())
     .pipe(rename({suffix: '.min'}))
-    .pipe(dest('src/css'))
+    .pipe(dest('docs/css'))
 }
 
 function serveSass() {
-  return src('src/sass/**/*.{scss,sass}')
+  return src('docs/sass/**/*.{scss,sass}')
       .pipe(sass())
       .pipe(autoprefixer({cascade: false}))
-      .pipe(dest('src/css'))
+      .pipe(dest('docs/css'))
       .pipe(browserSync.stream());
 }
 
@@ -27,12 +27,12 @@ function BrowserSync() {
   serveSass();
   browserSync.init({
     server: {
-        baseDir: "src"
+        baseDir: "docs"
     }
   });
-  watch('src/*.html').on('change', browserSync.reload);
-  watch('src/sass/**/*.{scss,sass}', serveSass);
-  watch('src/js/**/*.js').on('change', browserSync.reload);
+  watch('docs/*.html').on('change', browserSync.reload);
+  watch('docs/sass/**/*.{scss,sass}', serveSass);
+  watch('docs/js/**/*.js').on('change', browserSync.reload);
 }
 
 

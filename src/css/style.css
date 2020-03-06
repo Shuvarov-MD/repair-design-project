@@ -318,11 +318,6 @@ template {
 [hidden] {
   display: none; }
 
-.container {
-  width: 85%;
-  max-width: 1256px;
-  margin: auto; }
-
 .button {
   padding: 13px 20px;
   border: none;
@@ -341,6 +336,33 @@ template {
     border: 1px solid #FFFFFF;
     background-color: transparent;
     color: #ffffff; }
+
+.container {
+  width: 85%;
+  max-width: 1256px;
+  margin: auto; }
+
+*, *::before, *::after {
+  box-sizing: border-box; }
+
+body {
+  font-family: 'Futura Book', sans-serif;
+  font-size: 14px; }
+
+.section-title {
+  text-align: center;
+  text-transform: uppercase;
+  font-family: 'Yeseva One', cursive; }
+  .section-title__img {
+    display: flex;
+    align-items: center;
+    justify-content: center; }
+    .section-title__img::before, .section-title__img::after {
+      content: '';
+      width: 32px;
+      height: 2px;
+      background-color: #E3B873;
+      margin: 0 10px; }
 
 .header {
   position: fixed;
@@ -387,6 +409,8 @@ template {
   .hero::before {
     content: '';
     position: absolute;
+    left: 0;
+    top: 0;
     width: 100%;
     height: 100%;
     background: rgba(19, 19, 19, 0.7); }
@@ -454,10 +478,3 @@ template {
   font-size: 40px; }
   .title--primary {
     color: #E3B873; }
-
-*, *::before, *::after {
-  box-sizing: border-box; }
-
-body {
-  font-family: 'Futura Book', sans-serif;
-  font-size: 14px; }

@@ -21,12 +21,19 @@
     max-width: 47.85rem;
     margin-left: 4.28rem;
   }
+  &__title {
+    margin-bottom: 1rem;
+  }
   &__text {
     max-width: 500px;
     font-size: 1.57rem;
+    line-height: 1.363;
+    margin: 0;
+    margin-bottom: 3.4rem;
   }
   &__button {
    margin-right: 20px;
+   padding: 17px 28px;
   }
   &__instagram {
     position: absolute;
@@ -75,6 +82,7 @@
     color: $primary;
     transform: rotate(90deg);
     line-height: 0.8;
+    font-size: 1.1rem;
     &::after {
       content: '';
       width: 50px;
@@ -86,10 +94,11 @@
 }
 
 .title {
-  margin: 0;
+ /* margin: 0;*/
   font-family: 'Yeseva One', cursive;
   text-transform: uppercase;
   font-size: 2.857rem;
+  line-height: 1.325;
   &--primary {
     color: $primary;
   }

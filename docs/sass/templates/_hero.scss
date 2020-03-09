@@ -22,7 +22,7 @@
     margin-left: 4.28rem;
   }
   &__title {
-    margin-bottom: 1rem;
+    margin-bottom: 1.1rem;
   }
   &__text {
     max-width: 500px;
@@ -32,8 +32,12 @@
     margin-bottom: 3.4rem;
   }
   &__button {
-   margin-right: 20px;
-   padding: 17px 28px;
+    margin-right: 17px;
+    padding: 17px 28px;
+
+    &.button--outline {
+      padding: 17px 46px;
+    }
   }
   &__instagram {
     position: absolute;
@@ -52,6 +56,7 @@
     min-width: 17.6rem;
     min-height: 6.92rem;
     font-family: 'Yeseva One', cursive;
+    font-size: 0.857rem;
     background-color: $dark;
     text-transform: uppercase;
     text-decoration: none;
@@ -88,7 +93,7 @@
       width: 50px;
       height: 1px;
       background-color: $primary;
-      margin-left: 8px;
+      margin-left: 11px;
     }
   }
 }

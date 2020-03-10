@@ -11,7 +11,7 @@
 }
 
 .col {
-  flex-basis: 32%;
+  flex-basis: 31%;
 }
 
 .card {
@@ -40,7 +40,7 @@
     color: $secondary;
     margin-bottom: 2.5rem;
   }
-  
+
   &__pricetag {
     position: absolute;
     left: 0;

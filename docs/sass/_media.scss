@@ -61,6 +61,11 @@
         content: ' ...';
       }
     }
+    &__img {
+      &::before {
+        display: none;
+      }
+    }
   }
 
   .card {

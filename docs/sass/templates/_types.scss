@@ -45,11 +45,12 @@
     position: absolute;
     left: 0;
     bottom: -1.79rem;
+    padding: 1.214rem 2.6rem;
     font-size: 1.29rem;
     font-family: 'Yeseva One', cursive;
     text-transform: uppercase;
     background-color: $primary;
+    box-shadow: 5px 5px 10px rgba($primary, 0.3);
     color: $light;
-    padding: 1.214rem 2.6rem;
   }
 }

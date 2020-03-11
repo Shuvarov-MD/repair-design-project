@@ -35,6 +35,9 @@
     background: transparent url('../img/close.svg') no-repeat center;
     border: none;
     cursor: pointer;
+    &:focus, &:active {
+      outline: none;
+    }
   }
 
   &__title {

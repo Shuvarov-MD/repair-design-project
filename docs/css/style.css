@@ -671,6 +671,8 @@ img {
     background: transparent url("../img/close.svg") no-repeat center;
     border: none;
     cursor: pointer; }
+    .modal__close:focus, .modal__close:active {
+      outline: none; }
   .modal__title {
     font-family: 'Yeseva One', cursive;
     font-size: 1.357rem;

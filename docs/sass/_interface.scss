@@ -45,6 +45,9 @@
   &::placeholder {
     color: $light;
   }
+  &:focus {
+    outline: none;
+  }
 }
 
 .policy {

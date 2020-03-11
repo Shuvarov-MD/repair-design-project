@@ -361,6 +361,8 @@ template {
     color: #ffffff; }
   .input::placeholder {
     color: #ffffff; }
+  .input:focus {
+    outline: none; }
 
 .policy__checkbox {
   opacity: 0;

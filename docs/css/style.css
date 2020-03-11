@@ -636,6 +636,8 @@ img {
     background-color: rgba(0, 0, 0, 0.3); }
 
 .modal {
+  opacity: 0;
+  visibility: hidden;
   position: fixed;
   z-index: 199;
   left: 0;
@@ -648,6 +650,9 @@ img {
   display: flex;
   align-items: center;
   justify-content: center; }
+  .modal--visible {
+    opacity: 1;
+    visibility: visible; }
   .modal__dialog {
     position: relative;
     max-width: 36.36rem;
@@ -682,6 +687,8 @@ img {
   .modal__policy {
     margin-bottom: 2.7rem; }
   .modal__button {
+    border-radius: 0;
+    padding: 1.357rem 3.571rem;
     align-self: flex-end; }
 
 @media screen and (max-width: 1270px) {

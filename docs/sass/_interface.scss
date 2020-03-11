@@ -10,6 +10,7 @@
   &:active, &:focus {
     outline: none;
   }
+
   &--primary {
     background-color: $primary;
     color: $light;
@@ -19,6 +20,7 @@
       box-shadow: none;
     }
   }
+
   &--outline {
     border: 1px solid #FFFFFF;
     background-color: transparent;
@@ -56,8 +58,8 @@
         }
       }
     }
-
   }
+  
   &__label {
     display: flex;
     align-items: center;

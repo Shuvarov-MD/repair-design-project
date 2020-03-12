@@ -339,6 +339,29 @@ template {
     border: 1px solid #FFFFFF;
     background-color: transparent;
     color: #ffffff; }
+  .button__scroll-top {
+    display: inline-block;
+    width: 35px;
+    height: 35px;
+    background: transparent url("../img/arrow-down.svg") no-repeat center;
+    transform: rotate(180deg);
+    border: 2px solid #E3B873;
+    border-radius: 50%;
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    transition: background-color .3s, opacity .5s, visibility .5s;
+    opacity: 0;
+    visibility: hidden;
+    z-index: 1000; }
+    .button__scroll-top--show {
+      opacity: 1;
+      visibility: visible; }
+    .button__scroll-top:hover {
+      cursor: pointer;
+      background-color: #959595; }
+    .button__scroll-top:active {
+      background-color: #555; }
 
 .label--light {
   color: rgba(255, 255, 255, 0.5);

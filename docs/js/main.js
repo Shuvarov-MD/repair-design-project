@@ -38,13 +38,45 @@
 $(document).ready(function () {
   var modal = $('.modal'),
     modalBtn = $('[data-toggle=modal]'),
-    closeBtn = $('.modal__close');
+    closeBtn = $('.modal__close'),
+    modalDialog = $(".modal__dialog");
 
-    modalBtn.on('click', function () {
+
+  modalBtn.on('click', function () {
+    modal.toggleClass('modal--visible');
+  });
+
+  closeBtn.on('click', function () {
+    modal.toggleClass('modal--visible');
+  });
+
+  modal.on('click', function (e){
+    if (!modalDialog.is(e.target) && modalDialog.has(e.target).length === 0){
       modal.toggleClass('modal--visible');
+    }
+  });
+
+  $(this).keydown(function (eventObject) {
+    if (eventObject.which == 27 && modal.hasClass('modal--visible')) {
+      modal.toggleClass('modal--visible');
+    }
+  });
+
+
+    //Кнопка наверх
+    var btn = $('.button__scroll-top');
+
+    $(window).scroll(function() {
+      if ($(window).scrollTop() > 300) {
+        btn.addClass('button__scroll-top--show');
+      } else {
+        btn.removeClass('button__scroll-top--show');
+      }
     });
 
-    closeBtn.on('click', function () {
-      modal.toggleClass('modal--visible');
+    btn.on('click', function(e) {
+      e.preventDefault();
+      $('html, body').animate({scrollTop:0}, '300');
     });
+
 });

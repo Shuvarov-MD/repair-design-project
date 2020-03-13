@@ -79,4 +79,28 @@ $(document).ready(function () {
       $('html, body').animate({scrollTop:0}, '300');
     });
 
+
+  //initialize swiper when document ready
+  var mySwiper = new Swiper ('.swiper-container', {
+    loop: true,
+    pagination: {
+      el: '.swiper-pagination',
+      type: 'bullets',
+    },
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    },
+  });
+
+  var next = $('.swiper-button-next');
+  var prev = $('.swiper-button-prev');
+  var bullets = $('.swiper-pagination');
+
+  bullets.css('left', prev.width() + 30);
+  next.css('left', prev.width() + 25 + bullets.width() + 30 );
+
+
+
+
 });

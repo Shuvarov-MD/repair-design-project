@@ -17,10 +17,26 @@ img {
 
 .section {
   padding: 60px 0;
+  &--dark {
+    background-color: $dark;
+    color: $light;
+  }
   &-title {
     text-align: center;
-    text-transform: uppercase;
-    font-family: 'Yeseva One', cursive;
+    &--left {
+      text-align: left;
+    }
+
+    &__heading {
+      text-transform: uppercase;
+      font-family: 'Yeseva One', cursive;
+      font-weight: normal;
+      line-height: 138%;
+      margin-top: 0;
+      &--primary {
+        color: $primary;
+      }
+    }
     &__img {
       display: flex;
       align-items: center;
@@ -32,6 +48,22 @@ img {
         background-color: $primary;
         margin: 0 10px;
       }
+    }
+    &__word {
+      display: flex;
+      align-items: center;
+      &::after {
+        content: '';
+        width: 92px;
+        height: 2px;
+        background-color: $primary;
+        margin-left: 2.25rem;
+      }
+    }
+    &__text {
+      font-size: 1.28rem;
+      line-height: 2.07rem;
+      max-width: 31.57rem;
     }
   }
   &__text {

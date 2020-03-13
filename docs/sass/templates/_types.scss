@@ -4,16 +4,6 @@
   }
 }
 
-.row {
-  display: flex;
-  align-items: flex-start;
-  justify-content: space-between;
-}
-
-.col {
-  flex-basis: 31%;
-}
-
 .card {
   &__text {
     position: relative;

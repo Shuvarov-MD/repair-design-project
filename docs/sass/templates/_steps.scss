@@ -1,0 +1,48 @@
+.steps {
+  &__subtitle {
+    margin-bottom: 1.285rem;
+  }
+  &__block {
+    width: 33%;
+  }
+  &__text {
+    flex-basis: 22.5rem;
+  }
+  &__heading {
+    &--light {
+      color: $light;
+      &::after {
+        display: block;
+        content: '';
+        width: 16px;
+        height: 1px;
+        background-color: $primary;
+        margin-top: 5px;
+      }
+    }
+  }
+  &__number {
+    margin-bottom: 1.57rem;
+  }
+  &__swiper-slide {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+  }
+}
+
+.block {
+  &__content {
+    width: 130px;
+    color: $light;
+    opacity: 0.3;
+    &--active {
+      opacity: 1;
+    }
+    &:hover {
+      cursor: pointer;
+    }
+  }
+
+}

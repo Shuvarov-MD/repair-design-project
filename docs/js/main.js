@@ -185,32 +185,13 @@ $(".slide-6").click(function(){
 });
 
 
+$(".toggle-button__content").click(function(e) {
+  e.preventDefault();
+  $(".toggle-button__content").removeClass('toggle-button__content--active');
+  $(this).addClass('toggle-button__content--active');
+})
+
 
 
 
 });
-
-
-/*
-$(document).ready(function () {
-    var mySwiper = new Swiper('.swiper-container', {
-        direction: 'horizontal',
-        loop: false,
-        mousewheel: {
-            invert: false,
-        },
-    });
-    mySwiper.on('slideChange', function (realIndex) {
-        var activeSlide = $slider.find('.swiper-slide.swiper-slide-active');
-
-        if (activeSlide.hasClass('dark')) {
-            $('#navbar').addClass('darknav');
-        } else {
-            $('#navbar').removeClass('darknav');
-        }
-
-    });
-});
-
-var $slider = $('#slider');
-*/

@@ -1,6 +1,10 @@
 .projects {
-  padding-top: 9.21rem;
+  position: relative;
+  margin-top: -3.46rem;
+  padding-top: 12.67rem;
   padding-bottom: 30rem;
+  background: url('../img/project/city-bg--left.png') no-repeat bottom left, url('../img/project/city-bg--right.png') no-repeat bottom right, $dark url('../img/projects-bg.svg') no-repeat center;
+  background-size: auto, auto, cover;
   &__row {
     display: flex;
     flex-direction: row-reverse;

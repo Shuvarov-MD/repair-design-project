@@ -7,6 +7,7 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <link href="https://fonts.googleapis.com/css?family=Yeseva+One&display=swap&subset=cyrillic" rel="stylesheet">
   <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.min.css">
+  <link rel="stylesheet" href="css/animate.css">
   <link rel="stylesheet" href="css/style.css">
   <title>Repair Design Project</title>
 </head>
@@ -15,8 +16,8 @@
   <header class="header">
     <div class="container">
       <div class="menu">
-        <div class="logo menu__logo">Repair Design Project</div>
-        <nav class="nav menu__nav">
+        <div class="logo menu__logo wow fadeInDown">Repair Design Project</div>
+        <nav class="nav menu__nav wow fadeInDown">
           <a href="#" class="nav__item">Главная</a>
           <a href="#" class="nav__item">Проекты</a>
           <a href="#" class="nav__item">Замер</a>
@@ -24,7 +25,7 @@
           <a href="#" class="nav__item">Отзывы</a>
           <a href="#" class="nav__item">Контакты</a>
         </nav>
-        <div class="contacts menu__contacts">
+        <div class="contacts menu__contacts wow fadeInDown">
           <a href="tel:+79997683299" class="phone contacts__phone">+7 (999) 768-32-99</a>
           <button class="button contacts__button button--primary" data-toggle="modal">Заказать звонок</button>
         </div>
@@ -35,33 +36,33 @@
   </header>
   <main>
     <section class="hero">
-      <div class="instagram hero__instagram">
+      <div class="instagram hero__instagram wow fadeInLeft" data-wow-delay="0.1s">
         <a href="#" class="instagram__link">Instagram</a>
       </div>
       <div class="container">
         <div class="hero__content">
-          <h1 class="title hero__title">Турецкий ремонт в&nbsp;<span class="title--primary">Ростове-на-дону</span></h1>
-          <p class="hero__text">Получите готовый ремонт под ключ в срок с экономией рабочего времени до 45 дней и 20% от
+          <h1 class="title hero__title wow fadeInRight" data-wow-delay="0.1s">Турецкий ремонт в&nbsp;<span class="title--primary">Ростове-на-дону</span></h1>
+          <p class="hero__text wow fadeInRight" data-wow-delay="0.3s">Получите готовый ремонт под ключ в срок с экономией рабочего времени до 45 дней и 20% от
             стоимости материалов за счет организации работы</p>
-          <button class="button hero__button button--primary">Рассчитать стоимость</button>
-          <button class="button hero__button button--outline">Отправить заявку</button>
+          <button class="button hero__button button--primary wow fadeInRight" data-wow-delay="0.5s">Рассчитать стоимость</button>
+          <button class="button hero__button button--outline wow fadeInRight" data-wow-delay="0.5s">Отправить заявку</button>
         </div>
         <!-- /.hero__content -->
       </div>
       <!-- /.container -->
-      <a href="#" class="hero__scroll-down">листайте вниз</a>
+      <a href="#" class="hero__scroll-down wow fadeInLeft" data-wow-delay="0.1s">листайте вниз</a>
     </section>
     <!-- /.hero -->
     <section class="section section--dark projects">
       <div class="container">
-        <div class="section-title section-title--left projects__section-title">
+        <div class="section-title section-title--left projects__section-title wow fadeInLeft">
           <h2 class="section-title__heading section-title__heading--primary projects__heading">Завершенные <span
               class="section-title__word">проекты</span></h2>
           <p class="section-title__text">На сайте представлена ​​лишь небольшая часть работ, выполняемых нашей
             компанией. За 14 лет работы на строительном рынке мы осчастливили более 1000 семей</p>
         </div>
         <div class="projects__row">
-          <div class="col-55 col-85 col-100">
+          <div class="col-55 col-85 col-100 wow fadeInRight">
             <div class="swiper-container projects__swiper-container">
               <!-- Additional required wrapper -->
               <div class="swiper-wrapper swiper-no-swiping">
@@ -72,7 +73,7 @@
               </div>
             </div>
           </div>
-          <div class="col-45 col-85 col-100">
+          <div class="col-45 col-85 col-100 wow fadeInLeft">
             <div class="swiper-container projects__swiper-container">
               <!-- Additional required wrapper -->
               <div class="swiper-wrapper swiper-no-swiping">
@@ -150,21 +151,21 @@
 
     <section class="section control">
       <div class="container">
-        <div class="section-title control__section-title section-title--light">
+        <div class="section-title control__section-title section-title--light wow fadeInUp">
           <h2 class="section-title__heading control__heading">Онлайн контроль</h2>
           <div class="section-title__img">
             <img src="img/video.svg" alt="video">
           </div>
         </div>
-        <div class="control__video video">
+        <div class="control__video video wow fadeInUp">
           <img src="img/play-icon.svg" alt="play icon" class="video__play">
         </div>
         <!-- /.control__video video -->
-        <p class="control__text">На каждом объекте установлена ​​камера, которая транслирует ход работы на часах. В
+        <p class="control__text wow fadeInUp">На каждом объекте установлена ​​камера, которая транслирует ход работы на часах. В
           любой момент вы можете зайти на наш сайт и следить за ходом работы в вашей квартире. Посмотрите прямую
           трансляцию с одного из наших объектов! Оставьте заявку ниже чтобы получить ссылку на трансляцию.
         </p>
-        <form action="#" class="form control__form">
+        <form action="#" class="form control__form wow fadeInUp">
           <div class="control__input-group">
             <label for="user-name" class="label form__label control__label">Имя</label>
             <input type="text" class="input form__input control__input" id="user-name" placeholder="Как вас зовут:">
@@ -190,13 +191,13 @@
     <!-- /.section control -->
     <section class="section types">
       <div class="container">
-        <div class="section-title types__section-title">
-          <h2 class="section-title__heading">Виды ремонта</h2>
+        <div class="section-title types__section-title wow fadeInUp">
+          <h2 class="section-title__heading ">Виды ремонта</h2>
           <div class="section-title__img">
             <img src="img/repair.svg" alt="repair">
           </div>
         </div>
-        <div class="row">
+        <div class="row wow fadeInUp">
           <div class="col-30">
             <div class="card types__card">
               <img src="img/types/type-1.jpg" alt="Косметический ремонт" class="card__img">
@@ -277,15 +278,15 @@
     <!-- /.section types -->
     <section class="section design">
       <div class="container">
-        <div class="section-title design__section-title">
+        <div class="section-title design__section-title wow fadeInUp">
           <h2 class="section-title__heading">Дизайн проект</h2>
           <div class="section-title__img">
             <img src="img/design.svg" alt="design">
           </div>
         </div>
-        <p class="section__text design__text">Дизайн-проект не только помогает сделать ремонт вашей квартиры более
+        <p class="section__text design__text wow fadeInUp">Дизайн-проект не только помогает сделать ремонт вашей квартиры более
           современным, но и значительно удешевляет материалы и сокращает время ремонтных работ</p>
-        <div class="row">
+        <div class="row wow fadeInUp">
           <div class="col-30">
             <div class="card design__card">
               <div class="design__img">
@@ -372,7 +373,7 @@
     <section class="section section--dark steps">
       <div class="container">
         <div class="row">
-          <div class="col-35">
+          <div class="col-35 wow fadeInLeft">
             <div class="section-title section-title--left">
               <span class="section-title__subtitle steps__subtitle">как мы работаем</span>
               <h2 class="section-title__heading section-title__heading--primary steps__heading">6 шагов<span
@@ -461,7 +462,7 @@
           </div>
 
 
-          <div class="col-65">
+          <div class="col-65 wow fadeInRight">
 
             <div class="toggle-buttons steps__toggle-buttons">
               <div class="steps__toggle-button slide-1">
@@ -555,6 +556,7 @@
 
   <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
   <script src="https://unpkg.com/swiper/js/swiper.min.js"></script>
+  <script src="js/wow.min.js"></script>
   <script src="js/main.js"></script>
 
 </body>

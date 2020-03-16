@@ -193,5 +193,7 @@ $(".toggle-button__content").click(function(e) {
 
 
 
+new WOW().init();
+
 
 });

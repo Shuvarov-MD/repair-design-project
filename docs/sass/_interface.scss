@@ -73,8 +73,10 @@
   background-color: transparent;
   font-size: 1.285rem;
   color: $light;
-  &::placeholder {
-    color: $light;
+  &--light {
+    &::placeholder {
+      color: $light;
+    }
   }
   &:focus {
     outline: none;

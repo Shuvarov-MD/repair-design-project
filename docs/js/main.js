@@ -154,6 +154,37 @@ $(document).ready(function () {
 
 
 
+$(".slide-1").click(function(){
+  mySwiperSteps[0].slideTo(1);
+  mySwiperSteps[1].slideTo(1);
+});
+
+$(".slide-2").click(function(){
+  mySwiperSteps[0].slideTo(2);
+  mySwiperSteps[1].slideTo(2);
+});
+
+$(".slide-3").click(function(){
+  mySwiperSteps[0].slideTo(3);
+  mySwiperSteps[1].slideTo(3);
+});
+
+$(".slide-4").click(function(){
+  mySwiperSteps[0].slideTo(4);
+  mySwiperSteps[1].slideTo(4);
+});
+
+$(".slide-5").click(function(){
+  mySwiperSteps[0].slideTo(5);
+  mySwiperSteps[1].slideTo(5);
+});
+
+$(".slide-6").click(function(){
+  mySwiperSteps[0].slideTo(6);
+  mySwiperSteps[1].slideTo(6);
+});
+
+
 
 
 

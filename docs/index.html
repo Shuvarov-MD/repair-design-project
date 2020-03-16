@@ -152,12 +152,40 @@
 
     <section class="section control">
       <div class="container">
-        <div class="section-title">
+        <div class="section-title control__section-title section-title--light">
           <h2 class="section-title__heading">Онлайн контроль</h2>
           <div class="section-title__img">
             <img src="img/video.svg" alt="video">
           </div>
         </div>
+        <div class="control__video video">
+          <img src="img/play-icon.svg" alt="play icon" class="video__play">
+        </div>
+        <!-- /.control__video video -->
+        <p class="control__text">На каждом объекте установлена ​​камера, которая транслирует ход работы на часах. В
+          любой момент вы можете зайти на наш сайт и следить за ходом работы в вашей квартире. Посмотрите прямую
+          трансляцию с одного из наших объектов! Оставьте заявку ниже чтобы получить ссылку на трансляцию.
+        </p>
+        <form action="#" class="form control__form">
+          <div class="control__input-group">
+            <label for="user-name" class="label form__label control__label">Имя</label>
+            <input type="text" class="input form__input control__input" id="user-name" placeholder="Как вас зовут:">
+          </div>
+          <div class="control__input-group">
+            <label for="user-phone" class="label form__label control__label">Телефон</label>
+            <input type="tel" class="input form__input control__input" id="user-phone"
+              placeholder="Ваш номер телефона:">
+          </div>
+          <button class="button button--primary control__button">Отправить</button>
+          <div class="policy control__policy">
+            <input type="checkbox" name="policy-checkbox" id="policy-checkbox" class="policy__checkbox" checked>
+            <label for="policy-checkbox" class="policy__label control__policy-label">Я соглашаюсь с обработкой данных</label>
+          </div>
+          <!-- /.policy -->
+        </form>
+
+
+
       </div>
       <!-- /.container -->
     </section>
@@ -353,9 +381,7 @@
                   class="section-title__word">до цели</span></h2>
             </div>
             <div class="swiper-container steps__swiper-container">
-              <!-- Additional required wrapper -->
               <div class="swiper-wrapper swiper-no-swiping">
-                <!-- Slides -->
                 <div class="swiper-slide">
                   <div class="swiper-slide__text steps__text">
                     <span class="swiper-slide__number steps__number">1/6</span>
@@ -440,14 +466,14 @@
           <div class="col-65">
 
             <div class="steps__swiper-slide">
-              <div class="swiper-slide__text steps__block">
+              <div class="swiper-slide__text steps__block slide-1">
                 <div class="block__content block__content--active">
                   <h3 class="swiper-slide__heading steps__heading--light">01</h3>
                   <span class="swiper-slide__value">Выезд на замер помещения</span>
                 </div>
               </div>
 
-              <div class="swiper-slide__text steps__block">
+              <div class="swiper-slide__text steps__block slide-2">
                 <div class="block__content">
                   <h3 class="swiper-slide__heading steps__heading--light">02</h3>
                   <span class="swiper-slide__value">Составление сметы</span>
@@ -455,28 +481,28 @@
 
               </div>
 
-              <div class="swiper-slide__text steps__block">
+              <div class="swiper-slide__text steps__block slide-3">
                 <div class="block__content">
                   <h3 class="swiper-slide__heading steps__heading--light">03</h3>
                   <span class="swiper-slide__value">Разработка дизайн проекта</span>
                 </div>
               </div>
 
-              <div class="swiper-slide__text steps__block">
+              <div class="swiper-slide__text steps__block slide-4">
                 <div class="block__content">
                   <h3 class="swiper-slide__heading steps__heading--light">04</h3>
                   <span class="swiper-slide__value">Закупка расходных материалов</span>
                 </div>
               </div>
 
-              <div class="swiper-slide__text steps__block">
+              <div class="swiper-slide__text steps__block slide-5">
                 <div class="block__content">
                   <h3 class="swiper-slide__heading steps__heading--light">05</h3>
                   <span class="swiper-slide__value">Ремонтно-отделочные работы</span>
                 </div>
               </div>
 
-              <div class="swiper-slide__text steps__block">
+              <div class="swiper-slide__text steps__block slide-6">
                 <div class="block__content">
                   <h3 class="swiper-slide__heading steps__heading--light">06</h3>
                   <span class="swiper-slide__value">Приемка-сдача работ</span>
@@ -485,9 +511,7 @@
 
             </div>
             <div class="swiper-container steps__swiper-container">
-              <!-- Additional required wrapper -->
               <div class="swiper-wrapper swiper-no-swiping">
-                <!-- Slides -->
                 <div class="swiper-slide"><img src="img/steps/step-1.jpg" alt="Проект"></div>
                 <div class="swiper-slide"><img src="img/steps/step-1.jpg" alt="Проект"></div>
                 <div class="swiper-slide"><img src="img/steps/step-1.jpg" alt="Проект"></div>
@@ -512,11 +536,11 @@
       <h3 class="modal__title">Оставьте заявку и наш менеджер свяжется с вами </h3>
       <form action="#" class="form modal__form">
         <label for="user-name" class="label form__label label--light">Имя</label>
-        <input type="text" class="input form__input modal__input" id="user-name" placeholder="Как вас зовут:">
+        <input type="text" class="input form__input modal__input input--light" id="user-name" placeholder="Как вас зовут:">
         <label for="user-phone" class="label form__label label--light">Телефон</label>
-        <input type="tel" class="input form__input modal__input" id="user-phone" placeholder="Ваш номер телефона:">
+        <input type="tel" class="input form__input modal__input input--light" id="user-phone" placeholder="Ваш номер телефона:">
         <label for="user-email" class="label form__label label--light">Email</label>
-        <input type="email" class="input form__input modal__input" id="user-email" placeholder="Ваш email">
+        <input type="email" class="input form__input modal__input input--light" id="user-email" placeholder="Ваш email">
         <div class="policy modal__policy">
           <input type="checkbox" name="policy-checkbox" id="policy-checkbox" class="policy__checkbox" checked>
           <label for="policy-checkbox" class="policy__label">Я соглашаюсь с обработкой данных</label>

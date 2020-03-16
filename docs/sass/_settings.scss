@@ -26,6 +26,10 @@ img {
     &--left {
       text-align: left;
     }
+    &--light {
+      color: $light;
+    }
+
     &__subtitle {
       display: block;
       font-size: 1.07rem;

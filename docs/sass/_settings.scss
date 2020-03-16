@@ -177,3 +177,7 @@ img {
 .swiper-container-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet:not(:last-of-type) {
   margin-right: 18px;
 }
+
+.vector-bg {
+  background: url('../img/control-bg.svg') no-repeat center / cover;
+}

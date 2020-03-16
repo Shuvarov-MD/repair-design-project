@@ -143,7 +143,14 @@ $(document).ready(function () {
       nextEl: '.steps__swiper-button-next',
       prevEl: '.steps__swiper-button-prev',
     },
+    on: {
+      init: function() {
+
+      }
+    }
   });
+
+
 
   var nextStep = $('.steps__swiper-button-next');
   var prevStep = $('.steps__swiper-button-prev');
@@ -190,6 +197,15 @@ $(".toggle-button__content").click(function(e) {
   $(".toggle-button__content").removeClass('toggle-button__content--active');
   $(this).addClass('toggle-button__content--active');
 })
+
+
+mySwiperSteps[0].on('slideChange', function () {
+  $(".toggle-button__content").removeClass('toggle-button__content--active');
+  $('.slide-' + (mySwiperSteps[0].realIndex + 1)).addClass('toggle-button__content--active');
+});
+
+
+
 
 
 

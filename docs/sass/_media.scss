@@ -10,6 +10,7 @@
   html {
     font-size: 12px;
   }
+
   .nav {
     &__item {
       margin-right: 1rem;
@@ -18,7 +19,9 @@
 
   .projects {
     &__text {
-      &:nth-of-type(2n+1), &:nth-of-type(2n+2) {
+
+      &:nth-of-type(2n+1),
+      &:nth-of-type(2n+2) {
         width: 50%;
       }
     }
@@ -35,17 +38,21 @@
   .steps {
     display: none;
   }
+
   .nav {
     display: none;
   }
+
   .hero {
     &__instagram {
       display: none;
     }
+
     &__content {
       margin-left: 0;
     }
   }
+
   .col-85 {
     width: 85%;
     margin-bottom: 2.36rem;
@@ -56,15 +63,18 @@
     margin-top: 0;
     padding-top: 2.57rem;
     background: $dark;
+
     &__section-title {
       display: flex;
       flex-direction: column;
       align-items: center;
       text-align: center;
     }
+
     &__heading {
       display: flex;
     }
+
     &__row {
       flex-direction: column;
       align-items: center;
@@ -76,54 +86,73 @@
     &__word {
       margin-left: 6px;
       justify-content: center;
+
       &::after {
         display: none;
       }
     }
+
     &__text {
       max-width: 52.93rem;
     }
   }
 
+  .design {
+    margin-bottom: 0;
+  }
 }
+
+
+
 
 @media screen and (max-width: 760px) {
   .vector-bg {
     background: none;
   }
+
   .row {
     flex-direction: column;
     align-items: center;
   }
+
   .col-30 {
     width: auto;
     flex-basis: 392px;
   }
+
   .types {
     &__card {
       margin-bottom: 5rem;
     }
   }
+
   .design {
     background-color: $dark;
+    padding-bottom: 5.428rem;
+
     &__pricetag {
       padding-left: 3.6rem;
       padding-right: 3.6rem;
     }
+
     &__card {
       margin-bottom: 5rem;
     }
+
     &__section-title {
       color: $light;
     }
+
     &__text {
       color: $light;
     }
+
     &__list {
       .card__item:nth-child(7)::after {
         content: ' ...';
       }
     }
+
     &__img {
       &::before {
         display: none;
@@ -135,21 +164,26 @@
     &__text {
       margin-left: 0;
     }
+
     &__item:nth-child(n+8) {
       display: none;
     }
   }
+
   .projects {
     padding-bottom: 0;
   }
+
   .control {
     background: $dark;
     color: $light;
+
     &__video {
-        width: auto;
-        min-height: 207px;
-        background-size: cover;
+      width: auto;
+      min-height: 207px;
+      background-size: cover;
     }
+
     &__section-title {
       margin-top: 0;
     }
@@ -157,53 +191,98 @@
     &__video {
       margin-bottom: 2rem;
     }
+
     &__form {
       display: flex;
       flex-direction: column;
       margin: auto;
       max-width: 24.285rem;
     }
+
     &__input-group:first-of-type {
       margin-bottom: 4.5rem;
     }
+
     &__label {
       margin-bottom: -5px;
       color: rgba(255, 255, 255, 0.5)
     }
+
     &__input {
       color: $light;
+
       &::placeholder {
         color: $light;
       }
     }
+
     &__policy {
       margin-top: 1rem;
+
       &-label {
         justify-content: left;
       }
     }
+
     &__button {
       margin-top: 4.428rem;
       margin-bottom: -7rem;
       order: 5;
     }
+
     &__text {
       &::before {
         margin-bottom: 1.5rem;
       }
     }
   }
+
   .video {
     &__play {
       width: 55px;
     }
   }
+  .footer {
+    background-color: $dark;
+    background-image: none;
 
+    &__menu {
+      display: none;
+    }
 
-
-
-
+    &__wrap {
+      width: 100%;
+      margin-top: 0;
+      background-color: $dark;
+      background-image: none;
+      margin-bottom: 0;
+    }
+    &__form {
+      flex-direction: column;
+    }
+    &__policy {
+      display: flex;
+      flex-direction: row-reverse;
+      justify-content: space-between;
+      margin-bottom: 4.785rem;
+    }
+    &__button {
+      max-width: 340px;
+      width: 100%;
+    }
+    &__input {
+      &-group {
+        flex-basis: 100%;
+        margin-bottom: 4.428rem;
+        &--full-width {
+          flex-basis: 100%;
+          margin-bottom: 1.571rem;
+        }
+      }
+    }
+  }
 }
+
 
 @media screen and (max-width: 570px) {
   .col-100 {
@@ -215,29 +294,36 @@
     &__button {
       display: none;
     }
+
     &__phone {
       margin-right: 0;
       color: $light;
       text-decoration: none;
+
       &::after {
         display: none;
       }
     }
   }
+
   .title {
     font-size: 1.64rem;
   }
+
   .hero {
     &__scroll-down {
       display: none;
     }
+
     &__content {
       max-width: 22.86rem;
     }
+
     &__text {
       font-size: 1.29rem;
       margin-bottom: 2.28rem;
     }
+
     &__button {
       display: block;
       min-width: 22.86rem;

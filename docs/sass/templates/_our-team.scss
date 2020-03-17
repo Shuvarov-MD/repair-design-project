@@ -1,0 +1,98 @@
+.our-team {
+  background: url('../img/control-bg.svg') no-repeat center / cover;
+  padding-bottom: 26.57rem;
+  &__section-title {
+    margin-top: -33.5rem;
+  }
+  &__text {
+    max-width: 32rem;
+    margin: auto;
+    margin-top: 1.642rem;
+    margin-bottom: 5.285rem;
+    &--dark {
+      max-width: 40.57rem;
+      margin-top: 3.785rem;
+      &::before {
+        display: block;
+        content: '';
+        width: 55px;
+        height: 2px;
+        background-color: $primary;
+        margin: auto;
+        margin-bottom: 1.142rem;
+      }
+    }
+    &--light {
+      color: $light;
+    }
+  }
+  &__row {
+    justify-content: space-around;
+  }
+  &__col {
+    flex-basis: 19.428rem;
+  }
+  &__img {
+    position: relative;
+    display: flex;
+  }
+  &__icon {
+    position: absolute;
+    width: 70px;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transform: translate(-50%, -50%);
+    &--primary {
+      background-color: $primary;
+      box-shadow: 0px 5px 20px rgba(227, 184, 115, 0.5);
+    }
+  }
+  &__people {
+    position: relative;
+    width: 85%;
+    max-width: 233px;
+    margin: auto;
+    margin-top: -5.714rem;
+  }
+  &__name {
+    display: block;
+    font-family: 'Yeseva One', cursive;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 25px;
+    text-align: center;
+    color: $black;
+    padding: 22px 20px;
+    background-color: $light;
+  }
+  &__position {
+    display: block;
+    font-family: 'Futura Book', sans-serif;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 26px;
+    text-align: center;
+    color: $secondary;
+  }
+  &__experience {
+    display: block;
+    font-family: 'Yeseva One', cursive;
+    font-weight: normal;
+    font-size: 13px;
+    line-height: 20px;
+    text-align: center;
+    text-transform: uppercase;
+    text-align: center;
+    padding-top: 13px;
+    padding-bottom: 13px;
+    &--primary {
+      background-color: $primary;
+      color: $light;
+    }
+  }
+
+}
+
+

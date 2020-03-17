@@ -212,7 +212,7 @@ new WOW().init();
 
 
 //Animations
-
+/*
 var target = $('.projects__section-title');
 var targetPos = target.offset().top;
 var winHeight = $(window).height();
@@ -225,8 +225,86 @@ $(window).scroll(function(){
     target.addClass('fadeInDown');
   }
 });
+*/
 
 
+//Валидация формы
+$('.modal__form').validate({
+  errorClass: "invalid",
+  errorElement: "div",
+  rules: {
+    userName: {
+      required: true,
+      minlength: 2,
+      maxlength: 15,
+    },
+    userPhone: "required",
+    userEmail: {
+      required: true,
+      email: true
+    }
+  },
+  messages: {
+    userName: {
+      required: "Заполните поле",
+      minlength: "Имя должно быть не короче двух букв",
+      maxlength: "Имя должно быть не длиннее 15 символов"
+    },
+    userPhone: "Заполните поле",
+    userEmail: {
+      required: "Заполните поле",
+      email: "Введите корректный email"
+    }
+  }
+});
 
+
+$('.control__form').validate({
+  errorClass: "invalid",
+  errorElement: "div",
+  rules: {
+    userName: {
+      required: true,
+      minlength: 2,
+      maxlength: 15,
+    },
+    userPhone: "required",
+  },
+  messages: {
+    userName: {
+      required: "Заполните поле",
+      minlength: "Имя должно быть не короче двух букв",
+      maxlength: "Имя должно быть не длиннее 15 символов"
+    },
+    userPhone: "Заполните поле",
+
+  }
+});
+
+$('.footer__form').validate({
+  errorClass: "invalid",
+  errorElement: "div",
+  rules: {
+    userName: {
+      required: true,
+      minlength: 2,
+      maxlength: 15,
+    },
+    userPhone: "required",
+  },
+  messages: {
+    userName: {
+      required: "Заполните поле",
+      minlength: "Имя должно быть не короче двух букв",
+      maxlength: "Имя должно быть не длиннее 15 символов"
+    },
+    userPhone: "Заполните поле",
+
+  }
+});
+
+
+// Маска для телефона
+$('[type=tel]').mask('+7 (000) 000-00-00', {placeholder: "+7 (___) ___-__-__"});
 
 });

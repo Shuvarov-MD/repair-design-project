@@ -1,5 +1,6 @@
 .steps {
   padding-top: 30.5rem;
+  padding-bottom: 35.85rem;
   &__title {
     font-size: 1.928rem;
     margin-bottom: 6.2rem;
@@ -54,14 +55,14 @@
     flex-basis: 136px;
     margin-bottom: 3rem;
     &:nth-of-type(3n+1) {
-      margin-right: 135px;
+      margin-right: 9.64rem;
     }
     &:nth-of-type(3n+2) {
-      margin-right: 140px;
+      margin-right: 10rem;
     }
     &:nth-of-type(3n+3) {
       flex-basis: 100px;
-      margin-right: 50px;
+      margin-right: 5.57rem;
     }
     &--light {
       color: $light;

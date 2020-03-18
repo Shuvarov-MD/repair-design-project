@@ -1,3 +1,5 @@
+!function(a){a.fn.viewportChecker=function(b){var c={classToAdd:"visible",classToRemove:"invisible",classToAddForFullView:"full-visible",removeClassAfterAnimation:!1,offset:100,repeat:!1,invertBottomOffset:!0,callbackFunction:function(a,b){},scrollHorizontal:!1,scrollBox:window};a.extend(c,b);var d=this,e={height:a(c.scrollBox).height(),width:a(c.scrollBox).width()};return this.checkElements=function(){var b,f;c.scrollHorizontal?(b=Math.max(a("html").scrollLeft(),a("body").scrollLeft(),a(window).scrollLeft()),f=b+e.width):(b=Math.max(a("html").scrollTop(),a("body").scrollTop(),a(window).scrollTop()),f=b+e.height),d.each(function(){var d=a(this),g={},h={};if(d.data("vp-add-class")&&(h.classToAdd=d.data("vp-add-class")),d.data("vp-remove-class")&&(h.classToRemove=d.data("vp-remove-class")),d.data("vp-add-class-full-view")&&(h.classToAddForFullView=d.data("vp-add-class-full-view")),d.data("vp-keep-add-class")&&(h.removeClassAfterAnimation=d.data("vp-remove-after-animation")),d.data("vp-offset")&&(h.offset=d.data("vp-offset")),d.data("vp-repeat")&&(h.repeat=d.data("vp-repeat")),d.data("vp-scrollHorizontal")&&(h.scrollHorizontal=d.data("vp-scrollHorizontal")),d.data("vp-invertBottomOffset")&&(h.scrollHorizontal=d.data("vp-invertBottomOffset")),a.extend(g,c),a.extend(g,h),!d.data("vp-animated")||g.repeat){String(g.offset).indexOf("%")>0&&(g.offset=parseInt(g.offset)/100*e.height);var i=g.scrollHorizontal?d.offset().left:d.offset().top,j=g.scrollHorizontal?i+d.width():i+d.height(),k=Math.round(i)+g.offset,l=g.scrollHorizontal?k+d.width():k+d.height();g.invertBottomOffset&&(l-=2*g.offset),k<f&&l>b?(d.removeClass(g.classToRemove),d.addClass(g.classToAdd),g.callbackFunction(d,"add"),j<=f&&i>=b?d.addClass(g.classToAddForFullView):d.removeClass(g.classToAddForFullView),d.data("vp-animated",!0),g.removeClassAfterAnimation&&d.one("webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend",function(){d.removeClass(g.classToAdd)})):d.hasClass(g.classToAdd)&&g.repeat&&(d.removeClass(g.classToAdd+" "+g.classToAddForFullView),g.callbackFunction(d,"remove"),d.data("vp-animated",!1))}})},("ontouchstart"in window||"onmsgesturechange"in window)&&a(document).bind("touchmove MSPointerMove pointermove",this.checkElements),a(c.scrollBox).bind("load scroll",this.checkElements),a(window).resize(function(b){e={height:a(c.scrollBox).height(),width:a(c.scrollBox).width()},d.checkElements()}),this.checkElements(),this}}(jQuery);
+
 /*document.addEventListener("DOMContentLoaded", event => {
   const modal = document.querySelector('.modal');
   const modalBtn = document.querySelectorAll('[data-toggle=modal]');
@@ -35,12 +37,38 @@
 });*/
 
 
+
 $(document).ready(function () {
+
+//Анимация с помощью JS
+  $('.elementRight').addClass("hidden").viewportChecker({
+    classToAdd: 'visible animated slideRight',
+    offset: 100
+    });
+
+    $('.elementLeft').addClass("hidden").viewportChecker({
+      classToAdd: 'visible animated slideLeft',
+      offset: 100
+      });
+
+    $('.elementUp').addClass("hidden").viewportChecker({
+      classToAdd: 'visible animated slideUp',
+      offset: 100
+    });
+
+    $('.elementDown').addClass("hidden").viewportChecker({
+      classToAdd: 'visible animated slideDown',
+      offset: 100
+    });
+
+
+
+
+  //Модальное окно
   var modal = $('.modal'),
     modalBtn = $('[data-toggle=modal]'),
     closeBtn = $('.modal__close'),
     modalDialog = $(".modal__dialog");
-
 
   modalBtn.on('click', function () {
     modal.toggleClass('modal--visible');
@@ -63,21 +91,21 @@ $(document).ready(function () {
   });
 
 
-    //Кнопка наверх
-    var btn = $('.button__scroll-top');
+  //Кнопка наверх
+  var btn = $('.button__scroll-top');
 
-    $(window).scroll(function() {
-      if ($(window).scrollTop() > 300) {
-        btn.addClass('button__scroll-top--show');
-      } else {
-        btn.removeClass('button__scroll-top--show');
-      }
-    });
+  $(window).scroll(function() {
+    if ($(window).scrollTop() > 300) {
+      btn.addClass('button__scroll-top--show');
+    } else {
+      btn.removeClass('button__scroll-top--show');
+    }
+  });
 
-    btn.on('click', function(e) {
-      e.preventDefault();
-      $('html, body').animate({scrollTop:0}, '300');
-    });
+  btn.on('click', function(e) {
+    e.preventDefault();
+    $('html, body').animate({scrollTop:0}, '300');
+  });
 
 
   //initialize swiper when document ready
@@ -97,11 +125,8 @@ $(document).ready(function () {
   var prev = $('.projects__swiper-button-prev');
   var bullets = $('.projects__swiper-pagination');
 
-
   bullets.css('left', prev.width() + 30);
   next.css('left', prev.width() + 25 + bullets.width() + 30);
-
-
 
   function mediaSize() {
     var swiperСontainer = $('.projects__swiper-container');
@@ -123,14 +148,6 @@ $(document).ready(function () {
 
   mediaSize();
 	window.addEventListener('resize', mediaSize, false);
-
-
-
-
-
-
-
-
 
 
   var mySwiperSteps = new Swiper ('.steps__swiper-container', {
@@ -205,30 +222,12 @@ mySwiperSteps[0].on('slideChange', function () {
 });
 
 
-/*
+/*//Анимация с помощью библиотеки
 new WOW().init();
 */
 
 
-
-//Animations
-/*
-var target = $('.projects__section-title');
-var targetPos = target.offset().top;
-var winHeight = $(window).height();
-var scrollToElem = targetPos - winHeight;
-
-$(window).scroll(function(){
-  var winScrollTop = $(this).scrollTop();
-  if(winScrollTop > scrollToElem){
-    //сработает когда пользователь доскроллит к элементу с классом .elem
-    target.addClass('fadeInDown');
-  }
-});
-*/
-
-
-//Валидация формы
+//Валидация форм
 $('.modal__form').validate({
   errorClass: "invalid",
   errorElement: "div",
@@ -299,7 +298,6 @@ $('.footer__form').validate({
       maxlength: "Имя должно быть не длиннее 15 символов"
     },
     userPhone: "Заполните поле",
-
   }
 });
 
@@ -316,30 +314,22 @@ $('[type=tel]').mask('+7 (000) 000-00-00', {placeholder: "+7 (___) ___-__-__"});
           }, {
               searchControlProvider: 'yandex#search'
           }),
-
-          // Создаём макет содержимого.
           MyIconContentLayout = ymaps.templateLayoutFactory.createClass(
               '<div style="color: #FFFFFF; font-weight: bold;">$[properties.iconContent]</div>'
           ),
-
           myPlacemark = new ymaps.Placemark(myMap.getCenter(), {
               hintContent: 'Наш офис',
               balloonContent: 'Вход с ул. Нансена'
           }, {
-              // Опции.
-              // Необходимо указать данный тип макета.
               iconLayout: 'default#image',
-              // Своё изображение иконки метки.
               iconImageHref: '../img/marker.png',
-              // Размеры метки.
               iconImageSize: [32, 32],
-              // Смещение левого верхнего угла иконки относительно
-              // её "ножки" (точки привязки).
               iconImageOffset: [-16, -32]
           });
 
       myMap.geoObjects
           .add(myPlacemark);
   });
+
 
 });

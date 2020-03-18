@@ -1,66 +1,71 @@
-@keyframes fadeInDown {
-  from {
-    opacity: 0;
-    transform: translate3d(0, -100%, 0);
-  }
+.slideRight{
+  animation-name: slideRight;
+  animation-duration: 1s;
+  animation-timing-function: ease;
+  visibility: visible !important;
+}
 
-  to {
-    opacity: 1;
-    transform: translate3d(0, 0, 0);
+@keyframes slideRight {
+  0% {
+      transform: translateX(-150%);
+  }
+  100% {
+      transform: translateX(0%);
   }
 }
 
-@keyframes fadeInLeft {
-  from {
-    opacity: 0;
-    transform: translate3d(-100%, 0, 0);
-  }
-
-  to {
-    opacity: 1;
-    transform: translate3d(0, 0, 0);
-  }
+.slideLeft{
+  animation-name: slideLeft;
+  animation-duration: 1s;
+  animation-timing-function: ease;
+  visibility: visible !important;
 }
 
-@keyframes fadeInRight {
-  from {
-    opacity: 0;
-    transform: translate3d(100%, 0, 0);
+@keyframes slideLeft {
+  0% {
+      transform: translateX(150%);
   }
-
-  to {
-    opacity: 1;
-    transform: translate3d(0, 0, 0);
-  }
-}
-
-@keyframes fadeInUp {
-  from {
-    opacity: 0;
-    transform: translate3d(0, 100%, 0);
-  }
-
-  to {
-    opacity: 1;
-    transform: translate3d(0, 0, 0);
+  100% {
+      transform: translateX(0%);
   }
 }
 
 
-
-
-.fadeInUp {
-  animation-name: fadeInUp 1s ease;
+.slideUp{
+  animation-name: slideUp;
+  animation-duration: 1s;
+  animation-timing-function: ease;
+  visibility: visible !important;
 }
 
-.fadeInRight {
-  animation-name: fadeInRight 1s ease;
+@keyframes slideUp {
+  0% {
+      transform: translateY(150%);
+  }
+  100% {
+      transform: translateX(0%);
+  }
 }
 
-.fadeInDown {
-  animation: fadeInDown 1s ease;
+.slideDown{
+  animation-name: slideDown;
+  animation-duration: 1s;
+  animation-timing-function: ease;
+  visibility: visible !important;
 }
 
-.fadeInLeft {
-  animation-name: fadeInLeft 1s ease;
+@keyframes slideDown {
+  0% {
+      transform: translateY(-150%);
+  }
+  100% {
+      transform: translateY(0%);
+  }
+}
+
+.hidden {
+  opacity:0;
+}
+.visible {
+  opacity:1;
 }

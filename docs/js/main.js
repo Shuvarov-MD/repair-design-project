@@ -273,7 +273,10 @@ $('.control__form').validate({
       minlength: 2,
       maxlength: 15,
     },
-    userPhone: "required",
+    userPhone: {
+      required: true,
+      minlength: 11,
+    },
   },
   messages: {
     userName: {
@@ -281,7 +284,10 @@ $('.control__form').validate({
       minlength: "Имя должно быть не короче двух букв",
       maxlength: "Имя должно быть не длиннее 15 символов"
     },
-    userPhone: "Заполните поле",
+    userPhone: {
+      required: "Заполните поле",
+      minlength: "Должно быть 11 цифр",
+    },
 
   }
 });
@@ -295,7 +301,10 @@ $('.footer__form').validate({
       minlength: 2,
       maxlength: 15,
     },
-    userPhone: "required",
+    userPhone: {
+      required: true,
+      minlength: 11,
+    },
   },
   messages: {
     userName: {
@@ -303,7 +312,10 @@ $('.footer__form').validate({
       minlength: "Имя должно быть не короче двух букв",
       maxlength: "Имя должно быть не длиннее 15 символов"
     },
-    userPhone: "Заполните поле",
+    userPhone: {
+      required: "Заполните поле",
+      minlength: "Должно быть 11 цифр",
+    },
   }
 });
 

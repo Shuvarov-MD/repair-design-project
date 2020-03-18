@@ -180,4 +180,9 @@ img {
 
 .vector-bg {
   background: url('../img/control-bg.svg') no-repeat center / cover;
+  &--light {
+    background: url('../img/city-bg-left.png') no-repeat bottom left, url('../img/city-bg-right.png') no-repeat bottom right, $light url('../img/control-bg.svg') no-repeat center;
+    background-size: auto, auto, cover;
+  }
 }
+

@@ -111,6 +111,16 @@
       }
     }
   }
+  .our-clients {
+  
+    &__col {
+      margin-right: 2rem;
+      width: 45%;
+      &:last-of-type {
+        display: none;
+      }
+    }
+  }
 }
 
 
@@ -269,6 +279,10 @@
     }
   }
 
+  .our-clients {
+    display: none;
+  }
+
   .footer {
     background-color: $dark;
     background-image: none;
@@ -307,6 +321,14 @@
         }
       }
     }
+    &__contacts {
+      font-size: 1.285rem;
+      order: 5;
+    }
+
+  &__map {
+   height: 255px;
+  }
   }
 
 }

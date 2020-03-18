@@ -1,6 +1,6 @@
 .our-team {
-  background: url('../img/control-bg.svg') no-repeat center / cover;
-  padding-bottom: 26.57rem;
+  /*background: url('../img/control-bg.svg') no-repeat center / cover;*/
+  padding-bottom: 6.57rem;
   &__section-title {
     margin-top: -33.2rem;
   }
@@ -15,6 +15,7 @@
     &--dark {
       max-width: 40.57rem;
       margin-top: 3.785rem;
+      margin-bottom: 0;
       line-height: 2.428rem;
       &::before {
         display: block;

@@ -1,14 +1,20 @@
 .footer {
+
   position: relative;
   background: $dark url('../img/footer-bg.jpg') no-repeat center / cover;
   padding-top: 3rem;
+  &__container {
+    display: flex;
+    flex-direction: column;
+  }
   &__wrap {
     max-width: 63.07rem;
+    width: 100%;
     margin: auto;
     margin-top: -19rem;
     background: $black url('../img/footer-form-bg.svg') no-repeat center / cover;
     padding: 2.5rem;
-    margin-bottom: 3.714rem;
+    margin-bottom: 3.5rem;
   }
   &__title {
     text-transform: uppercase;
@@ -52,5 +58,52 @@
   &__menu {
     padding: 3.438rem 0;
     background-color: $dark
+  }
+  &__contacts {
+    max-width: 550px;
+    margin: auto;
+    margin-bottom: 3.142rem;
+  }
+  &__address {
+    font-family: 'Yeseva One', cursive;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 28px;
+    text-align: center;
+    text-transform: uppercase;
+    margin-top: 0;
+    margin-bottom: 1.6rem;
+    &--primary {
+      color: #E3B873;
+    }
+  }
+  &__social {
+    display: flex;
+    justify-content: center;
+  }
+
+
+  &__map {
+    max-width: 925px;
+    width: 100%;
+    height: 465px;
+    margin: auto;
+    margin-bottom: 4.614rem;
+  }
+}
+
+.social-link {
+  display: flex;
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  justify-content: center;
+  align-items: center;
+  margin-right: 1rem;
+  &--primary {
+    background-color: $primary;
+    &:hover {
+      background-color: lighten($primary,15%)
+    }
   }
 }

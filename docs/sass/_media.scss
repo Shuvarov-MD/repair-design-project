@@ -100,6 +100,17 @@
   .design {
     margin-bottom: 0;
   }
+  .our-team {
+    background-color: $dark;
+    &__section-title {
+      margin-top: 0;
+    }
+    &__text {
+      &--dark {
+        color: $light;
+      }
+    }
+  }
 }
 
 
@@ -242,10 +253,26 @@
       width: 55px;
     }
   }
+  .our-team {
+    padding-top: 0;
+    padding-bottom: 0;
+    &_row {
+      flex-direction: column;
+    }
+    &__col {
+      margin-bottom: 6.357rem;
+    }
+    &__text {
+      &--dark {
+        display: none;
+      }
+    }
+  }
+
   .footer {
     background-color: $dark;
     background-image: none;
-
+    padding-top: 0;
     &__menu {
       display: none;
     }
@@ -281,6 +308,7 @@
       }
     }
   }
+
 }
 
 

@@ -237,7 +237,10 @@ $('.modal__form').validate({
       minlength: 2,
       maxlength: 15,
     },
-    userPhone: "required",
+    userPhone: {
+      required: true,
+      minlength: 11,
+    },
     userEmail: {
       required: true,
       email: true
@@ -249,7 +252,10 @@ $('.modal__form').validate({
       minlength: "Имя должно быть не короче двух букв",
       maxlength: "Имя должно быть не длиннее 15 символов"
     },
-    userPhone: "Заполните поле",
+    userPhone: {
+      required: "Заполните поле",
+      minlength: "Должно быть 11 цифр",
+    },
     userEmail: {
       required: "Заполните поле",
       email: "Введите корректный email"

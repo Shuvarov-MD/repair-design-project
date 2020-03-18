@@ -100,8 +100,19 @@
   .design {
     margin-bottom: 0;
   }
+
   .our-team {
     background-color: $dark;
+    &__row {
+      justify-content: space-around;
+    }
+    &__col {
+      width: 45%;
+      flex-basis: 24rem;
+      &:last-of-type {
+        margin-top: 6.357rem;
+      }
+    }
     &__section-title {
       margin-top: 0;
     }
@@ -112,7 +123,7 @@
     }
   }
   .our-clients {
-  
+  padding-top: 4rem;
     &__col {
       margin-right: 2rem;
       width: 45%;
@@ -271,6 +282,9 @@
     }
     &__col {
       margin-bottom: 6.357rem;
+      &:last-of-type {
+        margin-top: 0;
+      }
     }
     &__text {
       &--dark {

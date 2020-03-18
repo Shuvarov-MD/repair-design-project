@@ -15,6 +15,11 @@ img {
   max-width: 100%;
 }
 
+main {
+  display: flex;
+  flex-direction: column;
+}
+
 .section {
   padding: 60px 0;
   &--dark {

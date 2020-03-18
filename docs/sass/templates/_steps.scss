@@ -52,17 +52,10 @@
     justify-content: space-between;
   }
   &__toggle-button {
-    flex-basis: 136px;
+    flex-basis: 40%;
     margin-bottom: 3rem;
-    &:nth-of-type(3n+1) {
-      margin-right: 9.64rem;
-    }
-    &:nth-of-type(3n+2) {
-      margin-right: 10rem;
-    }
     &:nth-of-type(3n+3) {
-      flex-basis: 100px;
-      margin-right: 5.57rem;
+      flex-basis: 20%;
     }
     &--light {
       color: $light;

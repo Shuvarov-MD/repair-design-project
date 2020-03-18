@@ -458,6 +458,10 @@ body {
 img {
   max-width: 100%; }
 
+main {
+  display: flex;
+  flex-direction: column; }
+
 .section {
   padding: 60px 0; }
   .section--dark {
@@ -994,15 +998,10 @@ img {
     flex-wrap: wrap;
     justify-content: space-between; }
   .steps__toggle-button {
-    flex-basis: 136px;
+    flex-basis: 40%;
     margin-bottom: 3rem; }
-    .steps__toggle-button:nth-of-type(3n+1) {
-      margin-right: 9.64rem; }
-    .steps__toggle-button:nth-of-type(3n+2) {
-      margin-right: 10rem; }
     .steps__toggle-button:nth-of-type(3n+3) {
-      flex-basis: 100px;
-      margin-right: 5.57rem; }
+      flex-basis: 20%; }
     .steps__toggle-button--light {
       color: #ffffff; }
       .steps__toggle-button--light::after {
@@ -1069,7 +1068,8 @@ img {
     .our-team__text--light {
       color: #ffffff; }
   .our-team__row {
-    justify-content: space-around; }
+    justify-content: space-around;
+    flex-wrap: wrap; }
   .our-team__col {
     flex-basis: 19.428rem; }
   .our-team__img {
@@ -1426,15 +1426,24 @@ img {
     margin-bottom: 0; }
   .our-team {
     background-color: #131313; }
+    .our-team__row {
+      justify-content: space-around; }
+    .our-team__col {
+      width: 45%;
+      flex-basis: 24rem; }
+      .our-team__col:last-of-type {
+        margin-top: 6.357rem; }
     .our-team__section-title {
       margin-top: 0; }
     .our-team__text--dark {
       color: #ffffff; }
-  .our-clients__col {
-    margin-right: 2rem;
-    width: 45%; }
-    .our-clients__col:last-of-type {
-      display: none; } }
+  .our-clients {
+    padding-top: 4rem; }
+    .our-clients__col {
+      margin-right: 2rem;
+      width: 45%; }
+      .our-clients__col:last-of-type {
+        display: none; } }
 
 @media screen and (max-width: 760px) {
   .vector-bg {
@@ -1521,6 +1530,8 @@ img {
       flex-direction: column; }
     .our-team__col {
       margin-bottom: 6.357rem; }
+      .our-team__col:last-of-type {
+        margin-top: 0; }
     .our-team__text--dark {
       display: none; }
   .our-clients {

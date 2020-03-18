@@ -323,39 +323,5 @@ $('.footer__form').validate({
 // Маска для телефона
 $('[type=tel]').mask('+7 (000) 000-00-00', {placeholder: "+7 (___) ___-__-__"});
 
-
-//Карта Yandex
-    ymaps.ready(function () {
-      var myMap = new ymaps.Map('map', {
-              center: [47.244722, 39.723183],
-              zoom: 17
-          }, {
-              searchControlProvider: 'yandex#search'
-          }),
-          MyIconContentLayout = ymaps.templateLayoutFactory.createClass(
-              '<div style="color: #FFFFFF; font-weight: bold;">$[properties.iconContent]</div>'
-          ),
-          myPlacemark = new ymaps.Placemark(myMap.getCenter(), {
-              hintContent: 'Наш офис',
-              balloonContent: 'Вход с ул. Нансена'
-          }, {
-              iconLayout: 'default#image',
-              iconImageHref: '../img/marker.png',
-              iconImageSize: [32, 32],
-              iconImageOffset: [-16, -32]
-          });
-
-
-          MyIconContentLayout = ymaps.templateLayoutFactory.createClass(
-            '<div style="color: #FFFFFF; font-weight: bold;">$[properties.iconContent]</div>'
-        ),
-
-      
-
-
-      myMap.geoObjects
-          .add(myPlacemark);
-  });
-
-
+/
 });

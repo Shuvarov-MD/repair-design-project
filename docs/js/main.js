@@ -244,7 +244,10 @@ $('.modal__form').validate({
     userEmail: {
       required: true,
       email: true
-    }
+    },
+    policyCheckbox: {
+      required: true,
+    },
   },
   messages: {
     userName: {
@@ -259,7 +262,10 @@ $('.modal__form').validate({
     userEmail: {
       required: "Заполните поле",
       email: "Введите корректный email"
-    }
+    },
+    policyCheckbox: {
+      required: "Необходимо согласие",
+    },
   }
 });
 

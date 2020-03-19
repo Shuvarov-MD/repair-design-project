@@ -283,6 +283,9 @@ $('.control__form').validate({
       required: true,
       minlength: 11,
     },
+    policyCheckbox: {
+      required: true,
+    },
   },
   messages: {
     userName: {
@@ -294,7 +297,9 @@ $('.control__form').validate({
       required: "Заполните поле",
       minlength: "Должно быть 11 цифр",
     },
-
+    policyCheckbox: {
+      required: "Необходимо согласие",
+    },
   }
 });
 
@@ -311,6 +316,9 @@ $('.footer__form').validate({
       required: true,
       minlength: 11,
     },
+    policyCheckbox: {
+      required: true,
+    },
   },
   messages: {
     userName: {
@@ -321,6 +329,9 @@ $('.footer__form').validate({
     userPhone: {
       required: "Заполните поле",
       minlength: "Должно быть 11 цифр",
+    },
+    policyCheckbox: {
+      required: "Необходимо согласие",
     },
   }
 });

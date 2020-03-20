@@ -227,6 +227,7 @@ new WOW().init();
 */
 
 
+
 //Валидация форм
 $('.modal__form').validate({
   errorClass: "invalid",
@@ -243,7 +244,7 @@ $('.modal__form').validate({
     },
     userEmail: {
       required: true,
-      email: true
+      email: true,
     },
     policyCheckbox: {
       required: true,
@@ -253,7 +254,7 @@ $('.modal__form').validate({
     userName: {
       required: "Заполните поле",
       minlength: "Имя должно быть не короче двух букв",
-      maxlength: "Имя должно быть не длиннее 15 символов"
+      maxlength: "Имя должно быть не длиннее 15 символов",
     },
     userPhone: {
       required: "Заполните поле",
@@ -261,7 +262,7 @@ $('.modal__form').validate({
     },
     userEmail: {
       required: "Заполните поле",
-      email: "Введите корректный email"
+      email: "Введите корректный email",
     },
     policyCheckbox: {
       required: "Необходимо согласие",
@@ -281,7 +282,7 @@ $('.modal__form').validate({
       },
       error: function (response) {
         console.log('Ошибка запроса' + response);
-      }
+      },
     });
   },
 });
@@ -308,7 +309,7 @@ $('.control__form').validate({
     userName: {
       required: "Заполните поле",
       minlength: "Имя должно быть не короче двух букв",
-      maxlength: "Имя должно быть не длиннее 15 символов"
+      maxlength: "Имя должно быть не длиннее 15 символов",
     },
     userPhone: {
       required: "Заполните поле",
@@ -331,7 +332,7 @@ $('.control__form').validate({
       },
       error: function (response) {
         console.log('Ошибка запроса' + response);
-      }
+      },
     });
   },
 });
@@ -357,7 +358,7 @@ $('.footer__form').validate({
     userName: {
       required: "Заполните поле",
       minlength: "Имя должно быть не короче двух букв",
-      maxlength: "Имя должно быть не длиннее 15 символов"
+      maxlength: "Имя должно быть не длиннее 15 символов",
     },
     userPhone: {
       required: "Заполните поле",
@@ -380,7 +381,7 @@ $('.footer__form').validate({
       },
       error: function (response) {
         console.log('Ошибка запроса' + response);
-      }
+      },
     });
   },
 });

@@ -266,7 +266,22 @@ $('.modal__form').validate({
     policyCheckbox: {
       required: "Необходимо согласие",
     },
-  }
+  },
+  submitHandler: function(form) {
+    $.ajax({
+      type: "POST",
+      url: "php/send.php",
+      data: $(form).serialize(),
+      success: function (response) {
+        alert('Форма отправлена, мы свяжемся с вами в течении 10 минут');
+        $(form)[0].reset();
+        modal.removeClass('modal--visible');
+      },
+      error: function (response) {
+        console.log('Ошибка запроса' + response);
+      }
+    });
+  },
 });
 
 
@@ -300,7 +315,21 @@ $('.control__form').validate({
     policyCheckbox: {
       required: "Необходимо согласие",
     },
-  }
+  },
+  submitHandler: function(form) {
+    $.ajax({
+      type: "POST",
+      url: "php/send.php",
+      data: $(form).serialize(),
+      success: function (response) {
+        alert('Форма отправлена, мы свяжемся с вами в течении 10 минут');
+        $(form)[0].reset();
+      },
+      error: function (response) {
+        console.log('Ошибка запроса' + response);
+      }
+    });
+  },
 });
 
 $('.footer__form').validate({
@@ -333,7 +362,21 @@ $('.footer__form').validate({
     policyCheckbox: {
       required: "Необходимо согласие",
     },
-  }
+  },
+  submitHandler: function(form) {
+    $.ajax({
+      type: "POST",
+      url: "php/send.php",
+      data: $(form).serialize(),
+      success: function (response) {
+        alert('Форма отправлена, мы свяжемся с вами в течении 10 минут');
+        $(form)[0].reset();
+      },
+      error: function (response) {
+        console.log('Ошибка запроса' + response);
+      }
+    });
+  },
 });
 
 

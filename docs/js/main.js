@@ -273,7 +273,7 @@ $('.modal__form').validate({
       url: "php/send.php",
       data: $(form).serialize(),
       success: function (response) {
-       // alert('Форма отправлена, мы свяжемся с вами в течении 10 минут');
+       //alert('Форма отправлена, мы свяжемся с вами в течении 10 минут');
         $(form)[0].reset();
         $('.modal__form').addClass('modal__form--hidden');
         $('.modal__send-success').addClass('modal__send-success--visible');

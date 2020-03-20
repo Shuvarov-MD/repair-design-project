@@ -75,4 +75,42 @@
     padding: 1.357rem 3.571rem;
     align-self: flex-end;
   }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  &__form {
+    &--hidden {
+      display: none;
+    }
+  }
+
+
+
+
+  &__send-success {
+    display: none;
+    padding-top: 88px;
+    padding-bottom: 88px;
+    align-self: center;
+    text-align: center;
+    flex-direction: column;
+    &--visible {
+      display: flex;
+    }
+  }
 }

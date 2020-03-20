@@ -190,3 +190,38 @@ main {
     background-size: auto, auto, cover;
   }
 }
+
+
+
+
+
+
+
+
+
+.send-success {
+  &__text {
+    font-size: 1.57rem;
+    line-height: 1.363;
+    color: $light;
+    &--dark {
+      font-size: 1.4rem;
+      color: $dark;
+      margin: 0;
+      &:last-of-type {
+        margin: 10px;
+      }
+    }
+  }
+  &__link {
+    text-decoration: none;
+    color: $light;
+    border-radius: 0;
+    padding: 1.357rem 3.571rem;
+    align-self: center;
+    background-color: #5181b8;
+    &:hover {
+      background-color: lighten(#5181b8, 15%);
+    }
+  }
+}

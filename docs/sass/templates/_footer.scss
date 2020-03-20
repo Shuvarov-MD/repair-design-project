@@ -90,6 +90,39 @@
     margin: auto;
     margin-bottom: 4.614rem;
   }
+
+
+
+
+
+
+  &__form {
+    &--hidden {
+      display: none;
+    }
+  }
+
+  &__send-success {
+    display: none;
+    padding-top: 54px;
+    padding-bottom: 54px;
+    align-self: center;
+    text-align: center;
+    flex-direction: column;
+    &--visible {
+      display: flex;
+    }
+  }
+
+
+
+
+
+
+
+
+
+
 }
 
 .social-link {

@@ -32,14 +32,23 @@
     justify-content: space-between;
     max-width: 37.142rem;
     margin: auto;
+    &--hidden {
+      display: none;
+    }
   }
   &__input {
     padding-top: 0.3rem;
     &-group {
+      position: relative;
       display: flex;
       flex-direction: column;
       flex-basis: 45%;
       margin-bottom: 3.2rem;
+      div.invalid {
+        position: absolute;
+        top: 3.571rem;
+        left: 0;
+      }
       &--full-width {
         flex-basis: 100%;
         margin-bottom: 2rem;
@@ -47,28 +56,39 @@
     }
   }
   &__policy {
+    position: relative;
     flex-basis: 100%;
     margin-bottom: 3.7rem;
+    div.invalid {
+      position: absolute;
+      top: 2.5rem;
+      left: 11.071rem;
+    }
   }
   &__button {
     margin: auto;
-    padding: 1.214rem 4.428rem;
+    padding: 1.143rem 4.357rem;
+    border: 0.071rem solid $primary;
     font-size: 1.071rem;
+    transition: all 0.3s;
+    &:hover {
+      border-color: light;
+    }
   }
   &__menu {
     padding: 3.438rem 0;
     background-color: $dark
   }
   &__contacts {
-    max-width: 550px;
+    max-width: 39.285rem;
     margin: auto;
     margin-bottom: 3.142rem;
   }
   &__address {
     font-family: 'Yeseva One', cursive;
     font-weight: normal;
-    font-size: 20px;
-    line-height: 28px;
+    font-size: 1.428rem;
+    line-height: 2rem;
     text-align: center;
     text-transform: uppercase;
     margin-top: 0;
@@ -81,31 +101,17 @@
     display: flex;
     justify-content: center;
   }
-
-
   &__map {
-    max-width: 925px;
+    max-width: 66.071rem;
     width: 100%;
-    height: 465px;
+    height: 33.214rem;
     margin: auto;
     margin-bottom: 4.614rem;
   }
-
-
-
-
-
-
-  &__form {
-    &--hidden {
-      display: none;
-    }
-  }
-
   &__send-success {
     display: none;
-    padding-top: 54px;
-    padding-bottom: 54px;
+    padding-top: 3.857rem;
+    padding-bottom: 3.857rem;
     align-self: center;
     text-align: center;
     flex-direction: column;
@@ -113,30 +119,23 @@
       display: flex;
     }
   }
-
-
-
-
-
-
-
-
-
-
 }
 
 .social-link {
   display: flex;
-  width: 28px;
-  height: 28px;
+  width: 1.929rem;
+  height: 1.929rem;
+  border: 0.071rem solid $primary;
   border-radius: 50%;
   justify-content: center;
   align-items: center;
   margin-right: 1rem;
+  transition: all 0.3s;
   &--primary {
     background-color: $primary;
     &:hover {
-      background-color: lighten($primary,15%)
+      background-color: transparent;
+      border-color: $light;
     }
   }
 }

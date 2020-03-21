@@ -3,9 +3,9 @@
   left: 0;
   top: 0;
   width: 100%;
-  z-index: 99;
+  padding: 1.714rem 0;
   background-color: $dark;
-  padding: 24px 0;
+  z-index: 99;
 }
 
 .menu {
@@ -17,7 +17,12 @@
 .logo {
   color: $primary;
   text-transform: uppercase;
-  font-size: 1.075rem;
+  text-decoration: none;
+  font-size: 1.071rem;
+  font-family: 'Futura Demi', sans-serif;
+  &:focus {
+    outline: none;
+  }
 }
 
 .nav {
@@ -30,13 +35,19 @@
     &:hover {
       color: $primary;
     }
+    &:focus {
+      outline: none;
+    }
   }
-
 }
 
 .phone {
+  font-family: 'Futura Demi', sans-serif;
   color: $primary;
   text-decoration: none;
+  &:focus {
+    outline: none;
+  }
 }
 
 .contacts {
@@ -45,12 +56,16 @@
   &__phone {
     display: flex;
     flex-direction: column;
-    margin-right: 45px;
+    margin-right: 3.3rem;
     &::after {
       content: '';
-      height: 1px;
+      height: 0.071rem;
       width: 100%;
       background-color: $primary;
     }
+  }
+  &__button {
+    padding: 0.714rem 1.643rem;
+    border: 0.071rem solid $primary;
   }
 }

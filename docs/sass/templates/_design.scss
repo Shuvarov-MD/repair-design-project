@@ -4,6 +4,9 @@
   &__section-title {
     margin-bottom: 1.4rem;
   }
+  &__heading {
+    margin-bottom: 0.928rem
+  }
   &__text {
     margin: 0 auto 3.4rem auto;
     max-width: 52.93rem;
@@ -12,8 +15,6 @@
     padding: 1.214rem 5.5rem 1.214rem 2.36rem;
   }
   &__img {
-    position: relative;
-    display: flex;
     &::before {
       content: '';
       position: absolute;

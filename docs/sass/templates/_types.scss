@@ -1,6 +1,13 @@
 .types {
+  padding-top: 6.142rem;
   &__section-title {
     margin-bottom: 2rem;
+  }
+  &__heading {
+    margin-bottom: 0.928rem;
+  }
+  &__section-title {
+    margin-bottom: 2.2rem;
   }
 }
 
@@ -8,20 +15,18 @@
   &__text {
     position: relative;
     margin: 0 auto;
-    margin-top: -9.3rem;
+    margin-top: -9rem;
     padding: 1.79rem 2.14rem;
     max-width: 23.6rem;
     background-color: $light;
-    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.03);
+    box-shadow: 0.714rem 0.714rem 1.428rem rgba(0, 0, 0, 0.03);
   }
-
   &__title {
     font-family: 'Yeseva One', cursive;
     font-size: 1.29rem;
     margin-top: 0;
     margin-bottom: 0.6rem;
   }
-
   &__list {
     margin: 0;
     padding: 0 0 0 1rem;
@@ -30,7 +35,6 @@
     color: $secondary;
     margin-bottom: 2.5rem;
   }
-
   &__pricetag {
     position: absolute;
     left: 0;
@@ -41,7 +45,22 @@
     font-weight: normal;
     text-transform: uppercase;
     background-color: $primary;
-    box-shadow: 5px 5px 10px rgba($primary, 0.3);
+    box-shadow: 0.357rem 0.357rem 0.714rem rgba($primary, 0.3);
     color: $light;
+  }
+  &__img-wrap {
+    position: relative;
+    width: 100%;
+    min-height: 30.071rem;
+    overflow: hidden;
+  }
+  &__img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    object-fit: cover;
   }
 }

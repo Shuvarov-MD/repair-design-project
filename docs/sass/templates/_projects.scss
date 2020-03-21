@@ -2,22 +2,43 @@
   position: relative;
   margin-top: -3.46rem;
   padding-top: 12.67rem;
-  padding-bottom: 30rem;
+  padding-bottom: 29.5rem;
   background: url('../img/project/city-bg--left.png') no-repeat bottom left, url('../img/project/city-bg--right.png') no-repeat bottom right, $dark url('../img/projects-bg.svg') no-repeat center;
   background-size: auto, auto, cover;
   &__row {
     display: flex;
-    flex-direction: row-reverse;
     align-items: flex-end;
     margin-top: -15.6%;
   }
+  &__swiper-container {
+    &--right {
+      max-width: 48.5rem;
+      margin-left: -0.642rem;
+    }
+  }
   &__swiper-slide {
-    margin-bottom: 4.55rem;
+    margin-bottom: 4.5rem;
+    &--right {
+      position: relative;
+      width: 100%;
+      min-height: 34.428rem;
+      overflow: hidden;
+    }
+  }
+  &__img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    object-fit: cover;
   }
   &__heading {
     font-size: 1.93rem;
     line-height: 2.64rem;
     letter-spacing: -0.07em;
+    margin-bottom: 1.5rem;
   }
   &__text {
     &:nth-of-type(2n+1) {

@@ -1,8 +1,7 @@
 .our-team {
-  /*background: url('../img/control-bg.svg') no-repeat center / cover;*/
   padding-bottom: 6.57rem;
   &__section-title {
-    margin-top: -33.2rem;
+    margin-top: -33.5rem;
   }
   &__heading {
     margin-bottom: 0.928rem;
@@ -40,7 +39,22 @@
   }
   &__img {
     position: relative;
-    display: flex;
+    width: 100%;
+    height: 25.571rem;
+    overflow: hidden;
+    & > img {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      object-fit: cover;
+    }
+    &--wrap {
+      position: relative;
+      display: flex;
+    }
   }
   &__icon {
     position: absolute;
@@ -50,9 +64,10 @@
     align-items: center;
     justify-content: center;
     transform: translate(-50%, -50%);
+    z-index: 50;
     &--primary {
       background-color: $primary;
-      box-shadow: 0px 5px 20px rgba(227, 184, 115, 0.5);
+      box-shadow: 0rem 0.357rem 1.428rem rgba(227, 184, 115, 0.5);
     }
   }
   &__people {
@@ -70,7 +85,7 @@
     line-height: 1.785rem;
     text-align: center;
     color: $black;
-    padding: 19px 20px;
+    padding: 1.428rem;
     background-color: $light;
   }
   &__position {
@@ -91,14 +106,11 @@
     text-align: center;
     text-transform: uppercase;
     text-align: center;
-    padding-top: 13px;
-    padding-bottom: 13px;
+    padding-top: 0.857rem;
+    padding-bottom: 0.928rem;
     &--primary {
       background-color: $primary;
       color: $light;
     }
   }
-
 }
-
-

@@ -21,7 +21,7 @@ main {
 }
 
 .section {
-  padding: 60px 0;
+  padding: 4.285rem 0;
   &--dark {
     background: $dark url('../img/projects-bg.svg') no-repeat center / cover;
     color: $light;
@@ -57,10 +57,10 @@ main {
       justify-content: center;
       &::before, &::after {
         content: '';
-        width: 32px;
-        height: 2px;
+        width: 2.285rem;
+        height: 0.142rem;
         background-color: $primary;
-        margin: 0 10px;
+        margin: 0 0.714rem;
       }
     }
     &__word {
@@ -68,10 +68,10 @@ main {
       align-items: center;
       &::after {
         content: '';
-        width: 92px;
-        height: 2px;
+        width: 6.571rem;
+        height: 0.142rem;
         background-color: $primary;
-        margin-left: 2.25rem;
+        margin-left: 2.45rem;
       }
     }
     &__text {
@@ -85,40 +85,31 @@ main {
     font-size: 1.43rem;
     line-height: 1.93rem;
   }
-
 }
-
-
 
 .swiper {
   &-slide {
     display: flex;
     flex-wrap: wrap;
-
-
     &--right {
       margin: 0;
       display: flex;
       justify-content: center;
     }
-
     &__text {
       font-size: 1.07rem;
       line-height: 1.428rem;
-      margin-bottom: 2.8rem;
+      margin-bottom: 2.75rem;
     }
-
     &__value {
       display: block;
     }
-
     &__number {
       display: block;
       font-family: 'Yeseva One', cursive;
       font-weight: normal;
       font-size: 1.285rem;
     }
-
     &__heading {
       font-family: 'Yeseva One', cursive;
       font-weight: normal;
@@ -132,7 +123,7 @@ main {
 
   &-container-horizontal>&-pagination-bullets {
     width: auto;
-    margin-bottom: -2px;
+    margin-bottom: -0.142rem;
     bottom: 0;
   }
 
@@ -153,9 +144,9 @@ main {
     &-prev, &-next {
       bottom: 0;
       top: auto;
-      background-size: 42px;
-      width: 42px;
-      height: 14px;
+      background-size: 3rem;
+      width: 3rem;
+      height: 1rem;
       &::after {
         display: none;
       }
@@ -175,12 +166,12 @@ main {
 
 .swiper-container-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet, .swiper-container-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet-active {
   margin-left: 0;
-  width: 10px;
-  height: 10px;
+  width: 0.714rem;
+  height: 0.714rem;
 }
 
 .swiper-container-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet:not(:last-of-type) {
-  margin-right: 18px;
+  margin-right: 1.285rem;
 }
 
 .vector-bg {
@@ -190,11 +181,6 @@ main {
     background-size: auto, auto, cover;
   }
 }
-
-
-
-
-
 
 
 
@@ -209,7 +195,7 @@ main {
       color: $dark;
       margin: 0;
       &:last-of-type {
-        margin: 10px;
+        margin: 0.714rem;
       }
     }
   }

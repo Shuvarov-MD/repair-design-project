@@ -3,7 +3,7 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding-top: 90px;
+  padding-top: 6.428rem;
   background: $dark url('../img/hero-bg.jpg') no-repeat center / cover;
   height: 100vh;
   color: $light;
@@ -16,15 +16,6 @@
     height: 100%;
     background: rgba($dark, 0.7);
   }
-  /*&::after {
-    content: '';
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    height: 3.46rem;
-    background-color: $dark;
-  }*/
   &__content {
     position: relative;
     max-width: 47.85rem;
@@ -34,25 +25,27 @@
     margin-bottom: 1.1rem;
   }
   &__text {
-    max-width: 500px;
+    max-width: 35.714rem;
     font-size: 1.57rem;
     line-height: 1.363;
     margin: 0;
     margin-bottom: 3.4rem;
   }
   &__button {
-    margin-right: 17px;
-    padding: 17px 28px;
-
-    &.button--outline {
-      padding: 17px 46px;
+    border: 0.071rem solid $primary;
+    &--left {
+      margin-right: 1.214rem;
+      padding: 1.229rem 1.929rem;
+    }
+    &--right {
+      padding: 1.143rem 3.214rem;
     }
   }
   &__instagram {
     position: absolute;
     left: 0;
     top: 0;
-    max-width: 80px;
+    max-width: 6.714rem;
     height: 100%;
   }
   &__scroll-down {
@@ -71,17 +64,20 @@
     text-decoration: none;
     color: $light;
     z-index: 9;
+    transition: color 0.3s;
+    &:hover {
+      color: $primary;
+    }
     &::after {
       content: '';
       background: url('../img/arrow-down.svg') no-repeat center;
-      width: 30px;
-      height: 30px;
-      border: 2px solid $primary;
+      width: 2.142rem;
+      height: 2.142rem;
+      border: 0.142rem solid $primary;
       border-radius: 50%;
-      margin-left: 16px;
+      margin-left: 1.25rem;
     }
   }
-
 }
 
 .instagram {
@@ -98,22 +94,29 @@
     transform: rotate(90deg);
     line-height: 0.8;
     font-size: 1.1rem;
+    transition: color 0.3s;
     &::after {
       content: '';
-      width: 50px;
-      height: 1px;
+      width: 3.571rem;
+      height: 0.071rem;
       background-color: $primary;
-      margin-left: 11px;
+      margin-left: 0.785rem;
+    }
+    &:hover {
+      color: $light
+    }
+    &:hover::after {
+      background-color: $light;
     }
   }
 }
 
 .title {
- /* margin: 0;*/
   font-family: 'Yeseva One', cursive;
   text-transform: uppercase;
   font-size: 2.857rem;
   line-height: 1.325;
+  font-weight: normal;
   &--primary {
     color: $primary;
   }

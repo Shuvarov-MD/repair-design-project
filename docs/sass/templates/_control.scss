@@ -1,8 +1,8 @@
 .control {
   position: relative;
-  /*background: url('../img/control-bg.svg') no-repeat center;*/
   &__heading {
-    margin-bottom: 0.714rem;
+    margin-bottom: 0.8rem;
+    font-size: 1.428rem;
   }
   &__video {
     position: relative;
@@ -11,8 +11,8 @@
     max-width: 58.357rem;
     min-height: 31rem;
     background: $dark url('../img/video-mask.jpg') no-repeat center;
-    box-shadow: 0px 20px 50px rgba(0, 0, 0, 0.15);
-    margin-bottom: 4.5rem;
+    box-shadow: 0px 1.428rem 3.571rem rgba(0, 0, 0, 0.15);
+    margin-bottom: 4.4rem;
     &::before {
       content: '';
       width: 100%;
@@ -23,7 +23,7 @@
   }
   &__section-title {
     margin-bottom: 2.214rem;
-    margin-top: -28rem;
+    margin-top: -27.5rem;
   }
   &__text {
     max-width: 40.785rem;
@@ -31,13 +31,13 @@
     text-align: center;
     font-size: 1.428rem;
     line-height: 2.4rem;
-    margin-bottom: 4.5rem;
+    margin-bottom: 4.4rem;
     &::before {
       content: '';
-      width: 55px;
-      height: 2px;
+      width: 3.928rem;
+      height: 0.142rem;
       display: block;
-      border-radius: 30px;
+      border-radius: 2.142rem;
       background-color: $primary;
       margin: auto;
       margin-bottom: 2rem;
@@ -49,27 +49,48 @@
     justify-content: space-between;
     margin: auto;
     max-width: 55rem;
+    &--hidden {
+      display: none;
+    }
   }
   &__policy {
+    position: relative;
     flex-basis: 100%;
     margin-top: 1.1rem;
+    div.invalid {
+      position: absolute;
+      top: 2.5rem;
+      left: 20rem;
+    }
     &-label {
       justify-content: center;
     }
   }
   &__input-group {
     display: flex;
+    position: relative;
     flex-direction: column;
     flex-basis: 30%;
+    div.invalid {
+      position: absolute;
+      top: 3.357rem;
+      left: 0;
+    }
   }
   &__label {
-    margin-bottom: -5px;
+    margin-bottom: -0.357rem;
     color: rgba(54, 54, 54, 0.5);
     font-size: 1.07rem;
   }
   &__button {
-    padding: 1.2rem 4.4rem;
+    padding: 1.129rem 4.393rem;
     font-size: 1.07rem;
+    border: 0.071rem solid $primary;
+    transition: all 0.3s;
+    &:hover {
+      border-color: $primary;
+      color: $primary;
+    }
   }
   &__input {
     color: #363636;
@@ -77,21 +98,8 @@
       color: #363636;
     }
   }
-
-
-
-
-
-  &__form {
-    &--hidden {
-      display: none;
-    }
-  }
-
   &__send-success {
     display: none;
-    /*padding-top: 54px;
-    padding-bottom: 54px;*/
     align-self: center;
     text-align: center;
     flex-direction: column;
@@ -99,20 +107,15 @@
       display: flex;
     }
   }
-
-
-
-
-
-
-
-
-
 }
 
 .video {
   &__play {
     position: relative;
     margin: auto;
+    border-radius: 50%;
+    &:hover {
+      cursor: pointer;
+    }
   }
 }

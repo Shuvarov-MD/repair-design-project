@@ -24,14 +24,13 @@
     padding: 3rem 3.5rem 1.928rem;
     color: $light;
   }
-
   &__close {
     position: absolute;
     right: 0;
     top: 0;
-    width: 28px;
-    height: 28px;
-    margin: 12px;
+    width: 2rem;
+    height: 2rem;
+    margin: 0.857rem;
     background: transparent url('../img/close.svg') no-repeat center;
     border: none;
     cursor: pointer;
@@ -39,7 +38,6 @@
       outline: none;
     }
   }
-
   &__title {
     font-family: 'Yeseva One', cursive;
     font-size: 1.357rem;
@@ -49,63 +47,51 @@
     margin: 0;
     margin-bottom: 1.5rem;
   }
-
   &__form {
     display: flex;
     flex-direction: column;
-  }
-
-  &__input {
-    &-group {
-      display: flex;
-      flex-direction: column;
-      margin-bottom: 3.2rem;
-    }
-  }
-
-  &__policy {
-    display: flex;
-    flex-direction: row-reverse;
-    justify-content: space-between;
-    margin-bottom: 3.3rem;
-  }
-
-  &__button {
-    border-radius: 0;
-    padding: 1.357rem 3.571rem;
-    align-self: flex-end;
-  }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-  &__form {
     &--hidden {
       display: none;
     }
   }
-
-
-
-
+  &__input {
+    &-group {
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      margin-bottom: 3.2rem;
+      div.invalid {
+        position: absolute;
+        top: 3.785rem;
+        left: 0;
+      }
+    }
+  }
+  &__policy {
+    position: relative;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    margin-bottom: 3.3rem;
+    div.invalid {
+      position: absolute;
+      top: 1.428rem;
+      left: 1.857rem;
+    }
+  }
+  &__button {
+    border-radius: 0;
+    padding: 1.286rem 3.5rem;
+    border: 0.071rem solid $primary;
+    align-self: flex-end;
+    &:hover {
+      border-color: $light;
+    }
+  }
   &__send-success {
     display: none;
-    padding-top: 88px;
-    padding-bottom: 88px;
+    padding-top: 6.285rem;
+    padding-bottom: 6.285rem;
     align-self: center;
     text-align: center;
     flex-direction: column;

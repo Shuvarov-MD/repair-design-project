@@ -1,6 +1,6 @@
 .measure {
   padding-top: 6.357rem;
-  padding-bottom: 17.857rem;
+  padding-bottom: 17.2rem;
   &__row {
     display: flex;
     justify-content: space-between;
@@ -19,7 +19,7 @@
     &--right {
       flex-basis: 36.142rem;
       margin-top: 7.571rem;
-
+     //  margin-right: 10px;
     }
   }
   &__text {
@@ -38,8 +38,11 @@
       margin-right: 4.071rem;
     }
     &:last-of-type {
-      margin-top: 8.571rem;
-      margin-right: -1.5rem;
+      margin-top: 8.5rem;
+      margin-right: 3.55rem;
+      .measure__description {
+        max-width: 256px;
+      }
     }
   }
   &__number {
@@ -67,17 +70,17 @@
     &--primary {
       max-width: 318px;
       font-family: 'Futura Demi', sans-serif;
-      font-size: 20px;
+      font-size: 1.428rem;
       font-weight: 700;
-      line-height: 25px;
-      color: #E3B873;
-      text-shadow: 0px 3px 10px rgba(227, 184, 115, 0.15);
+      line-height: 1.785rem;
+      color: $primary;
+      text-shadow: 0rem 0.214rem 0.714rem rgba(227, 184, 115, 0.15);
     }
   }
   &__saving {
     display: flex;
     align-items: center;
-    margin-left: 34px;
+    margin-left: 2.428rem;
   }
 
   &__img {
@@ -88,7 +91,7 @@
     height: 72px;
     border-radius: 50%;
     background-color: $primary;
-    margin-right: 26px;
+    margin-right: 1.857rem;
   }
 
   &__dialog {
@@ -96,16 +99,16 @@
     background: $dark url('../img/bg-lines.svg') no-repeat center / cover;
     padding: 1.7rem 3.5rem 1.928rem;
     color: $light;
-    margin-bottom: 38px;
+    margin-bottom: 2.714rem;
   }
   &__title {
     font-family: 'Futura Demi', sans-serif;
-    max-width: 297px;
+    max-width: 21.214rem;
     font-size: 1.428rem;
     line-height: 1.785rem;
     text-align: center;
     margin: auto;
-    margin-bottom: 37px;
+    margin-bottom: 2.642rem;
   }
   &__form {
     display: flex;
@@ -120,13 +123,13 @@
       display: flex;
       flex-direction: column;
       margin-bottom: 3.2rem;
+      &--last {
+        margin-bottom: 1.072rem;
+      }
       div.invalid {
         position: absolute;
         top: 3.785rem;
         left: 0;
-      }
-      &:last-of-type {
-        margin-bottom: 15px;
       }
     }
   }

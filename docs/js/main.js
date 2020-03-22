@@ -122,11 +122,6 @@ $(document).ready(function () {
       nextEl: '.steps__swiper-button-next',
       prevEl: '.steps__swiper-button-prev',
     },
-    on: {
-      init: function() {
-
-      }
-    }
   });
 
 
@@ -184,9 +179,79 @@ mySwiperSteps[0].on('slideChange', function () {
 });
 
 
-/*//Анимация с помощью библиотеки
-new WOW().init();
-*/
+
+
+
+
+var stylesSwiper = new Swiper ('.styles__swiper-container', {
+  loop: true,
+
+  // Navigation arrows
+  navigation: {
+    nextEl: '.styles__swiper-button-next',
+    prevEl: '.styles__swiper-button-prev',
+  },
+})
+
+
+$(".styles__slide-1").click(function(){
+  stylesSwiper.slideTo(1);
+});
+
+$(".styles__slide-2").click(function(){
+  stylesSwiper.slideTo(2);
+});
+
+$(".styles__slide-3").click(function(){
+  stylesSwiper.slideTo(3);
+});
+
+$(".styles__slide-4").click(function(){
+  stylesSwiper.slideTo(4);
+});
+
+$(".styles__slide-5").click(function(){
+  stylesSwiper.slideTo(5);
+});
+
+$(".styles__slide-6").click(function(){
+  stylesSwiper.slideTo(6);
+});
+
+
+$(".styles__slide-7").click(function(){
+  stylesSwiper.slideTo(7);
+});
+
+$(".styles__slide-8").click(function(){
+  stylesSwiper.slideTo(8);
+});
+
+$(".styles__slide-9").click(function(){
+  stylesSwiper.slideTo(9);
+});
+
+$(".styles__slide-10").click(function(){
+  stylesSwiper.slideTo(10);
+});
+
+$(".styles__slide-11").click(function(){
+  stylesSwiper.slideTo(11);
+});
+
+
+$(".styles__link").click(function(e) {
+  e.preventDefault();
+  $(".styles__link").removeClass('styles__link--active');
+  $(this).addClass('styles__link--active');
+})
+
+
+
+
+
+
+
 
 
 

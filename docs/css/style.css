@@ -696,12 +696,12 @@ main {
       margin-right: 1.214rem;
       padding: 1.229rem 1.929rem; }
     .hero__button--right {
-      padding: 1.143rem 3.214rem; }
+      padding: 1.229rem 3.214rem; }
   .hero__instagram {
     position: absolute;
     left: 0;
     top: 0;
-    max-width: 6.714rem;
+    max-width: 5rem;
     height: 100%; }
   .hero__scroll-down {
     position: absolute;
@@ -776,8 +776,19 @@ main {
   .projects__row {
     display: flex;
     align-items: flex-end;
-    margin-top: -15.6%; }
+    margin-top: -15.4%;
+    display: flex;
+    justify-content: space-between; }
+  .projects__col--left {
+    max-width: 442px; }
+  .projects__col--right {
+    max-width: 48.5rem;
+    width: 55%;
+    margin-right: 10px; }
+  .projects__swiper-container--left {
+    padding-top: 20px; }
   .projects__swiper-container--right {
+    width: 100%;
     max-width: 48.5rem;
     margin-left: -0.642rem; }
   .projects__swiper-slide {
@@ -802,9 +813,9 @@ main {
     letter-spacing: -0.07em;
     margin-bottom: 1.5rem; }
   .projects__text:nth-of-type(2n+1) {
-    width: 33.5%; }
+    width: 43%; }
   .projects__text:nth-of-type(2n+2) {
-    width: 66.5%; }
+    width: 57%; }
 
 .control {
   position: relative; }
@@ -1175,12 +1186,41 @@ main {
   .styles__swiper-slide {
     display: flex;
     justify-content: space-between; }
-  .styles__slide-col:first-of-type {
-    align-self: flex-end; }
+  .styles__slide-col {
+    width: 354px; }
+    .styles__slide-col:first-of-type {
+      align-self: flex-end; }
   .styles__slide-img-1 {
-    margin-bottom: 36px; }
+    margin-bottom: 36px;
+    position: relative;
+    width: 100%;
+    min-height: 557px;
+    overflow: hidden; }
+  .styles__slide-img-2 {
+    position: relative;
+    width: 100%;
+    min-height: 350px;
+    overflow: hidden; }
   .styles__slide-img-3 {
-    margin-bottom: 33px; }
+    margin-bottom: 33px;
+    position: relative;
+    width: 100%;
+    min-height: 275px;
+    overflow: hidden; }
+  .styles__slide-img-4 {
+    position: relative;
+    width: 100%;
+    min-height: 626px;
+    overflow: hidden; }
+  .styles__img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -o-object-fit: cover;
+    object-fit: cover; }
   .styles__swiper-button-next, .styles__swiper-button-prev {
     display: none; }
 

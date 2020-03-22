@@ -66,7 +66,7 @@ $(document).ready(function () {
 
   btn.on('click', function(e) {
     e.preventDefault();
-    $('html, body').animate({scrollTop:0}, '300');
+    $('html, body').animate({scrollTop:0}, '600');
   });
 
 
@@ -185,6 +185,7 @@ mySwiperSteps[0].on('slideChange', function () {
 
 var stylesSwiper = new Swiper ('.styles__swiper-container', {
   loop: true,
+  effect: "fade",
 
   // Navigation arrows
   navigation: {
@@ -305,6 +306,65 @@ $('.modal__form').validate({
         $(form)[0].reset();
         $('.modal__form').addClass('modal__form--hidden');
         $('.modal__send-success').addClass('modal__send-success--visible');
+        //modal.removeClass('modal--visible');
+      },
+      error: function (response) {
+        console.log('Ошибка запроса' + response);
+      },
+    });
+  },
+});
+
+
+$('.measure__form').validate({
+  errorClass: "invalid",
+  errorElement: "div",
+  rules: {
+    userName: {
+      required: true,
+      minlength: 2,
+      maxlength: 15,
+    },
+    userPhone: {
+      required: true,
+      minlength: 11,
+    },
+    userEmail: {
+      required: true,
+      email: true,
+    },
+    policyCheckbox: {
+      required: true,
+    },
+  },
+  messages: {
+    userName: {
+      required: "Заполните поле",
+      minlength: "Имя должно быть не короче двух букв",
+      maxlength: "Имя должно быть не длиннее 15 символов",
+    },
+    userPhone: {
+      required: "Заполните поле",
+      minlength: "Должно быть 11 цифр",
+    },
+    userEmail: {
+      required: "Заполните поле",
+      email: "Введите корректный email",
+    },
+    policyCheckbox: {
+      required: "Необходимо согласие",
+    },
+  },
+  submitHandler: function(form) {
+    $.ajax({
+      type: "POST",
+      url: "php/send.php",
+      data: $(form).serialize(),
+      success: function (response) {
+       //alert('Форма отправлена, мы свяжемся с вами в течении 10 минут');
+        $(form)[0].reset();
+        $('.measure__form').addClass('measure__form--hidden');
+        $('.measure__send-success').addClass('measure__send-success--visible');
         //modal.removeClass('modal--visible');
       },
       error: function (response) {

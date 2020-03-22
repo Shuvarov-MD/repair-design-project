@@ -8,10 +8,26 @@
   &__row {
     display: flex;
     align-items: flex-end;
-    margin-top: -15.6%;
+    margin-top: -15.4%;
+    display: flex;
+    justify-content: space-between;
+  }
+  &__col {
+    &--left {
+      max-width: 442px;
+    }
+    &--right {
+      max-width: 48.5rem; 
+      width: 55%;
+      margin-right: 10px;
+    }
   }
   &__swiper-container {
+    &--left {
+      padding-top: 20px;
+    }
     &--right {
+      width: 100%;
       max-width: 48.5rem;
       margin-left: -0.642rem;
     }
@@ -42,10 +58,10 @@
   }
   &__text {
     &:nth-of-type(2n+1) {
-      width: 33.5%;
+      width: 43%;
     }
     &:nth-of-type(2n+2) {
-      width: 66.5%;
+      width: 57%;
     }
   }
 }

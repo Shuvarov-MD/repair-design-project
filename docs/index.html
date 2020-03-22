@@ -291,7 +291,88 @@
         <!-- /.container -->
       </section>
       <!-- /.section types -->
+
+
+      <section class="section measure">
+        <div class="container">
+          <div class="measure__row">
+            <div class="measure__col measure__col--left">
+              <div class="measure__text">
+                <div class="measure__number">01</div>
+                <div class="measure__description">Наш специалист приедет для замеров в день контакта или назначит удобную для вас дату</div>
+              </div>
+              <div class="measure__text">
+                <div class="measure__number">02</div>
+                <div class="measure__description">Бесплатный замер</div>
+              </div>
+              <div class="measure__text">
+                <div class="measure__number">03</div>
+                <div class="measure__description">Бесплатная консультация</div>
+              </div>
+              <div class="measure__text">
+                <div class="measure__number">04</div>
+                <div class="measure__description">Получите смету расходов и сроки вашего будущего ремонта
+                </div>
+              </div>
+            </div>
+            <div class="measure__col measure__col--right">
+                <div class="measure__dialog">
+                  <h3 class="measure__title">Оставьте заявку на бесплатный выезд замерщика</h3>
+                  <form action="php/send.php" method="POST" class="form measure__form">
+                    <div class="input-group measure__input-group">
+                      <label for="measure__user-name" class="label form__label label--light">Имя</label>
+                      <input type="text" name="userName" class="input form__input measure__input input--light" id="measure__user-name"
+                        placeholder="Как вас зовут:" autocomplete="off">
+                    </div>
+                    <div class="input-group measure__input-group">
+                      <label for="measure__user-phone" class="label form__label label--light">Телефон</label>
+                      <input type="tel" name="userPhone" class="input form__input measure__input input--light" id="measure__user-phone"
+                        placeholder="Ваш номер телефона:" autocomplete="off">
+                    </div>
+                    <div class="input-group measure__input-group">
+                      <label for="measure__user-email" class="label form__label label--light">Email</label>
+                      <input type="email" name="userEmail" class="input form__input measure__input input--light"
+                        id="measure__user-email" placeholder="Ваш email" autocomplete="off">
+                    </div>
+                    <div class="policy measure__policy">
+                      <input type="checkbox" name="policyCheckbox" id="measure__policy-checkbox" class="policy__checkbox" checked>
+                      <label for="measure__policy-checkbox" class="policy__label">Я соглашаюсь с обработкой данных</label>
+                    </div>
+                    <button class="button button--primary measure__button">Вызвать замерщика</button>
+                    <!-- /.policy -->
+                  </form>
+                  <div class="send-success measure__send-success">
+                    <p class="send-success__text">Форма отправлена, мы свяжемся с вами в течении 10 минут.</p>
+                    <p class="send-success__text">Подпишитесь на нас в ВК:</p>
+                    <a href="https://vk.com/" class="send-success__link" target="_blank">Repair Design Project</a>
+                  </div>
+                </div>
+                <!-- /.measure-dialog -->
+                <div class="measure__saving">
+                  <div class="measure__img"><img src="img/measure/money-box.svg" alt="копилка"> </div>
+                  <div class="measure__description measure__description--primary">Это поможет сэкономить 10 - 20% от стоимости материалов
+                  </div>
+                </div>
+            </div>
+          </div>
+          <!-- /.measure__row -->
+        </div>
+        <!-- /.container -->
+      </section>
+      <!-- /.section measure -->
+
+
+
+
+
+
+
     </div>
+
+
+
+
+
     <section class="section design">
       <div class="container">
         <div class="section-title design__section-title elementUp">

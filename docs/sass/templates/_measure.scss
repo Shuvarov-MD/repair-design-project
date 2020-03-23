@@ -19,7 +19,6 @@
     &--right {
       flex-basis: 36.142rem;
       margin-top: 7.571rem;
-     //  margin-right: 10px;
     }
   }
   &__text {
@@ -150,14 +149,14 @@
     padding: 1.286rem 2.9rem;
     border: 0.071rem solid $primary;
     align-self: flex-end;
-    &:hover {
+    /*&:hover {
       border-color: $light;
-    }
+    }*/
   }
   &__send-success {
     display: none;
-    padding-top: 6.285rem;
-    padding-bottom: 6.285rem;
+    padding-top: 4.928rem;
+    padding-bottom: 4.928rem;
     align-self: center;
     text-align: center;
     flex-direction: column;

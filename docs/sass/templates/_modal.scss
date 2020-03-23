@@ -87,9 +87,9 @@
     padding: 1.286rem 3.5rem;
     border: 0.071rem solid $primary;
     align-self: flex-end;
-    &:hover {
+    /*&:hover {
       border-color: $light;
-    }
+    }*/
   }
   &__send-success {
     display: none;

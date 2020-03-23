@@ -65,9 +65,9 @@
     color: $light;
     z-index: 9;
     transition: color 0.3s;
-    &:hover {
+    /*&:hover {
       color: $primary;
-    }
+    }*/
     &::after {
       content: '';
       background: url('../img/arrow-down.svg') no-repeat center;
@@ -102,12 +102,12 @@
       background-color: $primary;
       margin-left: 0.785rem;
     }
-    &:hover {
+    /*&:hover {
       color: $light
     }
     &:hover::after {
       background-color: $light;
-    }
+    }*/
   }
 }
 

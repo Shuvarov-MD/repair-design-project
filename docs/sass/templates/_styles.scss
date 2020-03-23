@@ -62,12 +62,12 @@
       background-color: transparent;
       transition: all 0.3s;
     }
-    &:hover {
+    /*&:hover {
       color: $primary;
     }
     &:hover::after {
       background-color: $primary;
-    }
+    }*/
     &--active {
       color: $primary;
       &::after {

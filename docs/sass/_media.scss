@@ -65,6 +65,143 @@
 }
 
 
+@media screen and (min-width: 993px) {
+  .nav {
+    &__item {
+      transition: all 0.3s;
+      &:hover {
+        color: $primary;
+      }
+    }
+  }
+
+  .hero {
+    &__scroll-down {
+      ttransition: all 0.3s;
+      &:hover {
+        color: $primary;
+      }
+    }
+  }
+
+  .instagram {
+    &__link {
+      transition: all 0.3s;
+      &:hover {
+        color: $light
+      }
+      &:hover::after {
+        background-color: $light;
+      }
+    }
+  }
+
+
+  .video {
+    &__play {
+      &:hover {
+        cursor: pointer;
+      }
+    }
+  }
+
+  .footer {
+    &__button {
+      transition: all 0.3s;
+      &:hover {
+        border-color: light;
+      }
+    }
+  }
+
+  .social-link {
+    transition: all 0.3s;
+    &--primary {
+      &:hover {
+        background-color: transparent;
+        border-color: $light;
+      }
+    }
+  }
+
+  .measure {
+    &__button {
+      transition: all 0.3s;
+      &:hover {
+        border-color: $light;
+      }
+    }
+  }
+
+  .modal {
+    &__button {
+      transition: all 0.3s;
+      &:hover {
+        border-color: $light;
+      }
+    }
+  }
+
+  .toggle-button {
+    &__content {
+      transition: all 0.3s;
+      &:hover {
+        cursor: pointer;
+        opacity: 1;
+      }
+    }
+  }
+
+  .styles {
+    &__link {
+      transition: all 0.3s;
+      &::after {
+        transition: all 0.3s;
+      }
+      &:hover {
+        color: $primary;
+      }
+      &:hover::after {
+        background-color: $primary;
+      }
+    }
+  }
+
+  .button {
+    &:hover {
+      cursor: pointer;
+    }
+    &--primary {
+      transition: all 0.3s;
+      &:hover {
+        box-shadow: none;
+        border-color: $light;
+        background-color: transparent;
+      }
+    }
+    &__scroll-top {
+      transition: all 0.3s;
+      &:hover, &:active {
+        cursor: pointer;
+        background-color: $light;
+      }
+    }
+  }
+
+  .control {
+    &__button {
+      transition: all 0.3s;
+      &:hover {
+        border-color: $primary;
+        color: $primary;
+      }
+    }
+  }
+
+}
+
+
+
 
 
 @media screen and (max-width: 992px) {
@@ -574,7 +711,6 @@
     }
   }
 
-
   .projects {
     &__heading {
       display: block;
@@ -601,6 +737,8 @@
 
 
 
+
+
 @media screen and (max-width: 380px) {
   .our-team {
     &__row {
@@ -611,6 +749,16 @@
     }
   }
 }
+@media screen and (max-width: 325px) {
+  .modal {
+    &__policy {
+      .policy__label {
+        font-size: 1rem;
+      }
+    }
+  }
+}
+
 
 
 
@@ -618,6 +766,59 @@
   .hero {
     &__scroll-down {
       display: none;
+    }
+  }
+}
+
+@media screen and (max-height: 468px) {
+  .modal {
+    &__dialog {
+      padding: 1rem 3.5rem 1rem;
+    }
+    &__title {
+      margin-bottom: 1rem;
+    }
+    &__input {
+      &-group {
+        margin-bottom: 1.3rem;
+      }
+    }
+    &__policy {
+      margin-bottom: 1rem;
+    }
+    &__send-success {
+      padding-top: 1.285rem;
+      padding-bottom: 1.285rem;
+    }
+  }
+}
+
+@media screen and (max-height: 468px) and (max-width: 576px) {
+  .hero {
+    &__title {
+      margin: 0;
+    }
+    &__text {
+      font-size: 1.29rem;
+      margin-bottom: 1.28rem;
+    }
+    &__button {
+      margin-bottom: 0.85rem;
+    }
+  }
+}
+
+@media screen and (max-height: 468px) and (max-width: 768px) {
+  .hero {
+    &__title {
+      margin: 0;
+    }
+    &__text {
+      font-size: 1.29rem;
+      margin-bottom: 1.28rem;
+    }
+    &__button {
+      margin-bottom: 0.85rem;
     }
   }
 }

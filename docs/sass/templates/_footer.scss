@@ -1,5 +1,4 @@
 .footer {
-
   position: relative;
   background: $dark url('../img/footer-bg.jpg') no-repeat center / cover;
   padding-top: 3rem;
@@ -71,9 +70,9 @@
     border: 0.071rem solid $primary;
     font-size: 1.071rem;
     transition: all 0.3s;
-    &:hover {
+    /*&:hover {
       border-color: light;
-    }
+    }*/
   }
   &__menu {
     padding: 3.438rem 0;
@@ -133,9 +132,9 @@
   transition: all 0.3s;
   &--primary {
     background-color: $primary;
-    &:hover {
+    /*&:hover {
       background-color: transparent;
       border-color: $light;
-    }
+    }*/
   }
 }

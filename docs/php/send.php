@@ -17,6 +17,7 @@ require 'SMTP.php';
 
 // Instantiation and passing `true` enables exceptions
 $mail = new PHPMailer(true);
+$mail->CharSet = "UTF-8";
 
 try {
     //Server settings
@@ -35,7 +36,7 @@ try {
 
     // Content
     $mail->isHTML(true);                                  // Set email format to HTML
-    $mail->CharSet = "UTF-8"
+
     $mail->Subject = 'Новая заявка с сайта';
     $mail->Body    = "Имя пользователя: ${userName}, его телефон: ${userPhone}. Его почта: ${userEmail}";
 

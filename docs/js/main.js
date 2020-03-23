@@ -24,6 +24,27 @@ $(document).ready(function () {
     });
 
 
+    $(".menu").on("click","a", function (event) {
+      event.preventDefault();
+      var id  = $(this).attr('href'),
+          top = $(id).offset().top;
+      $('body,html').animate({scrollTop: top}, 1500);
+  });
+
+
+    //Кнопка play
+    $('.video__play').on('click', function() {
+      $('.video__wrap').hide();
+    })
+
+
+//Кнопка вниз
+var height = $(window).height();
+$('.hero__scroll-down').on('click',function(e){
+   e.preventDefault();
+   $('body,html').animate({scrollTop: height}, 1500);
+})
+
 
 
   //Модальное окно
@@ -52,15 +73,7 @@ $(document).ready(function () {
     }
   });
 
-//Кнопка вниз
-/*
-$(function(){
-	$('.hero__scroll-down').click(function(){
-		$('html, body').animate({scrollTop: $(document).height() - $(window).height()}, 1600);
-		return false;
-	});
-});
-*/
+
 
 
 
@@ -292,11 +305,9 @@ $('.modal__form').validate({
       url: "php/send.php",
       data: $(form).serialize(),
       success: function (response) {
-       //alert('Форма отправлена, мы свяжемся с вами в течении 10 минут');
         $(form)[0].reset();
         $('.modal__form').addClass('modal__form--hidden');
         $('.modal__send-success').addClass('modal__send-success--visible');
-        //modal.removeClass('modal--visible');
       },
       error: function (response) {
         console.log('Ошибка запроса' + response);
@@ -351,11 +362,9 @@ $('.measure__form').validate({
       url: "php/send.php",
       data: $(form).serialize(),
       success: function (response) {
-       //alert('Форма отправлена, мы свяжемся с вами в течении 10 минут');
         $(form)[0].reset();
         $('.measure__form').addClass('measure__form--hidden');
         $('.measure__send-success').addClass('measure__send-success--visible');
-        //modal.removeClass('modal--visible');
       },
       error: function (response) {
         console.log('Ошибка запроса' + response);
@@ -402,7 +411,6 @@ $('.control__form').validate({
       url: "php/send.php",
       data: $(form).serialize(),
       success: function (response) {
-        //alert('Форма отправлена, мы свяжемся с вами в течении 10 минут');
         $(form)[0].reset();
         $('.control__form').addClass('control__form--hidden');
         $('.control__send-success').addClass('control__send-success--visible');
@@ -451,7 +459,6 @@ $('.footer__form').validate({
       url: "php/send.php",
       data: $(form).serialize(),
       success: function (response) {
-        //alert('Форма отправлена, мы свяжемся с вами в течении 10 минут');
         $(form)[0].reset();
         $('.footer__form').addClass('footer__form--hidden');
         $('.footer__send-success').addClass('footer__send-success--visible');
@@ -465,7 +472,7 @@ $('.footer__form').validate({
 
 
 // Маска для телефона
-$('[type=tel]').mask('+7 (000) 000-00-00', {placeholder: "+7 (___) ___-__-__"});
+$('[type=tel]').mask('+7 (000) 000-00-00');
 
 
 });

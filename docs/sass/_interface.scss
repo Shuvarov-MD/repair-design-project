@@ -4,9 +4,9 @@
   text-transform: uppercase;
   font-family: 'Futura Demi', sans-serif;
   font-size: 0.928rem;
-  &:hover {
+  /*&:hover {
     cursor: pointer;
-  }
+  }*/
   &:active, &:focus {
     outline: none;
   }
@@ -15,11 +15,11 @@
     color: $light;
     box-shadow: 0px 5px 15px rgba($primary, 0.2);
     transition: all 0.3s;
-    &:hover, &:active {
+   /* &:hover, &:active {
       box-shadow: none;
       border-color: $light;
       background-color: transparent;
-    }
+    }*/
   }
   &__scroll-top {
     display: inline-block;
@@ -40,10 +40,10 @@
       opacity: 1;
       visibility: visible;
     }
-    &:hover, &:active {
+    /*&:hover, &:active {
       cursor: pointer;
       background-color: $light;
-    }
+    }*/
   }
 }
 

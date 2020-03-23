@@ -6,20 +6,10 @@
   }
   &__video {
     position: relative;
-    display: flex;
     margin: auto;
     max-width: 58.357rem;
     min-height: 31rem;
-    background: $dark url('../img/video-mask.jpg') no-repeat center;
-    box-shadow: 0px 1.428rem 3.571rem rgba(0, 0, 0, 0.15);
     margin-bottom: 4.4rem;
-    &::before {
-      content: '';
-      width: 100%;
-      height: 100%;
-      background: rgba(black, 0.8);
-      position: absolute;
-    }
   }
   &__section-title {
     margin-bottom: 2.214rem;
@@ -87,10 +77,10 @@
     font-size: 1.07rem;
     border: 0.071rem solid $primary;
     transition: all 0.3s;
-    &:hover {
+    /*&:hover {
       border-color: $primary;
       color: $primary;
-    }
+    }*/
   }
   &__input {
     color: #363636;
@@ -110,14 +100,42 @@
 }
 
 .video {
+  &__wrap {
+    position: absolute;
+    z-index: 44;
+    margin: auto;
+    top:0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: $dark url('../img/video-mask.jpg') no-repeat center;
+    box-shadow: 0px 1.428rem 3.571rem rgba(0, 0, 0, 0.15);
+    &::before {
+      content: '';
+      width: 100%;
+      height: 100%;
+      background: rgba(black, 0.8);
+      position: absolute;
+    }
+  }
   &__play {
     position: relative;
     margin: auto;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
     border-radius: 50%;
-    &:hover {
+   /* &:hover {
       cursor: pointer;
-    }
+    }*/
+  }
+  &-youtube {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
   }
 
-  
+
 }

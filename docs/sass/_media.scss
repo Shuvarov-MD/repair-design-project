@@ -11,11 +11,13 @@
   html {
     font-size: 12px;
   }
+
   .nav {
     &__item {
       margin-right: 1rem;
     }
   }
+
   .projects {
     &__text {
       &:nth-of-type(2n+1),
@@ -27,6 +29,7 @@
       margin-bottom: 2.57rem;
     }
   }
+
   .measure {
     &__text {
       &:first-of-type {
@@ -53,6 +56,7 @@
       }
     }
   }
+
   .styles {
     &__slide-col {
       width: 24.285rem;
@@ -63,11 +67,8 @@
 
 
 
-
-
-
-
 @media screen and (max-width: 992px) {
+
   .container {
     width: 90%;
   }
@@ -84,6 +85,7 @@
       margin-left: 0;
     }
   }
+
   .projects {
     margin-top: 0;
     padding-top: 2.571rem;
@@ -116,7 +118,6 @@
       }
     }
   }
-
 
   .control {
     padding-top: 1.857rem;
@@ -172,10 +173,43 @@
         color: $light;
       }
     }
+    &__row {
+      justify-content: space-between;
+    }
   }
 
   .styles {
-    display: none;
+    &__col {
+      &--right {
+        width: 50%;
+        height: auto;
+        max-width: 53.714rem;
+      }
+    }
+    &__swiper-container {
+      position: static;
+      width: 100%;
+      height: 100%;
+    }
+    &__slide-col {
+      width: 100%;
+      &:last-of-type {
+        display: none;
+      }
+    }
+    &__slide-img-1 {
+      margin-bottom:0;
+      width: 100%;
+      min-height: 340px;
+      overflow: hidden;
+    }
+    &__slide-img-2, &__slide-img-3, &__slide-img-4 {
+      display: none;
+    }
+
+    &__row {
+      align-items: center;
+    }
   }
 
   .measure {
@@ -207,13 +241,7 @@
       background: $dark;
     }
   }
-
 }
-
-
-
-
-
 
 
 
@@ -228,42 +256,40 @@
     width: 100%;
     max-width: 392px;
   }
+
   .col-30 {
     width: 100%;
     max-width: 305px;
   }
 
   .types {
+    padding-bottom: 0;
     &__card {
       margin-bottom: 5rem;
     }
   }
 
   .design {
+    padding-top: 173px;
     background-color: $dark;
     &__pricetag {
       padding-left: 3.6rem;
       padding-right: 3.6rem;
     }
-
     &__card {
       margin-bottom: 5rem;
     }
-
     &__section-title {
       color: $light;
     }
-
     &__text {
       color: $light;
     }
-
     &__list {
       .card__item:nth-child(7)::after {
         content: ' ...';
       }
     }
-
     &__img {
       &::before {
         display: none;
@@ -275,7 +301,6 @@
     &__text {
       margin-left: 0;
     }
-
     &__item:nth-child(n+8) {
       display: none;
     }
@@ -297,7 +322,6 @@
       }
       &--right {
         width: 100%;
-
       }
     }
     &__swiper-container {
@@ -314,45 +338,36 @@
 
   .control {
     color: $light;
-
     &__video {
       width: auto;
       min-height: 207px;
       background-size: cover;
     }
-
     &__section-title {
       margin-top: 0;
     }
-
     &__video {
       margin-bottom: 2rem;
     }
-
     &__form {
       display: flex;
       flex-direction: column;
       margin: auto;
       max-width: 24.285rem;
     }
-
     &__input-group:first-of-type {
       margin-bottom: 4.5rem;
     }
-
     &__label {
       margin-bottom: -5px;
       color: rgba(255, 255, 255, 0.5)
     }
-
     &__input {
       color: $light;
-
       &::placeholder {
         color: $light;
       }
     }
-
     &__policy {
       margin-top: 1rem;
       position: relative;
@@ -361,18 +376,15 @@
         top: 32px;
         left: 25px;
       }
-
       &-label {
         justify-content: left;
       }
     }
-
     &__button {
       margin-top: 4.428rem;
       margin-bottom: -6rem;
       order: 5;
     }
-
     &__text {
       &::before {
         margin-bottom: 1.5rem;
@@ -385,6 +397,7 @@
       width: 55px;
     }
   }
+
   .our-team {
     &_row {
       flex-direction: column;
@@ -409,13 +422,64 @@
     display: none;
   }
 
+
+  .styles {
+    background: $light;
+    &::before {
+      display: none;
+    }
+    padding-top: 28px;
+    padding-bottom: 0;
+    &__heading {
+      text-align: center;
+    }
+    &__row {
+      flex-direction: column;
+      align-items: center
+    }
+    &__col {
+      &--left {
+        width: 100%;
+      }
+      &--right {
+        width: 100%;
+        max-width: 340px;
+        margin-right: 0;
+        margin-bottom: -121px;
+      }
+    }
+    &__slide-img-1 {
+      max-width: 340px;
+      min-height: 242px;
+    }
+    &__toggle-buttons {
+      display: none;
+    }
+
+    &__swiper-button-next {
+      display: block;
+      position: absolute;
+      right: 14px;
+      top: 50%
+    }
+
+    &__swiper-button-prev {
+      display: block;
+      position: absolute;
+      left: 14px;
+      top: 50%
+    }
+
+  }
+
+
+
   .footer {
     background-color: $dark;
     background-image: none;
     &__menu {
       display: none;
     }
-
     &__wrap {
       width: 100%;
       margin-top: 0;
@@ -456,6 +520,7 @@
     height: 255px;
     }
   }
+
   .section {
     &-title {
       &__word {
@@ -472,22 +537,14 @@
 
 @media screen and (max-width: 576px) {
 
-
-  .col-100 {
-    width: 100%;
-    margin-bottom: 2.36rem;
-  }
-
   .contacts {
     &__button {
       display: none;
     }
-
     &__phone {
       margin-right: 0;
       color: $light;
       text-decoration: none;
-
       &::after {
         display: none;
       }
@@ -502,16 +559,13 @@
     &__scroll-down {
       display: none;
     }
-  
     &__content {
       max-width: 26.86rem;
     }
-
     &__text {
       font-size: 1.29rem;
       margin-bottom: 2.28rem;
     }
-
     &__button {
       display: block;
       width: 100%;
@@ -529,13 +583,13 @@
       min-height: 202px;
     }
   }
+
   .control {
     &__form {
       width: 100%;
       max-width: 100%;
     }
   }
-
 
   .footer {
     &__wrap {
@@ -544,10 +598,6 @@
     }
   }
 }
-
-
-
-
 
 
 
@@ -564,13 +614,10 @@
 
 
 
-@media screen and (max-height: 520px) {
+@media screen and (max-height: 620px) {
   .hero {
     &__scroll-down {
       display: none;
     }
   }
-
-
-
 }

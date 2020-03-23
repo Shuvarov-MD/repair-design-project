@@ -28,7 +28,6 @@
     }
   }
   &__heading {
-    //max-width: 411px;
     font-family: 'Yeseva One', cursive;
     font-weight: normal;
     font-size: 1.928rem;
@@ -128,9 +127,27 @@
     object-fit: cover;
   }
 
-  &__swiper-button-next, &__swiper-button-prev {
+  &__swiper-button-prev {
     display: none;
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    background: $primary url("../img/styles/arrow-left.svg") no-repeat center;
+    box-shadow: 0px 0px 15px rgba(227, 184, 115, 0.5);
+    &:active {
+      outline: none;
+    }
   }
 
-
+  &__swiper-button-next {
+    display: none;
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    background: $primary url("../img/styles/arrow-right.svg") no-repeat center;
+    box-shadow: 0px 0px 15px rgba(227, 184, 115, 0.5);
+    &:active {
+      outline: none;
+    }
+  }
 }

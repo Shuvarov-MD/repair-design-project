@@ -52,6 +52,17 @@ $(document).ready(function () {
     }
   });
 
+//Кнопка вниз
+/*
+$(function(){
+	$('.hero__scroll-down').click(function(){
+		$('html, body').animate({scrollTop: $(document).height() - $(window).height()}, 1600);
+		return false;
+	});
+});
+*/
+
+
 
   //Кнопка наверх
   var btn = $('.button__scroll-top');
@@ -66,7 +77,7 @@ $(document).ready(function () {
 
   btn.on('click', function(e) {
     e.preventDefault();
-    $('html, body').animate({scrollTop:0}, '600');
+    $('html, body').animate({scrollTop:0}, 1600);
   });
 
 
@@ -89,29 +100,8 @@ $(document).ready(function () {
 
   bullets.css('left', prev.width() + 30);
   next.css('left', prev.width() + 25 + bullets.width() + 30);
-/*
-  function mediaSize() {
-    var swiperСontainer = $('.projects__swiper-container');
-		if (window.matchMedia('(max-width: 992px)').matches) {
-      prev.css('left', swiperСontainer.width()*0.3);
-      bullets.css('left', prev.width() + 30 + swiperСontainer.width()*0.3);
-      next.css('left', prev.width() + 25 + bullets.width() + 30 + swiperСontainer.width()*0.3);
-      if (window.matchMedia('(max-width: 570px)').matches) {
-        prev.css('left', swiperСontainer.width()*0.2);
-        bullets.css('left', prev.width() + 30 + swiperСontainer.width()*0.2);
-        next.css('left', prev.width() + 25 + bullets.width() + 30 + swiperСontainer.width()*0.2);
-      }
-    } else {
-      prev.removeAttr('style');
-      bullets.css('left', prev.width() + 30);
-      next.css('left', prev.width() + 25 + bullets.width() + 30);
-		}
-  };
 
-  mediaSize();
-	window.addEventListener('resize', mediaSize, false);
 
-*/
   var mySwiperSteps = new Swiper ('.steps__swiper-container', {
     loop: true,
     pagination: {

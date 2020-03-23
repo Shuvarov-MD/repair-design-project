@@ -5,12 +5,14 @@ ymaps.ready(function () {
           zoom: 17
       }, {
           searchControlProvider: 'yandex#search'
-      }),
+      });
+
+      myMap.behaviors.disable(['scrollZoom']);
 
       // Создаём макет содержимого.
       MyIconContentLayout = ymaps.templateLayoutFactory.createClass(
           '<div style="color: #FFFFFF; font-weight: bold;">$[properties.iconContent]</div>'
-      ),
+      );
 
       myPlacemark = new ymaps.Placemark(myMap.getCenter(), {
           hintContent: 'Наш офис',

@@ -1,7 +1,7 @@
 .slideRight{
   animation-name: slideRight;
   animation-duration: 1s;
-  animation-timing-function: ease;
+  animation-timing-function: linear;
   visibility: visible !important;
 }
 
@@ -17,7 +17,7 @@
 .slideLeft{
   animation-name: slideLeft;
   animation-duration: 1s;
-  animation-timing-function: ease;
+  animation-timing-function: linear;
   visibility: visible !important;
 }
 
@@ -34,7 +34,7 @@
 .slideUp{
   animation-name: slideUp;
   animation-duration: 1s;
-  animation-timing-function: ease;
+  animation-timing-function: linear;
   visibility: visible !important;
 }
 
@@ -50,7 +50,7 @@
 .slideDown{
   animation-name: slideDown;
   animation-duration: 1s;
-  animation-timing-function: ease;
+  animation-timing-function: linear;
   visibility: visible !important;
 }
 

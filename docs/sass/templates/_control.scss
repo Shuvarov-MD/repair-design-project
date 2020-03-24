@@ -87,6 +87,10 @@
     &::placeholder {
       color: #363636;
     }
+    &::-moz-placeholder {
+      color: #363636; 
+      opacity: 1;
+    }
   }
   &__send-success {
     display: none;

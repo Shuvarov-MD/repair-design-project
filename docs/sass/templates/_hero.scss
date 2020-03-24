@@ -1,9 +1,10 @@
 .hero {
   position: relative;
   display: flex;
-  flex-direction: column;
-  justify-content: center;
-  padding-top: 6.428rem;
+  align-items: center;
+  //flex-direction: column;
+  //justify-content: center;
+  padding-top: 6rem;
   background: $dark url('../img/hero-bg.jpg') no-repeat center / cover;
   height: 100vh;
   color: $light;
@@ -55,8 +56,10 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    min-width: 17.6rem;
-    min-height: 6.92rem;
+    //min-width: 17.6rem;
+    //min-height: 6.92rem;
+    width: 17.6rem;
+    height: 6.92rem;
     font-family: 'Yeseva One', cursive;
     font-size: 0.857rem;
     background-color: $dark;
@@ -98,6 +101,7 @@
     &::after {
       content: '';
       width: 3.571rem;
+      min-width: 3.571rem;
       height: 0.071rem;
       background-color: $primary;
       margin-left: 0.785rem;

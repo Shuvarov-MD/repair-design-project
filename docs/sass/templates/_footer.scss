@@ -37,6 +37,10 @@
   }
   &__input {
     padding-top: 0.3rem;
+    &::-moz-placeholder {
+      color: $light;
+      opacity: 1;
+    }
     &-group {
       position: relative;
       display: flex;
@@ -79,6 +83,7 @@
     background-color: $dark
   }
   &__contacts {
+    width: 100%;
     max-width: 39.285rem;
     margin: auto;
     margin-bottom: 3.142rem;
@@ -136,5 +141,12 @@
       background-color: transparent;
       border-color: $light;
     }*/
+  }
+}
+
+.address {
+  &__phone {
+    text-decoration: none;
+    color: $primary;
   }
 }

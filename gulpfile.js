@@ -42,6 +42,7 @@ function BrowserSync() {
 function buildCSS() {
   return src('docs/css/**/*.css')
     .pipe(cleanCSS({compatibility: 'ie8'}))
+    .pipe(rename({suffix: '.min'}))
     .pipe(dest('dist/css'));
 }
 

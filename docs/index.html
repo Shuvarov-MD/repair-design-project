@@ -5,11 +5,11 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <script src="https://api-maps.yandex.ru/2.1/?apikey=9a4979e8-55d3-42e3-ad88-41189b90b659&lang=ru_RU"></script>
+
   <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
   <link href="https://fonts.googleapis.com/css?family=Yeseva+One&display=swap&subset=cyrillic" rel="stylesheet">
   <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.min.css">
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/style.min.css">
   <title>Repair Design Project</title>
 </head>
 
@@ -165,14 +165,13 @@
             <h2 class="section-title__heading control__heading">Онлайн контроль</h2>
             <div class="section-title__img">
               <img src="img/video.svg" alt="video">
-
             </div>
           </div>
           <div class="control__video video elementUp">
             <div class="video__wrap">
               <img src="img/play-icon.svg" alt="play icon" class="video__play">
             </div>
-            <iframe class="video-youtube" src="https://www.youtube.com/embed/gtXQ-XYFg_0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <iframe class="video-youtube" src="https://www.youtube.com/embed/gtXQ-XYFg_0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
           </div>
           <!-- /.control__video video -->
           <p class="control__text elementUp">На&nbsp;каждом объекте установлена ​​камера, которая транслирует ход работы
@@ -193,7 +192,7 @@
               <input type="tel" name="userPhone" class="input form__input control__input" id="user-phone"
                 placeholder="Ваш номер телефона:" autocomplete="off">
             </div>
-            <button class="button button--primary control__button">Отправить</button>
+            <button class="button button--primary control__button" onclick="ym(61223932,'reachGoal','request'); return true;">Отправить</button>
             <div class="policy control__policy">
               <input type="checkbox" name="policyCheckbox" id="policy-checkbox" class="policy__checkbox" checked>
               <label for="policy-checkbox" class="policy__label control__policy-label">Я&nbsp;соглашаюсь
@@ -354,7 +353,7 @@
                     <label for="measure__policy-checkbox" class="policy__label">Я&nbsp;соглашаюсь с&nbsp;обработкой
                       данных</label>
                   </div>
-                  <button class="button button--primary measure__button">Вызвать замерщика</button>
+                  <button class="button button--primary measure__button" onclick="ym(61223932,'reachGoal','request'); return true;">Вызвать замерщика</button>
                   <!-- /.policy -->
                 </form>
                 <div class="send-success measure__send-success">
@@ -1065,7 +1064,7 @@
               с&nbsp;обработкой
               данных</label>
           </div>
-          <button class="button button--primary footer__button">Отправить</button>
+          <button class="button button--primary footer__button" onclick="ym(61223932,'reachGoal','request'); return true;">Отправить</button>
           <!-- /.policy -->
         </form>
         <div class="send-success footer__send-success">
@@ -1076,7 +1075,7 @@
       </div>
       <div class="footer__contacts elementUp">
         <p class="footer__address footer__address--primary">Ростов-на-Дону, Торговый центр Plaza
-          Прямой телефон&nbsp;+7 (999) 768 32 99</p>
+          Прямой телефон <a href="tel:+79997683299" class="address__phone">+7&nbsp;(999)&nbsp;768&nbsp;32&nbsp;99</a></p>
         <div class="footer__social">
           <a class="social-link social-link--primary" href="mailto:ivannivitch@gmail.com"><img src="img/mail-icon.svg"
               alt="mail"></a>
@@ -1132,7 +1131,7 @@
           <input type="checkbox" name="policyCheckbox" id="modal__policy-checkbox" class="policy__checkbox" checked>
           <label for="modal__policy-checkbox" class="policy__label">Я&nbsp;соглашаюсь с&nbsp;обработкой данных</label>
         </div>
-        <button class="button button--primary modal__button">Отправить заявку</button>
+        <button class="button button--primary modal__button" onclick="ym(61223932,'reachGoal','callback'); return true">Отправить заявку</button>
         <!-- /.policy -->
       </form>
       <div class="send-success modal__send-success">
@@ -1146,12 +1145,27 @@
   <!-- /.modal -->
   <a href="#" class="button__scroll-top"></a>
 
+  <script src="https://api-maps.yandex.ru/2.1/?apikey=9a4979e8-55d3-42e3-ad88-41189b90b659&lang=ru_RU"></script>
+  <!-- Yandex.Metrika counter -->
+<script type="text/javascript" >
+  (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+  m[i].l=1*new Date();k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
+  (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+
+  ym(61223932, "init", {
+       clickmap:true,
+       trackLinks:true,
+       accurateTrackBounce:true
+  });
+</script>
+<noscript><div><img src="https://mc.yandex.ru/watch/61223932" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+<!-- /Yandex.Metrika counter -->
   <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
   <script src="https://unpkg.com/swiper/js/swiper.min.js"></script>
   <script src="js/jquery.validate.min.js"></script>
   <script src="js/jquery.mask.min.js"></script>
-  <script src="js/map.js"></script>
-  <script src="js/main.js"></script>
+  <script src="js/map.min.js"></script>
+  <script src="js/main.min.js"></script>
 
 </body>
 

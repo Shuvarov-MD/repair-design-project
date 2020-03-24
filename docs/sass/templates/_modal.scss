@@ -55,6 +55,10 @@
     }
   }
   &__input {
+    &::-moz-placeholder {
+      color: $light;
+      opacity: 1;
+    }
     &-group {
       position: relative;
       display: flex;

@@ -2732,6 +2732,16 @@ main {
     -webkit-transform: translate(-50%, -50%);
         -ms-transform: translate(-50%, -50%);
             transform: translate(-50%, -50%); }
+  .our-team__img > img {
+    width: 100%;
+    height: 130%;
+    top: 65%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+    -o-object-fit: cover;
+       object-fit: cover; }
   .our-clients {
     display: none; }
   .styles {

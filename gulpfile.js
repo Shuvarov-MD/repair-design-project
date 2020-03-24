@@ -80,10 +80,10 @@ function imgBuild(done) {
             key: '1g1Zc3fnKhsRRvsPTpmJ0Rb02CFfYhlG',
         }))
         .pipe(dest('dist/img'));
-        src('docs/img/**/*.svg')
+        src('docs/img/**/*.{svg,ico}')
         .pipe(dest('dist/img'));
         done();
 }
 
-exports.build = series(htmlBuild, buildCSS, buildJS, phpBuild, fontBuild, imgBuild);
+exports.build = series(htmlBuild, buildCSS, buildJS);
 exports.serve = BrowserSync;

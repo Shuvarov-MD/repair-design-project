@@ -5,11 +5,13 @@
     font-size: 1.428rem;
   }
   &__video {
-    position: relative;
+    width: 100%;
+    height: 100%;
+    /*position: relative;
     margin: auto;
-    max-width: 58.357rem;
+    max-width: 58.357rem;*/
     min-height: 31rem;
-    margin-bottom: 4.4rem;
+    /*margin-bottom: 4.4rem;*/
   }
   &__section-title {
     margin-bottom: 2.214rem;
@@ -77,10 +79,6 @@
     font-size: 1.07rem;
     border: 0.071rem solid $primary;
     transition: all 0.3s;
-    /*&:hover {
-      border-color: $primary;
-      color: $primary;
-    }*/
   }
   &__input {
     color: #363636;
@@ -88,7 +86,7 @@
       color: #363636;
     }
     &::-moz-placeholder {
-      color: #363636; 
+      color: #363636;
       opacity: 1;
     }
   }
@@ -104,14 +102,10 @@
 }
 
 .video {
-  &__wrap {
-    position: absolute;
-    z-index: 44;
-    margin: auto;
-    top:0;
-    left: 0;
-    right: 0;
-    bottom: 0;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     background: $dark url('../img/video-mask.jpg') no-repeat center;
     box-shadow: 0px 1.428rem 3.571rem rgba(0, 0, 0, 0.15);
     &::before {
@@ -120,26 +114,18 @@
       height: 100%;
       background: rgba(black, 0.8);
       position: absolute;
-    }
   }
   &__play {
     position: relative;
-    margin: auto;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%,-50%);
     border-radius: 50%;
-   /* &:hover {
-      cursor: pointer;
-    }*/
-  }
-  &-youtube {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
   }
 
+  &-wrap {
+    //position: relative;
+    margin: auto;
+    max-width: 58.357rem;
+    //min-height: 31rem;
+    margin-bottom: 4.4rem;
+  }
 
 }

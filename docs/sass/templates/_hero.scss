@@ -102,16 +102,10 @@
       content: '';
       width: 3.571rem;
       min-width: 3.571rem;
-      height: 0.071rem;
+      height: 2px;
       background-color: $primary;
       margin-left: 0.785rem;
     }
-    /*&:hover {
-      color: $light
-    }
-    &:hover::after {
-      background-color: $light;
-    }*/
   }
 }
 

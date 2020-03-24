@@ -147,9 +147,9 @@
                 <div class="swiper-slide swiper-slide--right projects__swiper-slide--right"><img
                     src="img/project/project-1.jpg" class="projects__img" alt="Проект"></div>
                 <div class="swiper-slide swiper-slide--right projects__swiper-slide--right"><img
-                    src="img/project/project-2.jpg" class="projects__img" alt="Проект"></div>
+                    data-src="img/project/project-2.jpg" class="projects__img lazyload" alt="Проект"></div>
                 <div class="swiper-slide swiper-slide--right projects__swiper-slide--right"><img
-                    src="img/project/project-3.jpg" class="projects__img" alt="Проект"></div>
+                  data-src="img/project/project-3.jpg" class="projects__img lazyload" alt="Проект"></div>
               </div>
             </div>
           </div>
@@ -167,11 +167,11 @@
               <img src="img/video.svg" alt="video">
             </div>
           </div>
-          <div class="control__video video elementUp">
-            <div class="video__wrap">
+          <div class="video-wrap elementUp">
+            <div class="control__video video" id="player">
               <img src="img/play-icon.svg" alt="play icon" class="video__play">
+              <script src="https://www.youtube.com/iframe_api"></script>
             </div>
-            <iframe class="video-youtube" src="https://www.youtube.com/embed/gtXQ-XYFg_0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
           </div>
           <!-- /.control__video video -->
           <p class="control__text elementUp">На&nbsp;каждом объекте установлена ​​камера, которая транслирует ход работы
@@ -444,180 +444,180 @@
                 <div class="swiper-slide styles__swiper-slide">
                   <div class="styles__slide-col">
                     <div class="styles__slide-img-1">
-                      <img src="img/styles/imperial/image-1.jpg" class="styles__img" alt="Имперский стиль">
+                      <img data-src="img/styles/imperial/image-1.jpg" class="styles__img lazyload" alt="Имперский стиль">
                     </div>
                     <div class="styles__slide-img-2">
-                      <img src="img/styles/imperial/image-2.jpg" class="styles__img" alt="Имперский стиль">
+                      <img data-src="img/styles/imperial/image-2.jpg" class="styles__img lazyload" alt="Имперский стиль">
                     </div>
                   </div>
                   <div class="styles__slide-col">
                     <div class="styles__slide-img-3">
-                      <img src="img/styles/imperial/image-3.jpg" class="styles__img" alt="Имперский стиль">
+                      <img data-src="img/styles/imperial/image-3.jpg" class="styles__img lazyload" alt="Имперский стиль">
                     </div>
                     <div class="styles__slide-img-4">
-                      <img src="img/styles/imperial/image-4.jpg" class="styles__img" alt="Имперский стиль">
+                      <img data-src="img/styles/imperial/image-4.jpg" class="styles__img lazyload" alt="Имперский стиль">
                     </div>
                   </div>
                 </div>
                 <div class="swiper-slide styles__swiper-slide">
                   <div class="styles__slide-col">
                     <div class="styles__slide-img-1">
-                      <img src="img/styles/classic/image-1.jpg" class="styles__img" alt="Классика">
+                      <img data-src="img/styles/classic/image-1.jpg" class="styles__img lazyload" alt="Классика">
                     </div>
                     <div class="styles__slide-img-2">
-                      <img src="img/styles/classic/image-2.jpg" class="styles__img" alt="Классика">
+                      <img data-src="img/styles/classic/image-2.jpg" class="styles__img lazyload" alt="Классика">
                     </div>
                   </div>
                   <div class="styles__slide-col">
                     <div class="styles__slide-img-3">
-                      <img src="img/styles/classic/image-3.jpg" class="styles__img" alt="Классика">
+                      <img data-src="img/styles/classic/image-3.jpg" class="styles__img lazyload" alt="Классика">
                     </div>
                     <div class="styles__slide-img-4">
-                      <img src="img/styles/classic/image-4.jpg" class="styles__img" alt="Классика">
+                      <img data-src="img/styles/classic/image-4.jpg" class="styles__img lazyload" alt="Классика">
                     </div>
                   </div>
                 </div>
                 <div class="swiper-slide styles__swiper-slide">
                   <div class="styles__slide-col">
                     <div class="styles__slide-img-1">
-                      <img src="img/styles/loft/image-1.jpg" class="styles__img" alt="Лофт">
+                      <img data-src="img/styles/loft/image-1.jpg" class="styles__img lazyload" alt="Лофт">
                     </div>
                     <div class="styles__slide-img-2">
-                      <img src="img/styles/loft/image-2.jpg" class="styles__img" alt="Лофт">
+                      <img data-src="img/styles/loft/image-2.jpg" class="styles__img lazyload" alt="Лофт">
                     </div>
                   </div>
                   <div class="styles__slide-col">
                     <div class="styles__slide-img-3">
-                      <img src="img/styles/loft/image-3.jpg" class="styles__img" alt="Лофт">
+                      <img data-src="img/styles/loft/image-3.jpg" class="styles__img lazyload" alt="Лофт">
                     </div>
                     <div class="styles__slide-img-4">
-                      <img src="img/styles/loft/image-4.jpg" class="styles__img" alt="Лофт">
+                      <img data-src="img/styles/loft/image-4.jpg" class="styles__img lazyload" alt="Лофт">
                     </div>
                   </div>
                 </div>
                 <div class="swiper-slide styles__swiper-slide">
                   <div class="styles__slide-col">
                     <div class="styles__slide-img-1">
-                      <img src="img/styles/minimalism/image-1.jpg" class="styles__img" alt="Минимализм">
+                      <img data-src="img/styles/minimalism/image-1.jpg" class="styles__img lazyload" alt="Минимализм">
                     </div>
                     <div class="styles__slide-img-2">
-                      <img src="img/styles/minimalism/image-2.jpg" class="styles__img" alt="Минимализм">
+                      <img data-src="img/styles/minimalism/image-2.jpg" class="styles__img lazyload" alt="Минимализм">
                     </div>
                   </div>
                   <div class="styles__slide-col">
                     <div class="styles__slide-img-3">
-                      <img src="img/styles/minimalism/image-3.jpg" class="styles__img" alt="Минимализм">
+                      <img data-src="img/styles/minimalism/image-3.jpg" class="styles__img lazyload" alt="Минимализм">
                     </div>
                     <div class="styles__slide-img-4">
-                      <img src="img/styles/minimalism/image-4.jpg" class="styles__img" alt="Минимализм">
+                      <img data-src="img/styles/minimalism/image-4.jpg" class="styles__img lazyload" alt="Минимализм">
                     </div>
                   </div>
                 </div>
                 <div class="swiper-slide styles__swiper-slide">
                   <div class="styles__slide-col">
                     <div class="styles__slide-img-1">
-                      <img src="img/styles/provence/image-1.jpg" class="styles__img" alt="Прованс">
+                      <img data-src="img/styles/provence/image-1.jpg" class="styles__img lazyload" alt="Прованс">
                     </div>
                     <div class="styles__slide-img-2">
-                      <img src="img/styles/provence/image-2.jpg" class="styles__img" alt="Прованс">
+                      <img data-src="img/styles/provence/image-2.jpg" class="styles__img lazyload" alt="Прованс">
                     </div>
                   </div>
                   <div class="styles__slide-col">
                     <div class="styles__slide-img-3">
-                      <img src="img/styles/provence/image-3.jpg" class="styles__img" alt="Прованс">
+                      <img data-src="img/styles/provence/image-3.jpg" class="styles__img lazyload" alt="Прованс">
                     </div>
                     <div class="styles__slide-img-4">
-                      <img src="img/styles/provence/image-4.jpg" class="styles__img" alt="Прованс">
+                      <img data-src="img/styles/provence/image-4.jpg" class="styles__img lazyload" alt="Прованс">
                     </div>
                   </div>
                 </div>
                 <div class="swiper-slide styles__swiper-slide">
                   <div class="styles__slide-col">
                     <div class="styles__slide-img-1">
-                      <img src="img/styles/romanticism/image-1.jpg" class="styles__img" alt="Романтизм">
+                      <img data-src="img/styles/romanticism/image-1.jpg" class="styles__img lazyload" alt="Романтизм">
                     </div>
                     <div class="styles__slide-img-2">
-                      <img src="img/styles/romanticism/image-2.jpg" class="styles__img" alt="Романтизм">
+                      <img data-src="img/styles/romanticism/image-2.jpg" class="styles__img lazyload" alt="Романтизм">
                     </div>
                   </div>
                   <div class="styles__slide-col">
                     <div class="styles__slide-img-3">
-                      <img src="img/styles/romanticism/image-3.jpg" class="styles__img" alt="Романтизм">
+                      <img data-src="img/styles/romanticism/image-3.jpg" class="styles__img lazyload" alt="Романтизм">
                     </div>
                     <div class="styles__slide-img-4">
-                      <img src="img/styles/romanticism/image-4.jpg" class="styles__img" alt="Романтизм">
+                      <img data-src="img/styles/romanticism/image-4.jpg" class="styles__img lazyload" alt="Романтизм">
                     </div>
                   </div>
                 </div>
                 <div class="swiper-slide styles__swiper-slide">
                   <div class="styles__slide-col">
                     <div class="styles__slide-img-1">
-                      <img src="img/styles/nordic/image-1.jpg" class="styles__img" alt="Скандинавский стиль">
+                      <img data-src="img/styles/nordic/image-1.jpg" class="styles__img lazyload" alt="Скандинавский стиль">
                     </div>
                     <div class="styles__slide-img-2">
-                      <img src="img/styles/nordic/image-2.jpg" class="styles__img" alt="Скандинавский стиль">
+                      <img data-src="img/styles/nordic/image-2.jpg" class="styles__img lazyload" alt="Скандинавский стиль">
                     </div>
                   </div>
                   <div class="styles__slide-col">
                     <div class="styles__slide-img-3">
-                      <img src="img/styles/nordic/image-3.jpg" class="styles__img" alt="Скандинавский стиль">
+                      <img data-src="img/styles/nordic/image-3.jpg" class="styles__img lazyload" alt="Скандинавский стиль">
                     </div>
                     <div class="styles__slide-img-4">
-                      <img src="img/styles/nordic/image-4.jpg" class="styles__img" alt="Скандинавский стиль">
+                      <img data-src="img/styles/nordic/image-4.jpg" class="styles__img lazyload" alt="Скандинавский стиль">
                     </div>
                   </div>
                 </div>
                 <div class="swiper-slide styles__swiper-slide">
                   <div class="styles__slide-col">
                     <div class="styles__slide-img-1">
-                      <img src="img/styles/mediterranean/image-1.jpg" class="styles__img" alt="Средиземноморский стиль">
+                      <img data-src="img/styles/mediterranean/image-1.jpg" class="styles__img lazyload" alt="Средиземноморский стиль">
                     </div>
                     <div class="styles__slide-img-2">
-                      <img src="img/styles/mediterranean/image-2.jpg" class="styles__img" alt="Средиземноморский стиль">
+                      <img data-src="img/styles/mediterranean/image-2.jpg" class="styles__img lazyload" alt="Средиземноморский стиль">
                     </div>
                   </div>
                   <div class="styles__slide-col">
                     <div class="styles__slide-img-3">
-                      <img src="img/styles/mediterranean/image-3.jpg" class="styles__img" alt="Средиземноморский стиль">
+                      <img data-src="img/styles/mediterranean/image-3.jpg" class="styles__img lazyload" alt="Средиземноморский стиль">
                     </div>
                     <div class="styles__slide-img-4">
-                      <img src="img/styles/mediterranean/image-4.jpg" class="styles__img" alt="Средиземноморский стиль">
+                      <img data-src="img/styles/mediterranean/image-4.jpg" class="styles__img lazyload" alt="Средиземноморский стиль">
                     </div>
                   </div>
                 </div>
                 <div class="swiper-slide styles__swiper-slide">
                   <div class="styles__slide-col">
                     <div class="styles__slide-img-1">
-                      <img src="img/styles/hightech/image-1.jpg" class="styles__img" alt="Хайтек">
+                      <img data-src="img/styles/hightech/image-1.jpg" class="styles__img lazyload" alt="Хайтек">
                     </div>
                     <div class="styles__slide-img-2">
-                      <img src="img/styles/hightech/image-2.jpg" class="styles__img" alt="Хайтек">
+                      <img data-src="img/styles/hightech/image-2.jpg" class="styles__img lazyload" alt="Хайтек">
                     </div>
                   </div>
                   <div class="styles__slide-col">
                     <div class="styles__slide-img-3">
-                      <img src="img/styles/hightech/image-3.jpg" class="styles__img" alt="Хайтек">
+                      <img data-src="img/styles/hightech/image-3.jpg" class="styles__img lazyload" alt="Хайтек">
                     </div>
                     <div class="styles__slide-img-4">
-                      <img src="img/styles/hightech/image-4.jpg" class="styles__img" alt="Хайтек">
+                      <img data-src="img/styles/hightech/image-4.jpg" class="styles__img lazyload" alt="Хайтек">
                     </div>
                   </div>
                 </div>
                 <div class="swiper-slide styles__swiper-slide">
                   <div class="styles__slide-col">
                     <div class="styles__slide-img-1">
-                      <img src="img/styles/eclecticism/image-1.jpg" class="styles__img" alt="Эклектизм">
+                      <img data-src="img/styles/eclecticism/image-1.jpg" class="styles__img lazyload" alt="Эклектизм">
                     </div>
                     <div class="styles__slide-img-2">
-                      <img src="img/styles/eclecticism/image-2.jpg" class="styles__img" alt="Эклектизм">
+                      <img data-src="img/styles/eclecticism/image-2.jpg" class="styles__img lazyload" alt="Эклектизм">
                     </div>
                   </div>
                   <div class="styles__slide-col">
                     <div class="styles__slide-img-3">
-                      <img src="img/styles/eclecticism/image-3.jpg" class="styles__img" alt="Эклектизм">
+                      <img data-src="img/styles/eclecticism/image-3.jpg" class="styles__img lazyload" alt="Эклектизм">
                     </div>
                     <div class="styles__slide-img-4">
-                      <img src="img/styles/eclecticism/image-4.jpg" class="styles__img" alt="Эклектизм">
+                      <img data-src="img/styles/eclecticism/image-4.jpg" class="styles__img lazyload" alt="Эклектизм">
                     </div>
                   </div>
                 </div>
@@ -863,16 +863,16 @@
               <div class="swiper-wrapper swiper-no-swiping">
                 <div class="swiper-slide steps__swiper-slide-img"><img src="img/steps/step-1.jpg" alt="Проект"
                     class="steps__img"></div>
-                <div class="swiper-slide steps__swiper-slide-img"><img src="img/steps/step-2.jpg" alt="Проект"
-                    class="steps__img"></div>
-                <div class="swiper-slide steps__swiper-slide-img"><img src="img/steps/step-3.jpg" alt="Проект"
-                    class="steps__img"></div>
-                <div class="swiper-slide steps__swiper-slide-img"><img src="img/steps/step-4.jpg" alt="Проект"
-                    class="steps__img"></div>
-                <div class="swiper-slide steps__swiper-slide-img"><img src="img/steps/step-5.jpg" alt="Проект"
-                    class="steps__img"></div>
-                <div class="swiper-slide steps__swiper-slide-img"><img src="img/steps/step-6.jpg" alt="Проект"
-                    class="steps__img"></div>
+                <div class="swiper-slide steps__swiper-slide-img"><img data-src="img/steps/step-2.jpg" alt="Проект"
+                    class="steps__img lazyload"></div>
+                <div class="swiper-slide steps__swiper-slide-img"><img data-src="img/steps/step-3.jpg" alt="Проект"
+                    class="steps__img lazyload"></div>
+                <div class="swiper-slide steps__swiper-slide-img"><img data-src="img/steps/step-4.jpg" alt="Проект"
+                    class="steps__img lazyload"></div>
+                <div class="swiper-slide steps__swiper-slide-img"><img data-src="img/steps/step-5.jpg" alt="Проект"
+                    class="steps__img lazyload"></div>
+                <div class="swiper-slide steps__swiper-slide-img"><img data-src="img/steps/step-6.jpg" alt="Проект"
+                    class="steps__img lazyload"></div>
               </div>
             </div>
           </div>
@@ -1083,7 +1083,9 @@
               src="img/instagram-icon.svg" alt="instagram"></a>
         </div>
       </div>
-      <div class="map footer__map elementUp" id="map">
+      <div class="ymap-container elementUp">
+        <div class="map footer__map" id="map">
+        </div>
       </div>
       <!-- /.map -->
     </div>
@@ -1147,7 +1149,7 @@
 
   <script src="https://api-maps.yandex.ru/2.1/?apikey=9a4979e8-55d3-42e3-ad88-41189b90b659&lang=ru_RU"></script>
   <!-- Yandex.Metrika counter -->
-<script type="text/javascript" >
+<script>
   (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
   m[i].l=1*new Date();k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
   (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
@@ -1164,8 +1166,9 @@
   <script src="https://unpkg.com/swiper/js/swiper.min.js"></script>
   <script src="js/jquery.validate.min.js"></script>
   <script src="js/jquery.mask.min.js"></script>
-  <script src="js/map.js"></script>
-  <script src="js/main.js"></script>
+  <script async src="js/map.js"></script>
+  <script async src="js/main.js"></script>
+  <script src="js/lazysizes.min.js" async></script>
 
 </body>
 

@@ -475,4 +475,21 @@ $('.footer__form').validate({
 $('[type=tel]').mask('+7 (000) 000-00-00');
 
 
+
+var player;
+$('.video__play').on('click', function onYouTubeIframeAPIReady() {
+  player = new YT.Player('player', {
+    height: '100%',
+    width: '100%',
+    videoId: 'gtXQ-XYFg_0',
+    events: {
+      'onReady': videoPlay,
+    }
+  });
+})
+
+function videoPlay(event) {
+  event.target.playVideo();
+}
+
 });

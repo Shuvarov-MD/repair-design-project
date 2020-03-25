@@ -8,8 +8,8 @@
 
   <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
   <link href="https://fonts.googleapis.com/css?family=Yeseva+One&display=swap&subset=cyrillic" rel="stylesheet">
-  <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.min.css">
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/swiper.min.css">
+  <link rel="stylesheet" href="css/style.min.css">
   <title>Repair Design Project</title>
 </head>
 
@@ -132,11 +132,9 @@
                   </div>
                 </div>
               </div>
-
               <div class="swiper-button-prev projects__swiper-button-prev"></div>
               <div class="swiper-pagination projects__swiper-pagination"></div>
               <div class="swiper-button-next projects__swiper-button-next"></div>
-
             </div>
           </div>
           <div class="projects__col projects__col--right elementLeft">
@@ -145,7 +143,7 @@
               <div class="swiper-wrapper swiper-no-swiping">
                 <!-- Slides -->
                 <div class="swiper-slide swiper-slide--right projects__swiper-slide--right"><img
-                    src="img/project/project-1.jpg" class="projects__img" alt="Проект"></div>
+                    data-src="img/project/project-1.jpg" class="projects__img lazyload" alt="Проект"></div>
                 <div class="swiper-slide swiper-slide--right projects__swiper-slide--right"><img
                     data-src="img/project/project-2.jpg" class="projects__img lazyload" alt="Проект"></div>
                 <div class="swiper-slide swiper-slide--right projects__swiper-slide--right"><img
@@ -169,7 +167,7 @@
           </div>
           <div class="video-wrap elementUp">
             <div class="control__video video" id="player">
-              <img src="img/play-icon.svg" alt="play icon" class="video__play">
+              <img data-src="img/play-icon.svg" alt="play icon" class="video__play lazyload">
               <script src="https://www.youtube.com/iframe_api"></script>
             </div>
           </div>
@@ -224,7 +222,7 @@
             <div class="col-31">
               <div class="card types__card">
                 <div class="card__img-wrap">
-                  <img src="img/types/type-1.jpg" alt="Косметический ремонт" class="card__img">
+                  <img data-src="img/types/type-1.jpg" alt="Косметический ремонт" class="card__img lazyload">
                 </div>
                 <div class="card__text">
                   <h3 class="card__title">Косметический ремонт</h3>
@@ -250,7 +248,7 @@
             <div class="col-31">
               <div class="card types__card">
                 <div class="card__img-wrap">
-                  <img src="img/types/type-2.jpg" alt="Капитальный ремонт" class="card__img">
+                  <img data-src="img/types/type-2.jpg" alt="Капитальный ремонт" class="card__img lazyload">
                 </div>
                 <div class="card__text">
                   <h3 class="card__title">Капитальный ремонт</h3>
@@ -276,7 +274,7 @@
             <div class="col-31">
               <div class="card types__card">
                 <div class="card__img-wrap">
-                  <img src="img/types/type-3.jpg" alt="Дизайнерский ремонт" class="card__img">
+                  <img data-src="img/types/type-3.jpg" alt="Дизайнерский ремонт" class="card__img lazyload">
                 </div>
                 <div class="card__text">
                   <h3 class="card__title">Дизайнерский ремонт</h3>
@@ -426,18 +424,18 @@
                 <div class="swiper-slide styles__swiper-slide">
                   <div class="styles__slide-col">
                     <div class="styles__slide-img-1">
-                      <img src="img/styles/american/image-1.jpg" class="styles__img" alt="Американская классика">
+                      <img data-src="img/styles/american/image-1.jpg" class="styles__img lazyload" alt="Американская классика">
                     </div>
                     <div class="styles__slide-img-2">
-                      <img src="img/styles/american/image-2.jpg" class="styles__img" alt="Американская классика">
+                      <img data-src="img/styles/american/image-2.jpg" class="styles__img lazyload" alt="Американская классика">
                     </div>
                   </div>
                   <div class="styles__slide-col">
                     <div class="styles__slide-img-3">
-                      <img src="img/styles/american/image-3.jpg" class="styles__img" alt="Американская классика">
+                      <img data-src="img/styles/american/image-3.jpg" class="styles__img lazyload" alt="Американская классика">
                     </div>
                     <div class="styles__slide-img-4">
-                      <img src="img/styles/american/image-4.jpg" class="styles__img" alt="Американская классика">
+                      <img data-src="img/styles/american/image-4.jpg" class="styles__img lazyload" alt="Американская классика">
                     </div>
                   </div>
                 </div>
@@ -647,7 +645,7 @@
           <div class="col-31">
             <div class="card design__card">
               <div class="card__img-wrap design__img">
-                <img src="img/design/design-1.jpg" alt="Минимальный" class="card__img">
+                <img data-src="img/design/design-1.jpg" alt="Минимальный" class="card__img lazyload">
               </div>
               <div class="card__text">
                 <h3 class="card__title">Минимальный</h3>
@@ -669,7 +667,7 @@
           <div class="col-31">
             <div class="card design__card">
               <div class="card__img-wrap design__img">
-                <img src="img/design/design-2.jpg" alt="Стандартный" class="card__img">
+                <img data-src="img/design/design-2.jpg" alt="Стандартный" class="card__img lazyload">
               </div>
               <div class="card__text">
                 <h3 class="card__title">Стандартный</h3>
@@ -694,7 +692,7 @@
           <div class="col-31">
             <div class="card design__card">
               <div class="design__img card__img-wrap">
-                <img src="img/design/design-3.jpg" alt="Полный" class="card__img">
+                <img data-src="img/design/design-3.jpg" alt="Полный" class="card__img lazyload">
               </div>
               <div class="card__text">
                 <h3 class="card__title">Полный</h3>
@@ -861,8 +859,8 @@
             </div>
             <div class="swiper-container steps__swiper-container steps__swiper-container--right elementLeft">
               <div class="swiper-wrapper swiper-no-swiping">
-                <div class="swiper-slide steps__swiper-slide-img"><img src="img/steps/step-1.jpg" alt="Проект"
-                    class="steps__img"></div>
+                <div class="swiper-slide steps__swiper-slide-img"><img data-src="img/steps/step-1.jpg" alt="Проект"
+                    class="steps__img lazyload"></div>
                 <div class="swiper-slide steps__swiper-slide-img"><img data-src="img/steps/step-2.jpg" alt="Проект"
                     class="steps__img lazyload"></div>
                 <div class="swiper-slide steps__swiper-slide-img"><img data-src="img/steps/step-3.jpg" alt="Проект"
@@ -898,7 +896,7 @@
                 <div class="our-team__icon our-team__icon--primary"><img src="img/our-team/our-team-icon-1.svg"
                     alt="icon"></div>
                 <div class="our-team__img">
-                  <img src="img/our-team/our-team-1.jpg" alt="Алексей Колмаков">
+                  <img data-src="img/our-team/our-team-1.jpg" alt="Алексей Колмаков" class="lazyload">
                 </div>
               </div>
               <div class="our-team__people">
@@ -913,7 +911,7 @@
                 <div class="our-team__icon our-team__icon--primary"><img src="img/our-team/our-team-icon-2.svg"
                     alt="icon"></div>
                 <div class="our-team__img">
-                  <img src="img/our-team/our-team-2.jpg" alt="Алиса Сухорукова">
+                  <img data-src="img/our-team/our-team-2.jpg" alt="Алиса Сухорукова" class="lazyload">
                 </div>
               </div>
               <div class="our-team__people">
@@ -928,7 +926,7 @@
                 <div class="our-team__icon our-team__icon--primary"><img src="img/our-team/our-team-icon-3.svg"
                     alt="icon"></div>
                 <div class="our-team__img">
-                  <img src="img/our-team/our-team-3.jpg" alt="Давид Волынев">
+                  <img data-src="img/our-team/our-team-3.jpg" alt="Давид Волынев" class="lazyload">
                 </div>
               </div>
               <div class="our-team__people">
@@ -960,7 +958,7 @@
           <div class="row our-clients__row elementUp">
             <div class="col-30 our-clients__col">
               <div class="our-clients__heading-col">
-                <div class="our-clients__img"><img src="img/our-clients/client-1.jpg" alt="Савельева Екатерина Львовна">
+                <div class="our-clients__img"><img data-src="img/our-clients/client-1.jpg" alt="Савельева Екатерина Львовна" class="lazyload">
                 </div>
                 <strong class="our-clients__name">Савельева Екатерина Львовна</strong>
               </div>
@@ -985,7 +983,7 @@
             </div>
             <div class="col-30 our-clients__col">
               <div class="our-clients__heading-col">
-                <div class="our-clients__img"><img src="img/our-clients/client-2.jpg" alt="Большов Михаил Анатольевич">
+                <div class="our-clients__img"><img data-src="img/our-clients/client-2.jpg" alt="Большов Михаил Анатольевич" class="lazyload">
                 </div>
                 <strong class="our-clients__name">Большов Михаил Анатольевич</strong>
               </div>
@@ -1010,7 +1008,7 @@
             </div>
             <div class="col-30 our-clients__col">
               <div class="our-clients__heading-col">
-                <div class="our-clients__img"><img src="img/our-clients/client-3.jpg" alt="Хасанов Даниил Муратович">
+                <div class="our-clients__img"><img data-src="img/our-clients/client-3.jpg" alt="Хасанов Даниил Муратович" class="lazyload">
                 </div>
                 <strong class="our-clients__name">Хасанов Даниил Муратович</strong>
               </div>
@@ -1084,6 +1082,7 @@
         </div>
       </div>
       <div class="ymap-container elementUp">
+        <div class="loader loader-default"></div>
         <div class="map footer__map" id="map">
         </div>
       </div>
@@ -1147,29 +1146,26 @@
   <!-- /.modal -->
   <a href="#" class="button__scroll-top"></a>
 
-  <script src="https://api-maps.yandex.ru/2.1/?apikey=9a4979e8-55d3-42e3-ad88-41189b90b659&lang=ru_RU"></script>
-  <!-- Yandex.Metrika counter -->
-<script>
-  (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
-  m[i].l=1*new Date();k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
-  (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
 
-  ym(61223932, "init", {
-       clickmap:true,
-       trackLinks:true,
-       accurateTrackBounce:true
-  });
-</script>
-<noscript><div><img src="https://mc.yandex.ru/watch/61223932" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
-<!-- /Yandex.Metrika counter -->
-  <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
-  <script src="https://unpkg.com/swiper/js/swiper.min.js"></script>
+  <script src="js/jquery-3.4.1.min.js"></script>
+  <script src="js/swiper.min.js"></script>
   <script src="js/jquery.validate.min.js"></script>
   <script src="js/jquery.mask.min.js"></script>
-  <script async src="js/map.js"></script>
-  <script async src="js/main.js"></script>
-  <script src="js/lazysizes.min.js" async></script>
+  <script src="js/map.min.js"></script>
+  <script src="js/main.min.js"></script>
+  <script async src="js/lazysizes.min.js"></script>
+  <script async>
+    (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+    m[i].l=1*new Date();k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
+    (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
 
+    ym(61223932, "init", {
+         clickmap:true,
+         trackLinks:true,
+         accurateTrackBounce:true
+    });
+  </script>
+  <noscript><div><img src="https://mc.yandex.ru/watch/61223932" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
 </body>
 
 </html>

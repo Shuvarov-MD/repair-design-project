@@ -959,12 +959,8 @@ main {
     font-size: 1.428rem; }
   .control__video {
     width: 100%;
-    height: 100%;
-    /*position: relative;
-    margin: auto;
-    max-width: 58.357rem;*/
-    min-height: 31rem;
-    /*margin-bottom: 4.4rem;*/ }
+    height: 31rem;
+    min-height: 31rem; }
   .control__section-title {
     margin-bottom: 2.214rem;
     margin-top: -27.5rem; }
@@ -1098,7 +1094,9 @@ main {
     width: 100%;
     height: 100%;
     background: rgba(0, 0, 0, 0.8);
-    position: absolute; }
+    position: absolute;
+    top: 0;
+    left: 0; }
   .video__play {
     position: relative;
     border-radius: 50%; }
@@ -2917,3 +2915,17 @@ main {
     margin-bottom: 1.28rem; }
   .hero__button {
     margin-bottom: 0.85rem; } }
+
+@media only screen and (max-width: 768px) {
+  .animated {
+    /*CSS transitions*/
+    -o-transition-property: none !important;
+    -webkit-transition-property: none !important;
+    transition-property: none !important;
+    /*CSS transforms*/
+    -ms-transform: none !important;
+    -webkit-transform: none !important;
+    transform: none !important;
+    /*CSS animations*/
+    -webkit-animation: none !important;
+    animation: none !important; } }

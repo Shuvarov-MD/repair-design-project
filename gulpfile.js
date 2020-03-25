@@ -85,5 +85,5 @@ function imgBuild(done) {
         done();
 }
 
-exports.build = series(htmlBuild, buildCSS, buildJS, imgBuild, fontBuild, phpBuild);
+exports.build = series(buildJS, htmlBuild);
 exports.serve = BrowserSync;

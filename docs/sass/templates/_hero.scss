@@ -33,13 +33,15 @@
     margin-bottom: 3.4rem;
   }
   &__button {
-    border: 0.071rem solid $primary;
+
     &--left {
       margin-right: 1.214rem;
       padding: 1.229rem 1.929rem;
+      border: 0.071rem solid $primary;
     }
     &--right {
       padding: 1.229rem 3.214rem;
+      border: 0.071rem solid $light;
     }
   }
   &__instagram {

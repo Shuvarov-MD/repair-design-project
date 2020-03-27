@@ -49,6 +49,7 @@
   }
   &__link {
     font-family: 'Futura Book', sans-serif;
+    display: inline-block;
     text-decoration: none;
     font-weight: 500;
     font-size: 1.714rem;
@@ -58,16 +59,10 @@
       content: '';
       display: block;
       height: 1px;
-      width: 55%;
+      width: 62%;
       background-color: transparent;
       transition: all 0.3s;
     }
-    /*&:hover {
-      color: $primary;
-    }
-    &:hover::after {
-      background-color: $primary;
-    }*/
     &--active {
       color: $primary;
       &::after {

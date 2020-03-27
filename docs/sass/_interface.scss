@@ -21,6 +21,10 @@
       background-color: transparent;
     }
   }
+  &--outline {
+    background-color: transparent;
+    color: $light;
+  }
   &__scroll-top {
     display: inline-block;
     width: 35px;

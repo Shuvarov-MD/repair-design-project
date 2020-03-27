@@ -62,6 +62,35 @@ $(document).ready(function () {
     }
   });
 
+
+  var modalSend = $('.modal__send-success'),
+    closeSendBtn = $('.modal__send-success-close'),
+    modalSendDialog = $(".modal__send-success-dialog");
+
+    closeSendBtn.on('click', function () {
+      modalSend.toggleClass('modal__send-success--visible');
+  });
+
+  modalSend.on('click', function (e){
+    if (!modalSendDialog.is(e.target) && modalSendDialog.has(e.target).length === 0){
+      modalSend.toggleClass('modal__send-success--visible');
+    }
+  });
+
+$(this).keydown(function (eventObject) {
+  if (eventObject.which == 27 && modalSend.hasClass('modal__send-success--visible')) {
+    modalSend.toggleClass('modal__send-success--visible');
+  }
+});
+
+
+
+
+
+
+
+
+
   //Кнопка наверх
   var btn = $('.button__scroll-top');
   $(window).scroll(function() {
@@ -228,7 +257,7 @@ $(document).ready(function () {
       },
       userPhone: {
         required: true,
-        minlength: 11,
+        minlength: 18,
       },
       userEmail: {
         required: true,
@@ -263,8 +292,10 @@ $(document).ready(function () {
         data: $(form).serialize(),
         success: function (response) {
           $(form)[0].reset();
-          $('.modal__form').addClass('modal__form--hidden');
-          $('.modal__send-success').addClass('modal__send-success--visible');
+          $('.modal').toggleClass('modal--visible');
+          $('.modal__send-success').toggleClass('modal__send-success--visible');
+         // $('.modal__form').addClass('modal__form--hidden');
+         // $('.modal__send-success').addClass('modal__send-success--visible');
         },
         error: function (response) {
           console.log('Ошибка запроса' + response);
@@ -284,7 +315,7 @@ $(document).ready(function () {
       },
       userPhone: {
         required: true,
-        minlength: 11,
+        minlength: 18,
       },
       userEmail: {
         required: true,
@@ -319,8 +350,10 @@ $(document).ready(function () {
         data: $(form).serialize(),
         success: function (response) {
           $(form)[0].reset();
-          $('.measure__form').addClass('measure__form--hidden');
-          $('.measure__send-success').addClass('measure__send-success--visible');
+         // $('.modal').toggleClass('modal--visible');
+          $('.modal__send-success').toggleClass('modal__send-success--visible');
+          //$('.measure__form').addClass('measure__form--hidden');
+         // $('.measure__send-success').addClass('measure__send-success--visible');
         },
         error: function (response) {
           console.log('Ошибка запроса' + response);
@@ -340,7 +373,7 @@ $(document).ready(function () {
       },
       userPhone: {
         required: true,
-        minlength: 11,
+        minlength: 18,
       },
       policyCheckbox: {
         required: true,
@@ -367,8 +400,10 @@ $(document).ready(function () {
         data: $(form).serialize(),
         success: function (response) {
           $(form)[0].reset();
-          $('.control__form').addClass('control__form--hidden');
-          $('.control__send-success').addClass('control__send-success--visible');
+         // $('.modal').toggleClass('modal--visible');
+          $('.modal__send-success').toggleClass('modal__send-success--visible');
+          //$('.control__form').addClass('control__form--hidden');
+          //$('.control__send-success').addClass('control__send-success--visible');
         },
         error: function (response) {
           console.log('Ошибка запроса' + response);
@@ -388,7 +423,7 @@ $(document).ready(function () {
       },
       userPhone: {
         required: true,
-        minlength: 11,
+        minlength: 18,
       },
       policyCheckbox: {
         required: true,
@@ -415,8 +450,10 @@ $(document).ready(function () {
         data: $(form).serialize(),
         success: function (response) {
           $(form)[0].reset();
-          $('.footer__form').addClass('footer__form--hidden');
-          $('.footer__send-success').addClass('footer__send-success--visible');
+         // $('.modal').toggleClass('modal--visible');
+          $('.modal__send-success').toggleClass('modal__send-success--visible');
+         // $('.footer__form').addClass('footer__form--hidden');
+        //  $('.footer__send-success').addClass('footer__send-success--visible');
         },
         error: function (response) {
           console.log('Ошибка запроса' + response);

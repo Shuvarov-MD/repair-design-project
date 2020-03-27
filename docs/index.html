@@ -9,7 +9,7 @@
   <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
   <link href="https://fonts.googleapis.com/css?family=Yeseva+One&display=swap&subset=cyrillic" rel="stylesheet">
   <link rel="stylesheet" href="css/swiper.min.css">
-  <link rel="stylesheet" href="css/style.min.css">
+  <link rel="stylesheet" href="css/style.css">
   <title>Repair Design Project</title>
 </head>
 
@@ -50,7 +50,7 @@
             дней и&nbsp;20% от&nbsp;стоимости материалов за&nbsp;счет организации работы</p>
           <button class="button hero__button hero__button--left button--primary elementLeft"
             data-toggle="modal">Рассчитать стоимость</button>
-          <button class="button hero__button button--primary hero__button--right elementLeft"
+          <button class="button hero__button button--outline hero__button--right elementLeft"
             data-toggle="modal">Отправить заявку</button>
         </div>
         <!-- /.hero__content -->
@@ -64,7 +64,7 @@
         <div class="section-title section-title--left projects__section-title elementRight">
           <h2 class="section-title__heading section-title__heading--primary projects__heading">Завершенные <span
               class="section-title__word">проекты</span></h2>
-          <p class="section-title__text">На&nbsp;сайте представлена ​​лишь небольшая часть работ, выполняемых нашей
+          <p class="section-title__text projects__section-title-text">На&nbsp;сайте представлена ​​лишь небольшая часть работ, выполняемых нашей
             компанией. За&nbsp;14&nbsp;лет работы на&nbsp;строительном рынке мы&nbsp;осчастливили более 1000 семей</p>
         </div>
         <div class="projects__row">
@@ -143,11 +143,11 @@
               <div class="swiper-wrapper swiper-no-swiping">
                 <!-- Slides -->
                 <div class="swiper-slide swiper-slide--right projects__swiper-slide--right"><img
-                    data-src="img/project/project-1.jpg" class="projects__img lazyload" alt="Проект"></div>
+                    data-src="img/project/project-1.jpg" src="#" class="projects__img lazyload" alt="Проект"></div>
                 <div class="swiper-slide swiper-slide--right projects__swiper-slide--right"><img
-                    data-src="img/project/project-2.jpg" class="projects__img lazyload" alt="Проект"></div>
+                    data-src="img/project/project-2.jpg" src="#" class="projects__img lazyload" alt="Проект"></div>
                 <div class="swiper-slide swiper-slide--right projects__swiper-slide--right"><img
-                  data-src="img/project/project-3.jpg" class="projects__img lazyload" alt="Проект"></div>
+                  data-src="img/project/project-3.jpg" src="#" class="projects__img lazyload" alt="Проект"></div>
               </div>
             </div>
           </div>
@@ -167,7 +167,23 @@
           </div>
           <div class="video-wrap elementUp">
             <div class="control__video video" id="player">
-              <img data-src="img/play-icon.svg" alt="play icon" class="video__play lazyload">
+              <svg class="video__play" viewBox="0 0 145 145" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <g filter="url(#filter0_d)">
+                <circle cx="72.5" cy="67.5" r="42.5" fill="#E3B873"/>
+                </g>
+                <path d="M86 68L65 80.1244L65 55.8756L86 68Z" fill="white"/>
+                <defs>
+                <filter id="filter0_d" x="0" y="0" width="145" height="145" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+                <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"/>
+                <feOffset dy="5"/>
+                <feGaussianBlur stdDeviation="15"/>
+                <feColorMatrix type="matrix" values="0 0 0 0 0.890196 0 0 0 0 0.721569 0 0 0 0 0.45098 0 0 0 0.2 0"/>
+                <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow"/>
+                <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow" result="shape"/>
+                </filter>
+                </defs>
+                </svg>
               <script src="https://www.youtube.com/iframe_api"></script>
             </div>
           </div>
@@ -199,13 +215,6 @@
             </div>
             <!-- /.policy -->
           </form>
-          <div class="send-success control__send-success">
-            <p class="send-success__text send-success__text--dark">Форма отправлена, мы&nbsp;свяжемся с&nbsp;вами
-              в&nbsp;течении 10
-              минут.</p>
-            <p class="send-success__text send-success__text--dark">Подпишитесь на&nbsp;нас в&nbsp;ВК:</p>
-            <a href="https://vk.com/" class="send-success__link" target="_blank">Repair Design Project</a>
-          </div>
         </div>
         <!-- /.container -->
       </section>
@@ -222,7 +231,7 @@
             <div class="col-31">
               <div class="card types__card">
                 <div class="card__img-wrap">
-                  <img data-src="img/types/type-1.jpg" alt="Косметический ремонт" class="card__img lazyload">
+                  <img data-src="img/types/type-1.jpg" src="#" alt="Косметический ремонт" class="card__img lazyload">
                 </div>
                 <div class="card__text">
                   <h3 class="card__title">Косметический ремонт</h3>
@@ -248,7 +257,7 @@
             <div class="col-31">
               <div class="card types__card">
                 <div class="card__img-wrap">
-                  <img data-src="img/types/type-2.jpg" alt="Капитальный ремонт" class="card__img lazyload">
+                  <img data-src="img/types/type-2.jpg" src="#" alt="Капитальный ремонт" class="card__img lazyload">
                 </div>
                 <div class="card__text">
                   <h3 class="card__title">Капитальный ремонт</h3>
@@ -274,7 +283,7 @@
             <div class="col-31">
               <div class="card types__card">
                 <div class="card__img-wrap">
-                  <img data-src="img/types/type-3.jpg" alt="Дизайнерский ремонт" class="card__img lazyload">
+                  <img data-src="img/types/type-3.jpg" src="#" alt="Дизайнерский ремонт" class="card__img lazyload">
                 </div>
                 <div class="card__text">
                   <h3 class="card__title">Дизайнерский ремонт</h3>
@@ -354,12 +363,6 @@
                   <button class="button button--primary measure__button" onclick="ym(61223932,'reachGoal','request'); return true;">Вызвать замерщика</button>
                   <!-- /.policy -->
                 </form>
-                <div class="send-success measure__send-success">
-                  <p class="send-success__text">Форма отправлена, мы&nbsp;свяжемся с&nbsp;вами в&nbsp;течении
-                    10&nbsp;минут.</p>
-                  <p class="send-success__text">Подпишитесь на&nbsp;нас в&nbsp;ВК:</p>
-                  <a href="https://vk.com/" class="send-success__link" target="_blank">Repair Design Project</a>
-                </div>
               </div>
               <!-- /.measure-dialog -->
               <div class="measure__saving">
@@ -424,198 +427,198 @@
                 <div class="swiper-slide styles__swiper-slide">
                   <div class="styles__slide-col">
                     <div class="styles__slide-img-1">
-                      <img data-src="img/styles/american/image-1.jpg" class="styles__img lazyload" alt="Американская классика">
+                      <img data-src="img/styles/american/image-1.jpg" class="styles__img lazyload" src="#" alt="Американская классика">
                     </div>
                     <div class="styles__slide-img-2">
-                      <img data-src="img/styles/american/image-2.jpg" class="styles__img lazyload" alt="Американская классика">
+                      <img data-src="img/styles/american/image-2.jpg" class="styles__img lazyload" src="#" alt="Американская классика">
                     </div>
                   </div>
                   <div class="styles__slide-col">
                     <div class="styles__slide-img-3">
-                      <img data-src="img/styles/american/image-3.jpg" class="styles__img lazyload" alt="Американская классика">
+                      <img data-src="img/styles/american/image-3.jpg" class="styles__img lazyload" src="#" alt="Американская классика">
                     </div>
                     <div class="styles__slide-img-4">
-                      <img data-src="img/styles/american/image-4.jpg" class="styles__img lazyload" alt="Американская классика">
+                      <img data-src="img/styles/american/image-4.jpg" class="styles__img lazyload" src="#" alt="Американская классика">
                     </div>
                   </div>
                 </div>
                 <div class="swiper-slide styles__swiper-slide">
                   <div class="styles__slide-col">
                     <div class="styles__slide-img-1">
-                      <img data-src="img/styles/imperial/image-1.jpg" class="styles__img lazyload" alt="Имперский стиль">
+                      <img data-src="img/styles/imperial/image-1.jpg" class="styles__img lazyload" src="#" alt="Имперский стиль">
                     </div>
                     <div class="styles__slide-img-2">
-                      <img data-src="img/styles/imperial/image-2.jpg" class="styles__img lazyload" alt="Имперский стиль">
+                      <img data-src="img/styles/imperial/image-2.jpg" class="styles__img lazyload" src="#" alt="Имперский стиль">
                     </div>
                   </div>
                   <div class="styles__slide-col">
                     <div class="styles__slide-img-3">
-                      <img data-src="img/styles/imperial/image-3.jpg" class="styles__img lazyload" alt="Имперский стиль">
+                      <img data-src="img/styles/imperial/image-3.jpg" class="styles__img lazyload" src="#" alt="Имперский стиль">
                     </div>
                     <div class="styles__slide-img-4">
-                      <img data-src="img/styles/imperial/image-4.jpg" class="styles__img lazyload" alt="Имперский стиль">
+                      <img data-src="img/styles/imperial/image-4.jpg" class="styles__img lazyload" src="#" alt="Имперский стиль">
                     </div>
                   </div>
                 </div>
                 <div class="swiper-slide styles__swiper-slide">
                   <div class="styles__slide-col">
                     <div class="styles__slide-img-1">
-                      <img data-src="img/styles/classic/image-1.jpg" class="styles__img lazyload" alt="Классика">
+                      <img data-src="img/styles/classic/image-1.jpg" class="styles__img lazyload" src="#" alt="Классика">
                     </div>
                     <div class="styles__slide-img-2">
-                      <img data-src="img/styles/classic/image-2.jpg" class="styles__img lazyload" alt="Классика">
+                      <img data-src="img/styles/classic/image-2.jpg" class="styles__img lazyload" src="#" alt="Классика">
                     </div>
                   </div>
                   <div class="styles__slide-col">
                     <div class="styles__slide-img-3">
-                      <img data-src="img/styles/classic/image-3.jpg" class="styles__img lazyload" alt="Классика">
+                      <img data-src="img/styles/classic/image-3.jpg" class="styles__img lazyload" src="#" alt="Классика">
                     </div>
                     <div class="styles__slide-img-4">
-                      <img data-src="img/styles/classic/image-4.jpg" class="styles__img lazyload" alt="Классика">
+                      <img data-src="img/styles/classic/image-4.jpg" class="styles__img lazyload" src="#" alt="Классика">
                     </div>
                   </div>
                 </div>
                 <div class="swiper-slide styles__swiper-slide">
                   <div class="styles__slide-col">
                     <div class="styles__slide-img-1">
-                      <img data-src="img/styles/loft/image-1.jpg" class="styles__img lazyload" alt="Лофт">
+                      <img data-src="img/styles/loft/image-1.jpg" class="styles__img lazyload" src="#" alt="Лофт">
                     </div>
                     <div class="styles__slide-img-2">
-                      <img data-src="img/styles/loft/image-2.jpg" class="styles__img lazyload" alt="Лофт">
+                      <img data-src="img/styles/loft/image-2.jpg" class="styles__img lazyload" src="#" alt="Лофт">
                     </div>
                   </div>
                   <div class="styles__slide-col">
                     <div class="styles__slide-img-3">
-                      <img data-src="img/styles/loft/image-3.jpg" class="styles__img lazyload" alt="Лофт">
+                      <img data-src="img/styles/loft/image-3.jpg" class="styles__img lazyload" src="#" alt="Лофт">
                     </div>
                     <div class="styles__slide-img-4">
-                      <img data-src="img/styles/loft/image-4.jpg" class="styles__img lazyload" alt="Лофт">
+                      <img data-src="img/styles/loft/image-4.jpg" class="styles__img lazyload" src="#" alt="Лофт">
                     </div>
                   </div>
                 </div>
                 <div class="swiper-slide styles__swiper-slide">
                   <div class="styles__slide-col">
                     <div class="styles__slide-img-1">
-                      <img data-src="img/styles/minimalism/image-1.jpg" class="styles__img lazyload" alt="Минимализм">
+                      <img data-src="img/styles/minimalism/image-1.jpg" class="styles__img lazyload" src="#" alt="Минимализм">
                     </div>
                     <div class="styles__slide-img-2">
-                      <img data-src="img/styles/minimalism/image-2.jpg" class="styles__img lazyload" alt="Минимализм">
+                      <img data-src="img/styles/minimalism/image-2.jpg" class="styles__img lazyload" src="#" alt="Минимализм">
                     </div>
                   </div>
                   <div class="styles__slide-col">
                     <div class="styles__slide-img-3">
-                      <img data-src="img/styles/minimalism/image-3.jpg" class="styles__img lazyload" alt="Минимализм">
+                      <img data-src="img/styles/minimalism/image-3.jpg" class="styles__img lazyload" src="#" alt="Минимализм">
                     </div>
                     <div class="styles__slide-img-4">
-                      <img data-src="img/styles/minimalism/image-4.jpg" class="styles__img lazyload" alt="Минимализм">
+                      <img data-src="img/styles/minimalism/image-4.jpg" class="styles__img lazyload" src="#" alt="Минимализм">
                     </div>
                   </div>
                 </div>
                 <div class="swiper-slide styles__swiper-slide">
                   <div class="styles__slide-col">
                     <div class="styles__slide-img-1">
-                      <img data-src="img/styles/provence/image-1.jpg" class="styles__img lazyload" alt="Прованс">
+                      <img data-src="img/styles/provence/image-1.jpg" class="styles__img lazyload" src="#" alt="Прованс">
                     </div>
                     <div class="styles__slide-img-2">
-                      <img data-src="img/styles/provence/image-2.jpg" class="styles__img lazyload" alt="Прованс">
+                      <img data-src="img/styles/provence/image-2.jpg" class="styles__img lazyload" src="#" alt="Прованс">
                     </div>
                   </div>
                   <div class="styles__slide-col">
                     <div class="styles__slide-img-3">
-                      <img data-src="img/styles/provence/image-3.jpg" class="styles__img lazyload" alt="Прованс">
+                      <img data-src="img/styles/provence/image-3.jpg" class="styles__img lazyload" src="#" alt="Прованс">
                     </div>
                     <div class="styles__slide-img-4">
-                      <img data-src="img/styles/provence/image-4.jpg" class="styles__img lazyload" alt="Прованс">
+                      <img data-src="img/styles/provence/image-4.jpg" class="styles__img lazyload" src="#" alt="Прованс">
                     </div>
                   </div>
                 </div>
                 <div class="swiper-slide styles__swiper-slide">
                   <div class="styles__slide-col">
                     <div class="styles__slide-img-1">
-                      <img data-src="img/styles/romanticism/image-1.jpg" class="styles__img lazyload" alt="Романтизм">
+                      <img data-src="img/styles/romanticism/image-1.jpg" class="styles__img lazyload" src="#" alt="Романтизм">
                     </div>
                     <div class="styles__slide-img-2">
-                      <img data-src="img/styles/romanticism/image-2.jpg" class="styles__img lazyload" alt="Романтизм">
+                      <img data-src="img/styles/romanticism/image-2.jpg" class="styles__img lazyload" src="#" alt="Романтизм">
                     </div>
                   </div>
                   <div class="styles__slide-col">
                     <div class="styles__slide-img-3">
-                      <img data-src="img/styles/romanticism/image-3.jpg" class="styles__img lazyload" alt="Романтизм">
+                      <img data-src="img/styles/romanticism/image-3.jpg" class="styles__img lazyload" src="#" alt="Романтизм">
                     </div>
                     <div class="styles__slide-img-4">
-                      <img data-src="img/styles/romanticism/image-4.jpg" class="styles__img lazyload" alt="Романтизм">
+                      <img data-src="img/styles/romanticism/image-4.jpg" class="styles__img lazyload" src="#" alt="Романтизм">
                     </div>
                   </div>
                 </div>
                 <div class="swiper-slide styles__swiper-slide">
                   <div class="styles__slide-col">
                     <div class="styles__slide-img-1">
-                      <img data-src="img/styles/nordic/image-1.jpg" class="styles__img lazyload" alt="Скандинавский стиль">
+                      <img data-src="img/styles/nordic/image-1.jpg" class="styles__img lazyload" src="#" alt="Скандинавский стиль">
                     </div>
                     <div class="styles__slide-img-2">
-                      <img data-src="img/styles/nordic/image-2.jpg" class="styles__img lazyload" alt="Скандинавский стиль">
+                      <img data-src="img/styles/nordic/image-2.jpg" class="styles__img lazyload" src="#" alt="Скандинавский стиль">
                     </div>
                   </div>
                   <div class="styles__slide-col">
                     <div class="styles__slide-img-3">
-                      <img data-src="img/styles/nordic/image-3.jpg" class="styles__img lazyload" alt="Скандинавский стиль">
+                      <img data-src="img/styles/nordic/image-3.jpg" class="styles__img lazyload" src="#" alt="Скандинавский стиль">
                     </div>
                     <div class="styles__slide-img-4">
-                      <img data-src="img/styles/nordic/image-4.jpg" class="styles__img lazyload" alt="Скандинавский стиль">
+                      <img data-src="img/styles/nordic/image-4.jpg" class="styles__img lazyload" src="#" alt="Скандинавский стиль">
                     </div>
                   </div>
                 </div>
                 <div class="swiper-slide styles__swiper-slide">
                   <div class="styles__slide-col">
                     <div class="styles__slide-img-1">
-                      <img data-src="img/styles/mediterranean/image-1.jpg" class="styles__img lazyload" alt="Средиземноморский стиль">
+                      <img data-src="img/styles/mediterranean/image-1.jpg" class="styles__img lazyload" src="#" alt="Средиземноморский стиль">
                     </div>
                     <div class="styles__slide-img-2">
-                      <img data-src="img/styles/mediterranean/image-2.jpg" class="styles__img lazyload" alt="Средиземноморский стиль">
+                      <img data-src="img/styles/mediterranean/image-2.jpg" class="styles__img lazyload" src="#" alt="Средиземноморский стиль">
                     </div>
                   </div>
                   <div class="styles__slide-col">
                     <div class="styles__slide-img-3">
-                      <img data-src="img/styles/mediterranean/image-3.jpg" class="styles__img lazyload" alt="Средиземноморский стиль">
+                      <img data-src="img/styles/mediterranean/image-3.jpg" class="styles__img lazyload" src="#" alt="Средиземноморский стиль">
                     </div>
                     <div class="styles__slide-img-4">
-                      <img data-src="img/styles/mediterranean/image-4.jpg" class="styles__img lazyload" alt="Средиземноморский стиль">
+                      <img data-src="img/styles/mediterranean/image-4.jpg" class="styles__img lazyload" src="#" alt="Средиземноморский стиль">
                     </div>
                   </div>
                 </div>
                 <div class="swiper-slide styles__swiper-slide">
                   <div class="styles__slide-col">
                     <div class="styles__slide-img-1">
-                      <img data-src="img/styles/hightech/image-1.jpg" class="styles__img lazyload" alt="Хайтек">
+                      <img data-src="img/styles/hightech/image-1.jpg" class="styles__img lazyload" src="#" alt="Хайтек">
                     </div>
                     <div class="styles__slide-img-2">
-                      <img data-src="img/styles/hightech/image-2.jpg" class="styles__img lazyload" alt="Хайтек">
+                      <img data-src="img/styles/hightech/image-2.jpg" class="styles__img lazyload" src="#" alt="Хайтек">
                     </div>
                   </div>
                   <div class="styles__slide-col">
                     <div class="styles__slide-img-3">
-                      <img data-src="img/styles/hightech/image-3.jpg" class="styles__img lazyload" alt="Хайтек">
+                      <img data-src="img/styles/hightech/image-3.jpg" class="styles__img lazyload" src="#" alt="Хайтек">
                     </div>
                     <div class="styles__slide-img-4">
-                      <img data-src="img/styles/hightech/image-4.jpg" class="styles__img lazyload" alt="Хайтек">
+                      <img data-src="img/styles/hightech/image-4.jpg" class="styles__img lazyload" src="#" alt="Хайтек">
                     </div>
                   </div>
                 </div>
                 <div class="swiper-slide styles__swiper-slide">
                   <div class="styles__slide-col">
                     <div class="styles__slide-img-1">
-                      <img data-src="img/styles/eclecticism/image-1.jpg" class="styles__img lazyload" alt="Эклектизм">
+                      <img data-src="img/styles/eclecticism/image-1.jpg" class="styles__img lazyload" src="#" alt="Эклектизм">
                     </div>
                     <div class="styles__slide-img-2">
-                      <img data-src="img/styles/eclecticism/image-2.jpg" class="styles__img lazyload" alt="Эклектизм">
+                      <img data-src="img/styles/eclecticism/image-2.jpg" class="styles__img lazyload" src="#" alt="Эклектизм">
                     </div>
                   </div>
                   <div class="styles__slide-col">
                     <div class="styles__slide-img-3">
-                      <img data-src="img/styles/eclecticism/image-3.jpg" class="styles__img lazyload" alt="Эклектизм">
+                      <img data-src="img/styles/eclecticism/image-3.jpg" class="styles__img lazyload" src="#" alt="Эклектизм">
                     </div>
                     <div class="styles__slide-img-4">
-                      <img data-src="img/styles/eclecticism/image-4.jpg" class="styles__img lazyload" alt="Эклектизм">
+                      <img data-src="img/styles/eclecticism/image-4.jpg" class="styles__img lazyload" src="#" alt="Эклектизм">
                     </div>
                   </div>
                 </div>
@@ -645,7 +648,7 @@
           <div class="col-31">
             <div class="card design__card">
               <div class="card__img-wrap design__img">
-                <img data-src="img/design/design-1.jpg" alt="Минимальный" class="card__img lazyload">
+                <img data-src="img/design/design-1.jpg" src="#" alt="Минимальный" class="card__img lazyload">
               </div>
               <div class="card__text">
                 <h3 class="card__title">Минимальный</h3>
@@ -667,7 +670,7 @@
           <div class="col-31">
             <div class="card design__card">
               <div class="card__img-wrap design__img">
-                <img data-src="img/design/design-2.jpg" alt="Стандартный" class="card__img lazyload">
+                <img data-src="img/design/design-2.jpg" src="#" alt="Стандартный" class="card__img lazyload">
               </div>
               <div class="card__text">
                 <h3 class="card__title">Стандартный</h3>
@@ -692,7 +695,7 @@
           <div class="col-31">
             <div class="card design__card">
               <div class="design__img card__img-wrap">
-                <img data-src="img/design/design-3.jpg" alt="Полный" class="card__img lazyload">
+                <img data-src="img/design/design-3.jpg" src="#" alt="Полный" class="card__img lazyload">
               </div>
               <div class="card__text">
                 <h3 class="card__title">Полный</h3>
@@ -859,17 +862,17 @@
             </div>
             <div class="swiper-container steps__swiper-container steps__swiper-container--right elementLeft">
               <div class="swiper-wrapper swiper-no-swiping">
-                <div class="swiper-slide steps__swiper-slide-img"><img data-src="img/steps/step-1.jpg" alt="Проект"
+                <div class="swiper-slide steps__swiper-slide-img"><img data-src="img/steps/step-1.jpg" src="#" alt="Проект"
                     class="steps__img lazyload"></div>
-                <div class="swiper-slide steps__swiper-slide-img"><img data-src="img/steps/step-2.jpg" alt="Проект"
+                <div class="swiper-slide steps__swiper-slide-img"><img data-src="img/steps/step-2.jpg" src="#" alt="Проект"
                     class="steps__img lazyload"></div>
-                <div class="swiper-slide steps__swiper-slide-img"><img data-src="img/steps/step-3.jpg" alt="Проект"
+                <div class="swiper-slide steps__swiper-slide-img"><img data-src="img/steps/step-3.jpg" src="#" alt="Проект"
                     class="steps__img lazyload"></div>
-                <div class="swiper-slide steps__swiper-slide-img"><img data-src="img/steps/step-4.jpg" alt="Проект"
+                <div class="swiper-slide steps__swiper-slide-img"><img data-src="img/steps/step-4.jpg" src="#" alt="Проект"
                     class="steps__img lazyload"></div>
-                <div class="swiper-slide steps__swiper-slide-img"><img data-src="img/steps/step-5.jpg" alt="Проект"
+                <div class="swiper-slide steps__swiper-slide-img"><img data-src="img/steps/step-5.jpg" src="#" alt="Проект"
                     class="steps__img lazyload"></div>
-                <div class="swiper-slide steps__swiper-slide-img"><img data-src="img/steps/step-6.jpg" alt="Проект"
+                <div class="swiper-slide steps__swiper-slide-img"><img data-src="img/steps/step-6.jpg" src="#" alt="Проект"
                     class="steps__img lazyload"></div>
               </div>
             </div>
@@ -879,10 +882,10 @@
     </section>
     <!-- /.steps -->
     <div class="vector-bg vector-bg--light">
-      <section class="section our-team" id="team">
+      <section class="section our-team" >
         <div class="container">
           <div class="section-title our-team__section-title section-title--light elementUp">
-            <h2 class="section-title__heading our-team__heading">Наша команда</h2>
+            <h2 class="section-title__heading our-team__heading" id="team">Наша команда</h2>
             <div class="section-title__img">
               <img src="img/team.svg" alt="team">
             </div>
@@ -896,7 +899,7 @@
                 <div class="our-team__icon our-team__icon--primary"><img src="img/our-team/our-team-icon-1.svg"
                     alt="icon"></div>
                 <div class="our-team__img">
-                  <img data-src="img/our-team/our-team-1.jpg" alt="Алексей Колмаков" class="lazyload">
+                  <img data-src="img/our-team/our-team-1.jpg" src="#" alt="Алексей Колмаков" class="lazyload">
                 </div>
               </div>
               <div class="our-team__people">
@@ -911,7 +914,7 @@
                 <div class="our-team__icon our-team__icon--primary"><img src="img/our-team/our-team-icon-2.svg"
                     alt="icon"></div>
                 <div class="our-team__img">
-                  <img data-src="img/our-team/our-team-2.jpg" alt="Алиса Сухорукова" class="lazyload">
+                  <img data-src="img/our-team/our-team-2.jpg" src="#" alt="Алиса Сухорукова" class="lazyload">
                 </div>
               </div>
               <div class="our-team__people">
@@ -926,7 +929,7 @@
                 <div class="our-team__icon our-team__icon--primary"><img src="img/our-team/our-team-icon-3.svg"
                     alt="icon"></div>
                 <div class="our-team__img">
-                  <img data-src="img/our-team/our-team-3.jpg" alt="Давид Волынев" class="lazyload">
+                  <img data-src="img/our-team/our-team-3.jpg" src="#" alt="Давид Волынев" class="lazyload">
                 </div>
               </div>
               <div class="our-team__people">
@@ -958,7 +961,7 @@
           <div class="row our-clients__row elementUp">
             <div class="col-30 our-clients__col">
               <div class="our-clients__heading-col">
-                <div class="our-clients__img"><img data-src="img/our-clients/client-1.jpg" alt="Савельева Екатерина Львовна" class="lazyload">
+                <div class="our-clients__img"><img data-src="img/our-clients/client-1.jpg" src="#" alt="Савельева Екатерина Львовна" class="lazyload">
                 </div>
                 <strong class="our-clients__name">Савельева Екатерина Львовна</strong>
               </div>
@@ -983,7 +986,7 @@
             </div>
             <div class="col-30 our-clients__col">
               <div class="our-clients__heading-col">
-                <div class="our-clients__img"><img data-src="img/our-clients/client-2.jpg" alt="Большов Михаил Анатольевич" class="lazyload">
+                <div class="our-clients__img"><img data-src="img/our-clients/client-2.jpg" src="#" alt="Большов Михаил Анатольевич" class="lazyload">
                 </div>
                 <strong class="our-clients__name">Большов Михаил Анатольевич</strong>
               </div>
@@ -1008,7 +1011,7 @@
             </div>
             <div class="col-30 our-clients__col">
               <div class="our-clients__heading-col">
-                <div class="our-clients__img"><img data-src="img/our-clients/client-3.jpg" alt="Хасанов Даниил Муратович" class="lazyload">
+                <div class="our-clients__img"><img data-src="img/our-clients/client-3.jpg" src="#" alt="Хасанов Даниил Муратович" class="lazyload">
                 </div>
                 <strong class="our-clients__name">Хасанов Даниил Муратович</strong>
               </div>
@@ -1065,11 +1068,6 @@
           <button class="button button--primary footer__button" onclick="ym(61223932,'reachGoal','request'); return true;">Отправить</button>
           <!-- /.policy -->
         </form>
-        <div class="send-success footer__send-success">
-          <p class="send-success__text">Форма отправлена, мы&nbsp;свяжемся с&nbsp;вами в&nbsp;течении 10&nbsp;минут.</p>
-          <p class="send-success__text">Подпишитесь на&nbsp;нас в&nbsp;ВК:</p>
-          <a href="https://vk.com/" class="send-success__link" target="_blank">Repair Design Project</a>
-        </div>
       </div>
       <div class="footer__contacts elementUp">
         <p class="footer__address footer__address--primary">Ростов-на-Дону, Торговый центр Plaza
@@ -1108,6 +1106,7 @@
       </div>
     </div>
   </footer>
+
   <div class="modal">
     <div class="modal__dialog">
       <button class="modal__close"></button>
@@ -1135,7 +1134,15 @@
         <button class="button button--primary modal__button" onclick="ym(61223932,'reachGoal','callback'); return true">Отправить заявку</button>
         <!-- /.policy -->
       </form>
-      <div class="send-success modal__send-success">
+
+    </div>
+    <!-- /.modal-dialog -->
+  </div>
+
+  <div class="modal__send-success">
+    <div class="modal__send-success-dialog">
+      <button class="modal__send-success-close"></button>
+      <div class="send-success">
         <p class="send-success__text">Форма отправлена, мы&nbsp;свяжемся с&nbsp;вами в&nbsp;течении 10&nbsp;минут.</p>
         <p class="send-success__text">Подпишитесь на&nbsp;нас в&nbsp;ВК:</p>
         <a href="https://vk.com/" class="send-success__link" target="_blank">Repair Design Project</a>
@@ -1143,6 +1150,12 @@
     </div>
     <!-- /.modal-dialog -->
   </div>
+
+
+
+
+
+
   <!-- /.modal -->
   <a href="#" class="button__scroll-top"></a>
 
@@ -1151,10 +1164,10 @@
   <script src="js/swiper.min.js"></script>
   <script src="js/jquery.validate.min.js"></script>
   <script src="js/jquery.mask.min.js"></script>
-  <script src="js/map.min.js"></script>
-  <script src="js/main.min.js"></script>
+  <script src="js/map.js"></script>
+  <script src="js/main.js"></script>
   <script async src="js/lazysizes.min.js"></script>
-  <script async>
+  <script>
     (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
     m[i].l=1*new Date();k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
     (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
